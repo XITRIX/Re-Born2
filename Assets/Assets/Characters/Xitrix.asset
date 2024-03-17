@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
+  m_Name: Xitrix
+  m_EditorClassIdentifier: 
+  charName: XITRIX
+  avatar: {fileID: 0}
+  tileset:
+  - {fileID: 2942010219306100528, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
+  - {fileID: -128106618655104547, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
+  - {fileID: -2228444311441872815, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
+  - {fileID: 5230506293732752396, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
+  - {fileID: 5974404956175956806, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
+  - {fileID: -5885943416697555621, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
+  - {fileID: 6983528451976925839, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
+  - {fileID: 8002854672327568717, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
+  - {fileID: -1971115383396252724, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
+  - {fileID: -2019891097329769794, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
+  - {fileID: -4790023340931897525, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
+  - {fileID: -1777131890918704481, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
