@@ -65,7 +65,7 @@ public class PlayerInputScript : MonoBehaviour
         UpdateCharacters();
         
         foreach (var character in allCharacters)
-            character.MoveByVector(Vector2.zero, 0);
+            character.MoveByVector(Vector2.zero, speed);
     }
 
     private void UpdateCharacters()
@@ -75,7 +75,7 @@ public class PlayerInputScript : MonoBehaviour
             var enableAI = enableFollowing && i != activeCharacterIndex;
             allCharacters[i].GetComponent<NavMeshAgent>().enabled = enableAI;
             // allCharacters[i].GetComponent<AITest>().AllowToMove = enableAI;
-            // allCharacters[i].GetComponent<BoxCollider2D>().enabled = !enableAI;
+            allCharacters[i].GetComponent<BoxCollider2D>().isTrigger = enableAI;
 
             var layer = (allCharacters.Count - 1 - i + activeCharacterIndex) % allCharacters.Count;
             allCharacters[i].GetComponent<SpriteRenderer>().sortingOrder = layer;

@@ -23,7 +23,7 @@ public class FollowerAIScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (!_agent.enabled) return;
         _agent.speed = _agent.remainingDistance < 1.75 ? 2.3f : 6f;
