@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8339615516426028876}
   - component: {fileID: -1195751345388287493}
   - component: {fileID: 3905945883528631332}
+  - component: {fileID: 3379259070624471224}
   m_Layer: 6
   m_Name: Character
   m_TagString: Untagged
@@ -107,6 +108,7 @@ MonoBehaviour:
   objectId: 
   direction: {x: 0, y: 1}
   characterModel: {fileID: 11400000, guid: eeb71d5a30b794db781e1197b81fe900, type: 2}
+  objectsToInteract: []
 --- !u!50 &9076674215199899157
 Rigidbody2D:
   serializedVersion: 4
@@ -215,3 +217,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followTarget: {fileID: 0}
+--- !u!114 &3379259070624471224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18416297776831903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b77ab273055d41009ad2c9760b470a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
