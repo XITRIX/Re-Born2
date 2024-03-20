@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
@@ -12,6 +13,7 @@ public class CharacterScript : Identifiable
 
     public Vector2 direction;
     public CharacterScriptableObject characterModel;
+    public List<Interactable> objectsToInteract = new();
 
     private const int AnimationTick = 8;
     private int _animationCounter;

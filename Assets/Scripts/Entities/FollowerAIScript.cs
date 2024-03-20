@@ -31,4 +31,14 @@ public class FollowerAIScript : MonoBehaviour
         _agent.SetDestination(followTarget.transform.position);
         _character.MoveByVector(_agent.velocity, _agent.speed, false);
     }
+
+    public bool AIEnabled
+    {
+        get => GetComponent<NavMeshAgent>().enabled;
+        set
+        {
+            GetComponent<NavMeshAgent>().enabled = value;
+            GetComponent<BoxCollider2D>().isTrigger = value;
+        }
+    }
 }

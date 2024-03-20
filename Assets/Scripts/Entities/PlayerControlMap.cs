@@ -80,6 +80,15 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Value"",
+                    ""id"": ""2e7e16cb-8190-4afd-b42a-bf325ce6c77d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -300,6 +309,17 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""ToggleFollowing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""86470c45-c58a-4959-9299-33eabf840300"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -893,6 +913,7 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
         m_Player_NextCharacter = m_Player.FindAction("NextCharacter", throwIfNotFound: true);
         m_Player_PrevCharacter = m_Player.FindAction("PrevCharacter", throwIfNotFound: true);
         m_Player_ToggleFollowing = m_Player.FindAction("ToggleFollowing", throwIfNotFound: true);
+        m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -972,6 +993,7 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_NextCharacter;
     private readonly InputAction m_Player_PrevCharacter;
     private readonly InputAction m_Player_ToggleFollowing;
+    private readonly InputAction m_Player_Interact;
     public struct PlayerActions
     {
         private @PlayerControlMap m_Wrapper;
@@ -982,6 +1004,7 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
         public InputAction @NextCharacter => m_Wrapper.m_Player_NextCharacter;
         public InputAction @PrevCharacter => m_Wrapper.m_Player_PrevCharacter;
         public InputAction @ToggleFollowing => m_Wrapper.m_Player_ToggleFollowing;
+        public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1009,6 +1032,9 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
             @ToggleFollowing.started += instance.OnToggleFollowing;
             @ToggleFollowing.performed += instance.OnToggleFollowing;
             @ToggleFollowing.canceled += instance.OnToggleFollowing;
+            @Interact.started += instance.OnInteract;
+            @Interact.performed += instance.OnInteract;
+            @Interact.canceled += instance.OnInteract;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1031,6 +1057,9 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
             @ToggleFollowing.started -= instance.OnToggleFollowing;
             @ToggleFollowing.performed -= instance.OnToggleFollowing;
             @ToggleFollowing.canceled -= instance.OnToggleFollowing;
+            @Interact.started -= instance.OnInteract;
+            @Interact.performed -= instance.OnInteract;
+            @Interact.canceled -= instance.OnInteract;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1219,6 +1248,7 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
         void OnNextCharacter(InputAction.CallbackContext context);
         void OnPrevCharacter(InputAction.CallbackContext context);
         void OnToggleFollowing(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
