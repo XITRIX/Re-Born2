@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Xitrix
   m_EditorClassIdentifier: 
   charName: XITRIX
-  avatar: {fileID: 0}
+  avatar: {fileID: 7531945580129196923, guid: 9a5707e67aa1b45d69e9737b26db6577, type: 3}
   tileset:
   - {fileID: 2942010219306100528, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
   - {fileID: -128106618655104547, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}

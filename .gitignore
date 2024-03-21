@@ -76,3 +76,4 @@ Assets/Unity.VisualScripting.Generated
 
 mono_crash*.json
 .DS_Store
+.utmp

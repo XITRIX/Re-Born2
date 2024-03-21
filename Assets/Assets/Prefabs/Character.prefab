@@ -180,8 +180,8 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.73, y: 0.53}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.7, y: 0.5}
+  m_EdgeRadius: 0.03
 --- !u!195 &-1195751345388287493
 NavMeshAgent:
   m_ObjectHideFlags: 0

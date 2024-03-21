@@ -1,18 +1,28 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
-[RequireComponent(typeof(SpriteRenderer))]
 public class RenderOrderByCoordinate : MonoBehaviour
 {
-    private SpriteRenderer _spriteRenderer;
+    public bool isStatic;
+    public SpriteRenderer spriteRenderer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        
+        UpdateOrder();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        _spriteRenderer.sortingOrder = (int) (-transform.position.y * 10);
+        if (isStatic) return;
+        UpdateOrder();
+    }
+
+    private void UpdateOrder()
+    {
+        spriteRenderer.sortingOrder = (int) (-transform.position.y * 10);
     }
 }

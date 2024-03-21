@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Danya
   m_EditorClassIdentifier: 
   charName: Soloway
-  avatar: {fileID: 0}
+  avatar: {fileID: -8801154533391093845, guid: 80e7cfb9a01c94126b182b18759e6f1d, type: 3}
   tileset:
   - {fileID: 4498544600597911442, guid: 3538df517a02a4a588bd6df884e23739, type: 3}
   - {fileID: -7706798523822224507, guid: 3538df517a02a4a588bd6df884e23739, type: 3}

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -8,10 +9,16 @@ public class GlobalDirector : MonoBehaviour
     public Dictionary<string, GameObject> GameObjectsStash { get; } = new();
 
     public List<Identifiable> maps;
+    public GameObject dialogHUD;
     
     public GlobalDirector()
     {
         Shared = this;
+    }
+
+    private void Awake()
+    {
+        Application.targetFrameRate = 120;
     }
 
     public static void LoadMap(string map)
@@ -26,6 +33,18 @@ public class GlobalDirector : MonoBehaviour
     public static GameObject GetEntityById(string id)
     {
         return Shared.GameObjectsStash.TryGetValue(id, out var value) ? value : null;
+    }
+
+    public static void ShowDialog()
+    {
+        // Shared.dialogHUD.SetActive(true);
+        PlayerInputScript.Shared.DisablePlayerInput();
+    }
+    
+    public static void CloseDialog()
+    {
+        // Shared.dialogHUD.SetActive(false);
+        PlayerInputScript.Shared.EnablePlayerInput();
     }
     
     private void PrepareToLoadMap()
