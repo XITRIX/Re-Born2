@@ -27,6 +27,7 @@ public class UIDialogMessage : MonoBehaviour
 
     public static IEnumerator SetMessage([CanBeNull] Sprite avatar, string name, string message)
     {
+        Shared.avatar.transform.parent.gameObject.SetActive(avatar != null);
         Shared.avatar.sprite = avatar;
         Shared.charName.text = name;
         yield return Shared.textField.SetText(message);

@@ -271,7 +271,7 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""3646d7d2-8c14-45c2-9b02-531f01ff9488"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
@@ -359,10 +359,10 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""dc9412bc-f69b-4fcb-9e37-a83b31a83b5a"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""path"": ""<Gamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -736,6 +736,17 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse;Gamepad;Touch;Joystick;XR"",
+                    ""action"": ""Submit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3dba3799-0c7b-4f21-a70d-6c726126feba"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Submit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false

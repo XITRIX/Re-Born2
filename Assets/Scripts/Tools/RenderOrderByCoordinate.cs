@@ -15,7 +15,7 @@ public class RenderOrderByCoordinate : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (isStatic) return;
         UpdateOrder();

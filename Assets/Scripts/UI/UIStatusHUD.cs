@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,7 @@ public class UIStatusHUD : MonoBehaviour
 
     public UICharacterStatus statusPrefab;
 
+    private List<UICharacterStatus> characterStatusItems = new();
     private void Update()
     {
         if (layoutGroup.transform.childCount != PlayerInputScript.Shared.allCharacters.Count)
@@ -18,21 +20,23 @@ public class UIStatusHUD : MonoBehaviour
 
     private void ReloadHUD()
     {
-        foreach (Transform child in layoutGroup.transform)
+        foreach (var child in characterStatusItems)
             Destroy(child); 
+        characterStatusItems.Clear();
 
         foreach (var character in PlayerInputScript.Shared.allCharacters)
         {
+            statusPrefab.characterModel = character.characterModel;
             var status = Instantiate(statusPrefab, layoutGroup.transform);
-            status.characterModel = character.characterModel;
+            characterStatusItems.Add(status);
         }
     }
 
     private void RefreshHUD()
     {
-        foreach (var character in PlayerInputScript.Shared.allCharacters)
+        for (var i = 0; i < characterStatusItems.Count; i++)
         {
-            
+            characterStatusItems[i].IsSelected = i == PlayerInputScript.Shared.activeCharacterIndex;
         }
     }
 }
