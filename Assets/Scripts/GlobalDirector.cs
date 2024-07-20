@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class GlobalDirector : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class GlobalDirector : MonoBehaviour
 
     public List<Identifiable> maps;
     public GameObject dialogHUD;
+
+    public Identifiable currentMap;
+    public string lastMapId;
     
     public GlobalDirector()
     {
@@ -23,12 +27,18 @@ public class GlobalDirector : MonoBehaviour
 
     public static void LoadMap(string map)
     {
-        Shared._lastMapId = Shared._currentMap?.objectId ?? "Initial";
+        if (Shared.currentMap != null)
+        {
+            Destroy(Shared.currentMap);
+            PlayerInputScript.Shared.allCharacters.Clear();
+        }
+
+        Shared.lastMapId = Shared.currentMap?.objectId ?? "Initial";
         Shared.PrepareToLoadMap();
-        Shared._currentMap = Instantiate(Shared.maps.First(v => v.objectId == map));
+        Shared.currentMap = Instantiate(Shared.maps.First(v => v.objectId == map));
     }
 
-    public static string GetLastMapId() => Shared._lastMapId;
+    public static string GetLastMapId() => Shared.lastMapId;
     
     public static GameObject GetEntityById(string id)
     {
@@ -55,9 +65,6 @@ public class GlobalDirector : MonoBehaviour
         }
         GameObjectsStash.Clear();
 
-        _currentMap = null;
+        currentMap = null;
     }
-
-    private Identifiable _currentMap;
-    private string _lastMapId;
 }

@@ -59,20 +59,24 @@ public class PlayerInputScript : MonoBehaviour
 
     public static void SpawnCharacters(List<CharacterScriptableObject> characters, Vector2 atPoint)
     {
+        foreach (var character in Shared.allCharacters)
+            Destroy(character);
+        Shared.allCharacters.Clear();
+        
         foreach (var character in characters)
         {
-            var characterObject = Instantiate(Shared.characterPrefab, atPoint, Quaternion.identity);
+            var characterObject = Instantiate(Shared.characterPrefab, atPoint, Quaternion.identity, GlobalDirector.Shared.currentMap.transform);
             characterObject.characterModel = character;
             InternalAddCharacter(characterObject);
         }
         Shared.UpdateCharacters();
     }
 
-    public static void AddCharacter(CharacterScript character)
-    {
-        InternalAddCharacter(character);
-        Shared.UpdateCharacters();
-    }
+    // public static void AddCharacter(CharacterScript character)
+    // {
+    //     InternalAddCharacter(character);
+    //     Shared.UpdateCharacters();
+    // }
 
     private static void InternalAddCharacter(CharacterScript character)
     {
@@ -84,6 +88,8 @@ public class PlayerInputScript : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+        if (allCharacters.Count == 0) return;
+        
         var run = IsRunning ? 2 : 1;
         var movementDirection = _controlMap.Player.Move.ReadValue<Vector2>();
         ActiveCharacter.MoveByVector(movementDirection, speed * run);

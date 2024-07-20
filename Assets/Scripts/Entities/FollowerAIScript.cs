@@ -25,7 +25,7 @@ public class FollowerAIScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!_agent.enabled) return;
+        if (!_agent.enabled || !_agent.isOnNavMesh) return;
         _agent.speed = _agent.remainingDistance < 1.75 ? 2.3f : 6f;
         
         _agent.SetDestination(followTarget.transform.position);
