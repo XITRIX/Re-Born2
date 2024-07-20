@@ -14,6 +14,7 @@ public class ToggleItem : Interactable
     public override Action InteractionScenario => () =>
     {
         isEnabled = !isEnabled;
+        GlobalDirector.SetGameKey(objectId, isEnabled);
         UpdateSprite();
         base.InteractionScenario();
     };
@@ -21,6 +22,7 @@ public class ToggleItem : Interactable
     public override void Awake()
     {
         base.Awake();
+        isEnabled = GlobalDirector.GetGameKey(objectId);
         _spriteRenderer = GetComponent<SpriteRenderer>();
         UpdateSprite();
     }

@@ -8,6 +8,7 @@ public class GlobalDirector : MonoBehaviour
 {
     public static GlobalDirector Shared { get; private set; }
     public Dictionary<string, GameObject> GameObjectsStash { get; } = new();
+    private Dictionary<string, bool> _gameKeys = new();
 
     public List<Identifiable> maps;
     public GameObject dialogHUD;
@@ -30,12 +31,22 @@ public class GlobalDirector : MonoBehaviour
         if (Shared.currentMap != null)
         {
             Destroy(Shared.currentMap);
-            PlayerInputScript.Shared.allCharacters.Clear();
+            PlayerInputScript.Shared.AllCharacters.Clear();
         }
 
         Shared.lastMapId = Shared.currentMap?.objectId ?? "Initial";
         Shared.PrepareToLoadMap();
         Shared.currentMap = Instantiate(Shared.maps.First(v => v.objectId == map));
+    }
+
+    public static bool GetGameKey(string key)
+    {
+        return Shared._gameKeys.ContainsKey(key) && Shared._gameKeys[key];
+    }
+
+    public static void SetGameKey(string key, bool value)
+    {
+        Shared._gameKeys[key] = value;
     }
 
     public static string GetLastMapId() => Shared.lastMapId;

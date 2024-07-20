@@ -14,7 +14,7 @@ public class PlayerInputScript : MonoBehaviour
     public int activeCharacterIndex;
     public bool enableFollowing = true;
     
-    public readonly List<CharacterScript> allCharacters = new();
+    public readonly List<CharacterScript> AllCharacters = new();
     private PlayerControlMap _controlMap;
     
     public PlayerInputScript()
@@ -59,9 +59,11 @@ public class PlayerInputScript : MonoBehaviour
 
     public static void SpawnCharacters(List<CharacterScriptableObject> characters, Vector2 atPoint)
     {
-        foreach (var character in Shared.allCharacters)
+        SetFollowing(true);
+        
+        foreach (var character in Shared.AllCharacters)
             Destroy(character);
-        Shared.allCharacters.Clear();
+        Shared.AllCharacters.Clear();
         
         foreach (var character in characters)
         {
@@ -72,6 +74,15 @@ public class PlayerInputScript : MonoBehaviour
         Shared.UpdateCharacters();
     }
 
+    public static void SetFollowing(bool following)
+    {
+        Shared.enableFollowing = following;
+        Shared.UpdateCharacters();
+        
+        foreach (var character in Shared.AllCharacters)
+            character.MoveByVector(Vector2.zero, Shared.speed);
+    }
+
     // public static void AddCharacter(CharacterScript character)
     // {
     //     InternalAddCharacter(character);
@@ -80,15 +91,15 @@ public class PlayerInputScript : MonoBehaviour
 
     private static void InternalAddCharacter(CharacterScript character)
     {
-        Shared.allCharacters.Add(character);
-        for (var i = 0; i < Shared.allCharacters.Count; i++)
-            Shared.allCharacters[(i + 1) % Shared.allCharacters.Count].GetComponent<FollowerAIScript>().followTarget = Shared.allCharacters[i].gameObject;
+        Shared.AllCharacters.Add(character);
+        for (var i = 0; i < Shared.AllCharacters.Count; i++)
+            Shared.AllCharacters[(i + 1) % Shared.AllCharacters.Count].GetComponent<FollowerAIScript>().followTarget = Shared.AllCharacters[i].gameObject;
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
-        if (allCharacters.Count == 0) return;
+        if (AllCharacters.Count == 0) return;
         
         var run = IsRunning ? 2 : 1;
         var movementDirection = _controlMap.Player.Move.ReadValue<Vector2>();
@@ -99,7 +110,7 @@ public class PlayerInputScript : MonoBehaviour
     {
         ActiveCharacter.MoveByVector(Vector2.zero, speed);
         activeCharacterIndex -= 1;
-        if (activeCharacterIndex < 0) activeCharacterIndex = allCharacters.Count - 1;
+        if (activeCharacterIndex < 0) activeCharacterIndex = AllCharacters.Count - 1;
         UpdateCharacters();
     }
 
@@ -107,22 +118,18 @@ public class PlayerInputScript : MonoBehaviour
     {
         ActiveCharacter.MoveByVector(Vector2.zero, speed);
         activeCharacterIndex += 1;
-        activeCharacterIndex %= allCharacters.Count;
+        activeCharacterIndex %= AllCharacters.Count;
         UpdateCharacters();
     }
 
     private void ToggleFollowing(InputAction.CallbackContext ctx)
     {
-        enableFollowing = !enableFollowing;
-        UpdateCharacters();
-        
-        foreach (var character in allCharacters)
-            character.MoveByVector(Vector2.zero, speed);
+        SetFollowing(!enableFollowing);
     }
     
     private void PerformInteraction(InputAction.CallbackContext ctx)
     {
-        var objectsToInteract = allCharacters[activeCharacterIndex].objectsToInteract;
+        var objectsToInteract = AllCharacters[activeCharacterIndex].objectsToInteract;
         if (objectsToInteract.Count <= 0) return;
 
         var obj = objectsToInteract.LastOrDefault();
@@ -135,18 +142,20 @@ public class PlayerInputScript : MonoBehaviour
 
     private void UpdateCharacters()
     {
-        for (var i = 0; i < allCharacters.Count; i++)
+        if (AllCharacters.Count == 0) return;
+        
+        for (var i = 0; i < AllCharacters.Count; i++)
         {
             var enableAI = enableFollowing && i != activeCharacterIndex;
-            allCharacters[i].GetComponent<FollowerAIScript>().AIEnabled = enableAI;
+            AllCharacters[i].GetComponent<FollowerAIScript>().AIEnabled = enableAI;
 
-            var layer = (allCharacters.Count - 1 - i + activeCharacterIndex) % allCharacters.Count;
-            allCharacters[i].GetComponent<SpriteRenderer>().sortingOrder = layer;
+            var layer = (AllCharacters.Count - 1 - i + activeCharacterIndex) % AllCharacters.Count;
+            AllCharacters[i].GetComponent<SpriteRenderer>().sortingOrder = layer;
         }
 
-        CameraScript.Shared.followedObject = allCharacters[activeCharacterIndex].gameObject;
+        CameraScript.Shared.followedObject = AllCharacters[activeCharacterIndex].gameObject;
     }
 
-    private CharacterScript ActiveCharacter => allCharacters[activeCharacterIndex];
+    private CharacterScript ActiveCharacter => AllCharacters[activeCharacterIndex];
     private bool IsRunning => Math.Abs(_controlMap.Player.Run.ReadValue<float>() - 1) < 0.1f;
 }

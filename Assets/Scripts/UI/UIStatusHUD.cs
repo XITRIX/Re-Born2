@@ -12,7 +12,7 @@ public class UIStatusHUD : MonoBehaviour
     private List<UICharacterStatus> characterStatusItems = new();
     private void Update()
     {
-        if (layoutGroup.transform.childCount != PlayerInputScript.Shared.allCharacters.Count)
+        if (layoutGroup.transform.childCount != PlayerInputScript.Shared.AllCharacters.Count)
             ReloadHUD();
 
         RefreshHUD();
@@ -24,7 +24,7 @@ public class UIStatusHUD : MonoBehaviour
             Destroy(child); 
         characterStatusItems.Clear();
 
-        foreach (var character in PlayerInputScript.Shared.allCharacters)
+        foreach (var character in PlayerInputScript.Shared.AllCharacters)
         {
             statusPrefab.characterModel = character.characterModel;
             var status = Instantiate(statusPrefab, layoutGroup.transform);
