@@ -42,7 +42,7 @@ public class VSMessageUnit : Unit
         yield return UIDialogMessage.SetMessage(avatar, name, message);
         
         yield return new WaitUntil(() => UIDialogMessage.Shared.Submit);
-        yield return new WaitForSeconds(0.01f);
+        yield return new WaitForSeconds(0.1f);
         
         UIDialogMessage.CloseMessageView();
         GlobalDirector.CloseDialog();

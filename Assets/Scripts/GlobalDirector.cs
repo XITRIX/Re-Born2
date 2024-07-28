@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Serialization;
 
 public class GlobalDirector : MonoBehaviour
@@ -12,6 +13,7 @@ public class GlobalDirector : MonoBehaviour
 
     public List<Identifiable> maps;
     public GameObject dialogHUD;
+    public AudioSource backgroundAudioSource;
 
     public Identifiable currentMap;
     public string lastMapId;
@@ -28,6 +30,9 @@ public class GlobalDirector : MonoBehaviour
 
     public static void LoadMap(string map)
     {
+        UIDialogMessage.SetBackstageColor(Color.clear);
+        UIDialogMessage.SetBackstageImage(null);
+        
         if (Shared.currentMap != null)
         {
             Destroy(Shared.currentMap);
@@ -67,7 +72,24 @@ public class GlobalDirector : MonoBehaviour
         // Shared.dialogHUD.SetActive(false);
         PlayerInputScript.Shared.EnablePlayerInput();
     }
-    
+
+    public static void PlayBackgroundAudio(AudioResource audio)
+    {
+        var source = Shared.backgroundAudioSource;
+        if (source.isPlaying)
+            source.Pause();
+
+        source.resource = audio;
+        source.Play();
+    }
+
+    public static void PauseBackgroundAudio()
+    {
+        var source = Shared.backgroundAudioSource;
+        if (source.isPlaying)
+            source.Pause();
+    }
+
     private void PrepareToLoadMap()
     {
         foreach (var keyValuePair in GameObjectsStash)

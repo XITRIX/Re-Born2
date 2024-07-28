@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Character", menuName 
-    = "Character/Character")]
+[CreateAssetMenu(fileName = "New Character", menuName = "Character/Character")]
+[System.Serializable]
 public class CharacterScriptableObject : ScriptableObject
 {
     public string charName;

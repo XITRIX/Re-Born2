@@ -35,6 +35,12 @@ public class PlayerInputScript : MonoBehaviour
         EnablePlayerInput();
     }
 
+    public static void SetPlayerInputEnabled(bool enabled)
+    {
+        if (enabled) Shared.EnablePlayerInput();
+        else Shared.DisablePlayerInput();
+    }
+
     public void EnablePlayerInput()
     {
         _controlMap.Player.PrevCharacter.Enable();

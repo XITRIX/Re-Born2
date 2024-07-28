@@ -10,6 +10,7 @@ public class UIDialogMessage : MonoBehaviour
     public static UIDialogMessage Shared { get; private set; }
 
     public Image backstageColor;
+    public Image backstageImage;
     public GameObject messageView;
     public Image avatar;
     public TextMeshProUGUI charName;
@@ -26,6 +27,11 @@ public class UIDialogMessage : MonoBehaviour
         _controlMap.UI.Submit.Enable();
     }
 
+    public static void SetBackstageColor(Color targetColor)
+    {
+        Shared.backstageColor.color = targetColor;
+    }
+    
     public static IEnumerator SetBackstageColor(Color targetColor, float seconds)
     {
         var startTime = Time.time;
@@ -37,6 +43,13 @@ public class UIDialogMessage : MonoBehaviour
             if (timePass >= seconds) break;
             yield return null;
         }
+    }
+    
+    public static void SetBackstageImage([CanBeNull] Sprite image)
+    {
+        Shared.backstageImage.color = image == null ? Color.clear : Color.white;
+        Shared.backstageImage.sprite = image;
+        Shared.backstageImage.preserveAspect = true;
     }
 
     public static IEnumerator SetMessage([CanBeNull] Sprite avatar, string name, string message)
