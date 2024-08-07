@@ -35,8 +35,7 @@ public class UIMessageTypewriterEffect : MonoBehaviour
         
         var numCharsRevealed = 0;
         
-        // TODO: Uncomment for dialog audio
-        // VNCanvasController.Shared.audioSource.Play();
+        UIDialogMessage.Shared.audioSource.Play();
 
         _textBox.ForceMeshUpdate();
         while (numCharsRevealed < _textBox.textInfo.characterCount)
@@ -52,7 +51,6 @@ public class UIMessageTypewriterEffect : MonoBehaviour
             yield return new WaitForSeconds(startSkipping && IsSkipping ? 0.01f : 0.07f);
         }
         
-        // TODO: Uncomment for dialog audio
-        // VNCanvasController.Shared.audioSource.Stop();
+        UIDialogMessage.Shared.audioSource.Stop();
     } 
 }

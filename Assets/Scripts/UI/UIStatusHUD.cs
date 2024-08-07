@@ -21,7 +21,7 @@ public class UIStatusHUD : MonoBehaviour
     private void ReloadHUD()
     {
         foreach (var child in characterStatusItems)
-            Destroy(child); 
+            Destroy(child.gameObject); 
         characterStatusItems.Clear();
 
         foreach (var character in PlayerInputScript.Shared.AllCharacters)

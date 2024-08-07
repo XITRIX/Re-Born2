@@ -15,6 +15,7 @@ public class UIDialogMessage : MonoBehaviour
     public Image avatar;
     public TextMeshProUGUI charName;
     public UIMessageTypewriterEffect textField;
+    public AudioSource audioSource;
     
     private PlayerControlMap _controlMap;
 
@@ -23,6 +24,7 @@ public class UIDialogMessage : MonoBehaviour
     public void Awake()
     {
         Shared = this;
+        audioSource = GetComponent<AudioSource>();
         _controlMap = new PlayerControlMap();
         _controlMap.UI.Submit.Enable();
     }

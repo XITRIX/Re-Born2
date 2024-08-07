@@ -68,7 +68,7 @@ public class PlayerInputScript : MonoBehaviour
         SetFollowing(true);
         
         foreach (var character in Shared.AllCharacters)
-            Destroy(character);
+            Destroy(character.gameObject);
         Shared.AllCharacters.Clear();
         
         foreach (var character in characters)
@@ -89,11 +89,14 @@ public class PlayerInputScript : MonoBehaviour
             character.MoveByVector(Vector2.zero, Shared.speed);
     }
 
-    // public static void AddCharacter(CharacterScript character)
-    // {
-    //     InternalAddCharacter(character);
-    //     Shared.UpdateCharacters();
-    // }
+    public static void AddCharacter(CharacterScriptableObject character, Vector2 atPoint)
+    {
+        var characterObject = Instantiate(Shared.characterPrefab, atPoint, Quaternion.identity, GlobalDirector.Shared.currentMap.transform);
+        characterObject.characterModel = character;
+        InternalAddCharacter(characterObject);
+            
+        Shared.UpdateCharacters();
+    }
 
     private static void InternalAddCharacter(CharacterScript character)
     {
