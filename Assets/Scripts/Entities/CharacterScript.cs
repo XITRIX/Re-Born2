@@ -5,8 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterScript : Identifiable
-{
-    private enum Direction
+{ 
+    public enum Direction
     {
         Down, Left, Right, Up
     }
@@ -39,7 +39,13 @@ public class CharacterScript : Identifiable
         direction = movementDirection;
         PerformAnimation(speed);
     }
-    
+
+    public void SetDirection(Direction direction)
+    {
+        _lastDirection = direction;
+        _spriteRenderer.sprite = FrameForDirection(direction, 0, true);
+    }
+
     private void PerformAnimation(float speed)
     {
         var isIdle = false;

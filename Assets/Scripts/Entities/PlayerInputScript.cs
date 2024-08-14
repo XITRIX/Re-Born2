@@ -89,10 +89,11 @@ public class PlayerInputScript : MonoBehaviour
             character.MoveByVector(Vector2.zero, Shared.speed);
     }
 
-    public static void AddCharacter(CharacterScriptableObject character, Vector2 atPoint)
+    public static void AddCharacter(CharacterScriptableObject character, Vector2 atPoint, CharacterScript.Direction direction)
     {
         var characterObject = Instantiate(Shared.characterPrefab, atPoint, Quaternion.identity, GlobalDirector.Shared.currentMap.transform);
         characterObject.characterModel = character;
+        characterObject.SetDirection(direction);
         InternalAddCharacter(characterObject);
             
         Shared.UpdateCharacters();
