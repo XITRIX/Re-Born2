@@ -166,6 +166,6 @@ public class PlayerInputScript : MonoBehaviour
         CameraScript.Shared.followedObject = AllCharacters[activeCharacterIndex].gameObject;
     }
 
-    private CharacterScript ActiveCharacter => AllCharacters[activeCharacterIndex];
+    public CharacterScript ActiveCharacter => AllCharacters[activeCharacterIndex];
     private bool IsRunning => Math.Abs(_controlMap.Player.Run.ReadValue<float>() - 1) < 0.1f;
 }

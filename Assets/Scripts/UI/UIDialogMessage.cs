@@ -59,7 +59,7 @@ public class UIDialogMessage : MonoBehaviour
     
     public static void ShowNote(string text, float seconds = 2)
     {
-        Shared.noteLabel.text = "<mark=#000000aa>" + text + "</mark>";
+        Shared.noteLabel.text = "<mark=#00000077>" + text + "</mark>";
         Shared.noteLabel.alpha = 1;
         Shared.noteLabelFadeTime = Time.time + seconds;
     }

@@ -177,10 +177,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Test text \ndsda"
+  m_text: "<mark=#00000077>Test text \ndsda</mark>"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 717f43d63eec2495f8542f21bed9c21a, type: 2}
-  m_sharedMaterial: {fileID: -5475222884135812015, guid: 717f43d63eec2495f8542f21bed9c21a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a529de39afe5d4c40b053d6c3f07c5af, type: 2}
+  m_sharedMaterial: {fileID: -5475222884135812015, guid: a529de39afe5d4c40b053d6c3f07c5af, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
