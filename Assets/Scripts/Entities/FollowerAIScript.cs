@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -6,6 +7,8 @@ public class FollowerAIScript : MonoBehaviour
 {
 
     public GameObject followTarget;
+    public bool needToOverrideFollowTarget = false;
+    public GameObject overrideFollowTarget;
     private NavMeshAgent _agent;
 
     private CharacterScript _character;
@@ -27,8 +30,10 @@ public class FollowerAIScript : MonoBehaviour
     {
         if (!_agent.enabled || !_agent.isOnNavMesh) return;
         _agent.speed = _agent.remainingDistance < 1.75 ? 2.3f : 6f;
-        
-        _agent.SetDestination(followTarget.transform.position);
+
+        var target = needToOverrideFollowTarget ? overrideFollowTarget : followTarget;
+        _agent.SetDestination(target.transform.position);
+
         _character.MoveByVector(_agent.velocity, _agent.speed, false);
     }
 

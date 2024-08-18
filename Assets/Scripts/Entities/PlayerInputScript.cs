@@ -98,6 +98,8 @@ public class PlayerInputScript : MonoBehaviour
             
         Shared.UpdateCharacters();
     }
+    
+    // public static void Move
 
     private static void InternalAddCharacter(CharacterScript character)
     {
