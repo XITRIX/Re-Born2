@@ -35,10 +35,13 @@ public class InteractionActionUnit : EventUnit<string>
     }
 }
 
-public class InteractionTriggerEnterUnit : EventUnit<string>
+public class InteractionTriggerEnterUnit : EventUnit<(string, CharacterScript)>
 {
     [DoNotSerialize]
     public ValueInput Id { get; private set; }
+    
+    [DoNotSerialize]
+    public ValueInput ActiveCharOnly { get; private set; }
     
     protected override bool register => true;
 
@@ -52,20 +55,31 @@ public class InteractionTriggerEnterUnit : EventUnit<string>
         base.Definition();
         // Setting the value on our port.
         Id = ValueInput("Id", "");
+        ActiveCharOnly = ValueInput("ActiveCharOnly", true);
     }
 
-    protected override bool ShouldTrigger(Flow flow, string args)
+    protected override bool ShouldTrigger(Flow flow, (string, CharacterScript) args)
     {
         // return base.ShouldTrigger(flow, args);
         var id = flow.GetValue<string>(Id);
-        return id == args;
+        var activeCharOnly = flow.GetValue<bool>(ActiveCharOnly);
+
+        if (activeCharOnly && PlayerInputScript.Shared.ActiveCharacter != args.Item2)
+        {
+            return false;
+        }
+        
+        return id == args.Item1;
     }
 }
 
-public class InteractionTriggerExitUnit : EventUnit<string>
+public class InteractionTriggerExitUnit : EventUnit<(string, CharacterScript)>
 {
     [DoNotSerialize]
     public ValueInput Id { get; private set; }
+    
+    [DoNotSerialize]
+    public ValueInput ActiveCharOnly { get; private set; }
     
     protected override bool register => true;
 
@@ -79,12 +93,20 @@ public class InteractionTriggerExitUnit : EventUnit<string>
         base.Definition();
         // Setting the value on our port.
         Id = ValueInput("Id", "");
+        ActiveCharOnly = ValueInput("ActiveCharOnly", true);
     }
 
-    protected override bool ShouldTrigger(Flow flow, string args)
+    protected override bool ShouldTrigger(Flow flow, (string, CharacterScript) args)
     {
         // return base.ShouldTrigger(flow, args);
         var id = flow.GetValue<string>(Id);
-        return id == args;
+        var activeCharOnly = flow.GetValue<bool>(ActiveCharOnly);
+
+        if (activeCharOnly && PlayerInputScript.Shared.ActiveCharacter != args.Item2)
+        {
+            return false;
+        }
+        
+        return id == args.Item1;
     }
 }

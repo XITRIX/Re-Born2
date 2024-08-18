@@ -17,6 +17,8 @@ public class GlobalDirector : MonoBehaviour
 
     public Identifiable currentMap;
     public string lastMapId;
+
+    public static string InitialMapId = "Initial";
     
     public GlobalDirector()
     {
@@ -33,13 +35,14 @@ public class GlobalDirector : MonoBehaviour
         UIDialogMessage.SetBackstageColor(Color.clear);
         UIDialogMessage.SetBackstageImage(null);
         
+        Shared.lastMapId = Shared.currentMap?.objectId ?? InitialMapId;
+        
         if (Shared.currentMap != null)
         {
             Destroy(Shared.currentMap);
             PlayerInputScript.Shared.AllCharacters.Clear();
         }
 
-        Shared.lastMapId = Shared.currentMap?.objectId ?? "Initial";
         Shared.PrepareToLoadMap();
         Shared.currentMap = Instantiate(Shared.maps.First(v => v.objectId == map));
     }

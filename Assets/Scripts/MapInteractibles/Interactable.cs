@@ -18,7 +18,7 @@ public class Interactable : Identifiable
         // Debug.Log($"Enter: {entity.objectId}");
 
         entity.objectsToInteract.Add(this);
-        EventBus.Trigger("InteractionTriggerEnterUnit", objectId);
+        EventBus.Trigger("InteractionTriggerEnterUnit", (objectId, entity));
     }
 
     public virtual void OnTriggerExit2D(Collider2D col)
@@ -32,6 +32,6 @@ public class Interactable : Identifiable
         // Debug.Log($"Exit: {entity.objectId}");
 
         entity.objectsToInteract.Remove(this);
-        EventBus.Trigger("InteractionTriggerExitUnit", objectId);
+        EventBus.Trigger("InteractionTriggerExitUnit", (objectId, entity));
     }
 }

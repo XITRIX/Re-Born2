@@ -31,7 +31,7 @@ public class PressurePlateScript : Identifiable
         
         if (oldValue == 0)
         {
-            EventBus.Trigger("InteractionTriggerEnterUnit", objectId);
+            EventBus.Trigger("InteractionTriggerEnterUnit", (objectId, entity));
             _spriteRenderer.sprite = pressedSprite;
         }
         
@@ -48,7 +48,7 @@ public class PressurePlateScript : Identifiable
         
         if (_stayCounter == 0)
         {
-            EventBus.Trigger("InteractionTriggerExitUnit", objectId);
+            EventBus.Trigger("InteractionTriggerExitUnit", (objectId, entity));
             _spriteRenderer.sprite = unpressedSprite;
         }
     }
