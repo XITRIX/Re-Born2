@@ -13,6 +13,7 @@ public class CharacterScript : Identifiable
 
     public Vector2 direction;
     public CharacterScriptableObject characterModel;
+    public bool playable;
     public List<Interactable> objectsToInteract = new();
 
     private const int AnimationTick = 8;
@@ -29,6 +30,7 @@ public class CharacterScript : Identifiable
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         PerformAnimation(0);
+        transform.localScale = new Vector3(characterModel.size, characterModel.size, 1);
     }
 
     public void MoveByVector(Vector2 movementDirection, float speed, bool changeObjectVelocity = true)

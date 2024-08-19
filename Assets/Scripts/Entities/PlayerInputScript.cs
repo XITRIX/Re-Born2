@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -16,6 +17,9 @@ public class PlayerInputScript : MonoBehaviour
     
     public readonly List<CharacterScript> AllCharacters = new();
     private PlayerControlMap _controlMap;
+
+    public static List<CharacterScriptableObject> CharactersInParty = new();
+    public static List<CharacterScriptableObject> CharactersInFolowers = new();
     
     public PlayerInputScript()
     {
@@ -63,7 +67,34 @@ public class PlayerInputScript : MonoBehaviour
         _controlMap.Player.Run.Disable();
     }
 
-    public static void SpawnCharacters(List<CharacterScriptableObject> characters, Vector2 atPoint)
+    public static void SpawnAllCharacters(Vector2 atPoint)
+    {
+        SetFollowing(true);
+        
+        foreach (var character in Shared.AllCharacters)
+            Destroy(character.gameObject);
+        Shared.AllCharacters.Clear();
+        
+        foreach (var character in CharactersInParty)
+        {
+            var characterObject = Instantiate(Shared.characterPrefab, atPoint, Quaternion.identity, GlobalDirector.Shared.currentMap.transform);
+            characterObject.characterModel = character;
+            characterObject.playable = true;
+            InternalAddCharacter(characterObject);
+        }
+        
+        foreach (var character in CharactersInFolowers)
+        {
+            var characterObject = Instantiate(Shared.characterPrefab, atPoint, Quaternion.identity, GlobalDirector.Shared.currentMap.transform);
+            characterObject.characterModel = character;
+            characterObject.playable = false;
+            InternalAddCharacter(characterObject);
+        }
+        
+        Shared.UpdateCharacters();
+    }
+    
+    public static void SpawnCharacters(List<CharacterScriptableObject> characters, Vector2 atPoint, bool playable = true)
     {
         SetFollowing(true);
         
@@ -75,6 +106,7 @@ public class PlayerInputScript : MonoBehaviour
         {
             var characterObject = Instantiate(Shared.characterPrefab, atPoint, Quaternion.identity, GlobalDirector.Shared.currentMap.transform);
             characterObject.characterModel = character;
+            characterObject.playable = playable;
             InternalAddCharacter(characterObject);
         }
         Shared.UpdateCharacters();
@@ -89,17 +121,75 @@ public class PlayerInputScript : MonoBehaviour
             character.MoveByVector(Vector2.zero, Shared.speed);
     }
 
-    public static void AddCharacter(CharacterScriptableObject character, Vector2 atPoint, CharacterScript.Direction direction)
+    public static void AddCharacter(CharacterScriptableObject character, Vector2 atPoint, CharacterScript.Direction direction, bool playable = true)
     {
+        if (playable) 
+            CharactersInParty.Add(character);
+        else
+            CharactersInFolowers.Add(character);
+        
         var characterObject = Instantiate(Shared.characterPrefab, atPoint, Quaternion.identity, GlobalDirector.Shared.currentMap.transform);
         characterObject.characterModel = character;
+        characterObject.playable = playable;
         characterObject.SetDirection(direction);
         InternalAddCharacter(characterObject);
             
         Shared.UpdateCharacters();
     }
+
+    public static void AddExistingCharacter(CharacterScript character, bool playable = true)
+    {
+        if (playable) 
+            CharactersInParty.Add(character.characterModel);
+        else
+            CharactersInFolowers.Add(character.characterModel);
+        
+        character.playable = playable;
+        InternalAddCharacter(character);
+            
+        Shared.UpdateCharacters();
+    }
+
+    public static IEnumerator MoveDeltaCoroutine(Vector2 point)
+    {
+        Vector3 point3 = point;
+        var targetPos = Shared.ActiveCharacter.transform.position + point3;
+        var target = Instantiate(new GameObject(), targetPos, Quaternion.identity);
+        yield return MoveCoroutine(target);
+        Destroy(target);
+    }
+
+    public static IEnumerator MoveToPointCoroutine(Vector2 point)
+    {
+        var target = Instantiate(new GameObject(), point, Quaternion.identity);
+        yield return MoveCoroutine(target);
+        Destroy(target);
+    }
     
-    // public static void Move
+    public static IEnumerator MoveCoroutine(GameObject target)
+    {
+        var ai = Shared.ActiveCharacter.GetComponent<FollowerAIScript>();
+        Shared.DisablePlayerInput();
+        ai.overrideFollowTarget = target;
+        ai.needToOverrideFollowTarget = true;
+        ai.AIEnabled = true;
+
+        var playerTransform = Shared.ActiveCharacter.transform;
+        var targetTransform = target.transform;
+        
+        while (true)
+        {
+            yield return new WaitForFixedUpdate();
+            if (Vector2.Distance(playerTransform.position, targetTransform.position) > 1)
+                continue;
+
+            ai.AIEnabled = false;
+            ai.needToOverrideFollowTarget = false;
+            ai.overrideFollowTarget = null;
+            Shared.EnablePlayerInput();
+            break;
+        }
+    }
 
     private static void InternalAddCharacter(CharacterScript character)
     {
@@ -121,16 +211,24 @@ public class PlayerInputScript : MonoBehaviour
     private void SetPrevCharacter(InputAction.CallbackContext ctx)
     {
         ActiveCharacter.MoveByVector(Vector2.zero, speed);
-        activeCharacterIndex -= 1;
-        if (activeCharacterIndex < 0) activeCharacterIndex = AllCharacters.Count - 1;
+        do
+        {
+            activeCharacterIndex -= 1;
+            if (activeCharacterIndex < 0) activeCharacterIndex = AllCharacters.Count - 1;
+        } while (!ActiveCharacter.playable);
+
         UpdateCharacters();
     }
 
     private void SetNextCharacter(InputAction.CallbackContext ctx)
     {
         ActiveCharacter.MoveByVector(Vector2.zero, speed);
-        activeCharacterIndex += 1;
-        activeCharacterIndex %= AllCharacters.Count;
+        do
+        {
+            activeCharacterIndex += 1;
+            activeCharacterIndex %= AllCharacters.Count;
+        } while (!ActiveCharacter.playable);
+        
         UpdateCharacters();
     }
 
