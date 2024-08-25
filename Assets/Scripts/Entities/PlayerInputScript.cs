@@ -14,6 +14,20 @@ public class PlayerInputScript : MonoBehaviour
     public float speed = 3f;
     public int activeCharacterIndex;
     public bool enableFollowing = true;
+
+    private bool _canToggleFollowing = false;
+    public bool CanToggleFollowing
+    {
+        get => _canToggleFollowing;
+        set
+        {
+            _canToggleFollowing = value;
+            if (_canToggleFollowing && _controlMap.Player.Move.enabled)
+                _controlMap.Player.ToggleFollowing.Enable();
+            else 
+                _controlMap.Player.ToggleFollowing.Disable();
+        }
+    }
     
     public readonly List<CharacterScript> AllCharacters = new();
     private PlayerControlMap _controlMap;
@@ -49,22 +63,25 @@ public class PlayerInputScript : MonoBehaviour
     {
         _controlMap.Player.PrevCharacter.Enable();
         _controlMap.Player.NextCharacter.Enable();
-        _controlMap.Player.ToggleFollowing.Enable();
         _controlMap.Player.Interact.Enable();
         
         _controlMap.Player.Move.Enable();
         _controlMap.Player.Run.Enable();
+        
+        if (_canToggleFollowing)
+            _controlMap.Player.ToggleFollowing.Enable();
     }
 
     public void DisablePlayerInput()
     {
         _controlMap.Player.PrevCharacter.Disable();
         _controlMap.Player.NextCharacter.Disable();
-        _controlMap.Player.ToggleFollowing.Disable();
         _controlMap.Player.Interact.Disable();
         
         _controlMap.Player.Move.Disable();
         _controlMap.Player.Run.Disable();
+        
+        _controlMap.Player.ToggleFollowing.Disable();
     }
 
     public static void SpawnAllCharacters(Vector2 atPoint)
@@ -79,6 +96,7 @@ public class PlayerInputScript : MonoBehaviour
         {
             var characterObject = Instantiate(Shared.characterPrefab, atPoint, Quaternion.identity, GlobalDirector.Shared.currentMap.transform);
             characterObject.characterModel = character;
+            characterObject.transform.localScale = new Vector3(character.size, character.size, 1);
             characterObject.playable = true;
             InternalAddCharacter(characterObject);
         }
@@ -87,11 +105,17 @@ public class PlayerInputScript : MonoBehaviour
         {
             var characterObject = Instantiate(Shared.characterPrefab, atPoint, Quaternion.identity, GlobalDirector.Shared.currentMap.transform);
             characterObject.characterModel = character;
+            characterObject.transform.localScale = new Vector3(character.size, character.size, 1);
             characterObject.playable = false;
             InternalAddCharacter(characterObject);
         }
         
         Shared.UpdateCharacters();
+
+        var cameraPos = Camera.main.transform.position;
+        cameraPos.x = atPoint.x;
+        cameraPos.y = atPoint.y;
+        Camera.main.transform.position = cameraPos;
     }
     
     public static void SpawnCharacters(List<CharacterScriptableObject> characters, Vector2 atPoint, bool playable = true)
@@ -106,6 +130,7 @@ public class PlayerInputScript : MonoBehaviour
         {
             var characterObject = Instantiate(Shared.characterPrefab, atPoint, Quaternion.identity, GlobalDirector.Shared.currentMap.transform);
             characterObject.characterModel = character;
+            characterObject.transform.localScale = new Vector3(character.size, character.size, 1);
             characterObject.playable = playable;
             InternalAddCharacter(characterObject);
         }
@@ -130,6 +155,7 @@ public class PlayerInputScript : MonoBehaviour
         
         var characterObject = Instantiate(Shared.characterPrefab, atPoint, Quaternion.identity, GlobalDirector.Shared.currentMap.transform);
         characterObject.characterModel = character;
+        characterObject.transform.localScale = new Vector3(character.size, character.size, 1);
         characterObject.playable = playable;
         characterObject.SetDirection(direction);
         InternalAddCharacter(characterObject);

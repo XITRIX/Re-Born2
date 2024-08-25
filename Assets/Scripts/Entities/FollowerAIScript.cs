@@ -22,7 +22,7 @@ public class FollowerAIScript : MonoBehaviour
         _agent.updateUpAxis = false;
         _agent.stoppingDistance = 1.25f;
         _agent.acceleration = 25;
-        _agent.radius = 0.01f;
+        _agent.radius = 0.2f;
     }
 
     // Update is called once per frame
