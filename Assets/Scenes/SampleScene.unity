@@ -1783,6 +1783,8 @@ MonoBehaviour:
   - {fileID: 4406123986450319850, guid: 5aecd8fda01a34c7ba61fd900353e255, type: 3}
   - {fileID: -8508071657997360991, guid: 748d98cd6749446db833db2a32e0a8f5, type: 3}
   - {fileID: -5219646957216527485, guid: 84db7a99a6aec4ad388d92ae62dd97b0, type: 3}
+  - {fileID: 4286670578602017403, guid: 79c78f6d5148140afa6e0b542a4b229e, type: 3}
+  - {fileID: 1078851589244000360, guid: b84529105ccc14495800beadf89aed21, type: 3}
   dialogHUD: {fileID: 1602118275}
   backgroundAudioSource: {fileID: 1624944491}
   currentMap: {fileID: 0}
