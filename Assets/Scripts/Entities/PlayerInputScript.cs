@@ -202,19 +202,19 @@ public class PlayerInputScript : MonoBehaviour
 
         var playerTransform = Shared.ActiveCharacter.transform;
         var targetTransform = target.transform;
-        
-        while (true)
+
+        var startTime = Time.time;
+        while (Time.time - startTime < 5)
         {
             yield return new WaitForFixedUpdate();
-            if (Vector2.Distance(playerTransform.position, targetTransform.position) > 1)
-                continue;
-
-            ai.AIEnabled = false;
-            ai.needToOverrideFollowTarget = false;
-            ai.overrideFollowTarget = null;
-            Shared.EnablePlayerInput();
-            break;
+            if (Vector2.Distance(playerTransform.position, targetTransform.position) <= 2)
+                break;
         }
+        
+        ai.AIEnabled = false;
+        ai.needToOverrideFollowTarget = false;
+        ai.overrideFollowTarget = null;
+        Shared.EnablePlayerInput();
     }
 
     private static void InternalAddCharacter(CharacterScript character)

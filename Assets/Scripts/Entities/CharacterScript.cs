@@ -20,6 +20,7 @@ public class CharacterScript : Identifiable
     private int _animationCounter;
     private int _animationFrame;
     private Direction _lastDirection;
+    private Vector2 _lastNonZeroDirection;
     
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rigidbody2D;
@@ -39,6 +40,9 @@ public class CharacterScript : Identifiable
             _rigidbody2D.velocity = movementDirection * speed;
         
         direction = movementDirection;
+        if (direction != Vector2.zero)
+            _lastNonZeroDirection = direction;
+        
         PerformAnimation(speed);
     }
 
@@ -95,6 +99,11 @@ public class CharacterScript : Identifiable
             _animationFrame++;
             _animationFrame %= 4;
         }
+    }
+
+    public Vector2 GetLastDirectionVector()
+    {
+        return _lastNonZeroDirection;
     }
 
     private Sprite FrameForDirection(Direction direction, int frame, bool isIdle)
