@@ -1,0 +1,14 @@
+{
+  "name": "com.ditpowuh.urp-glitch",
+  "description": "Glitch effect with URP (Universal Render Pipeline) [Support for Unity 6]",
+  "version": "1.0.0",
+  "unity": "6000.0",
+  "displayName": "URPGlitch",
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "17.0.3"
+  },
+  "keywords": [
+    "graphics",
+    "rendering"
+  ]
+}

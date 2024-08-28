@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Rendering;
 using UnityEngine.Serialization;
 
 public class GlobalDirector : MonoBehaviour
@@ -14,7 +15,8 @@ public class GlobalDirector : MonoBehaviour
     public List<Identifiable> maps;
     public GameObject dialogHUD;
     public AudioSource backgroundAudioSource;
-
+    public Volume glitchEffect;
+    
     public Identifiable currentMap;
     public string lastMapId;
 
@@ -32,6 +34,8 @@ public class GlobalDirector : MonoBehaviour
 
     public static void LoadMap(string map)
     {
+        SetGlitchEffectWeight(0);
+        
         UIDialogMessage.SetBackstageColor(Color.clear);
         UIDialogMessage.SetBackstageImage(null);
         
@@ -55,6 +59,11 @@ public class GlobalDirector : MonoBehaviour
     public static void SetGameKey(string key, bool value)
     {
         Shared._gameKeys[key] = value;
+    }
+
+    public static void SetGlitchEffectWeight(float weight)
+    {
+        Shared.glitchEffect.weight = weight;
     }
 
     public static string GetLastMapId() => Shared.lastMapId;
