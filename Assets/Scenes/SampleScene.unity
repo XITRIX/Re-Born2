@@ -1837,6 +1837,8 @@ MonoBehaviour:
   dialogHUD: {fileID: 1602118275}
   backgroundAudioSource: {fileID: 1624944491}
   glitchEffect: {fileID: 1350829312}
+  renderPipelineGlitchAsset: {fileID: 11400000, guid: 19ba41d7c0026c3459d37c2fe90c55a0, type: 2}
+  renderPipeline2DLightAsset: {fileID: 11400000, guid: 681886c5eb7344803b6206f758bf0b1c, type: 2}
   currentMap: {fileID: 0}
   lastMapId: 
 --- !u!114 &1711905295

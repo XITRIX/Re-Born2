@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.Serialization;
 
 public class GlobalDirector : MonoBehaviour
@@ -16,6 +17,8 @@ public class GlobalDirector : MonoBehaviour
     public GameObject dialogHUD;
     public AudioSource backgroundAudioSource;
     public Volume glitchEffect;
+    public UniversalRenderPipelineAsset renderPipelineGlitchAsset;
+    public UniversalRenderPipelineAsset renderPipeline2DLightAsset;
     
     public Identifiable currentMap;
     public string lastMapId;
@@ -64,6 +67,7 @@ public class GlobalDirector : MonoBehaviour
     public static void SetGlitchEffectWeight(float weight)
     {
         Shared.glitchEffect.weight = weight;
+        GraphicsSettings.renderPipelineAsset = weight != 0 ? Shared.renderPipelineGlitchAsset : Shared.renderPipeline2DLightAsset;
     }
 
     public static string GetLastMapId() => Shared.lastMapId;
