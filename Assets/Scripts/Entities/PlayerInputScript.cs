@@ -187,7 +187,8 @@ public class PlayerInputScript : MonoBehaviour
 
     public static IEnumerator MoveToPointCoroutine(Vector2 point)
     {
-        var target = Instantiate(new GameObject(), point, Quaternion.identity);
+        var target = new GameObject(); 
+        target.transform.position = point;
         yield return MoveCoroutine(target);
         Destroy(target);
     }
@@ -215,6 +216,37 @@ public class PlayerInputScript : MonoBehaviour
         ai.needToOverrideFollowTarget = false;
         ai.overrideFollowTarget = null;
         Shared.EnablePlayerInput();
+    }
+
+    public static IEnumerator MoveCharToPointCoroutine(CharacterScript character, Vector2 point)
+    {
+        var target = new GameObject(); 
+        target.transform.position = point;
+        yield return MoveCharCoroutine(character, target);
+        Destroy(target);
+    }
+    
+    public static IEnumerator MoveCharCoroutine(CharacterScript character, GameObject target)
+    {
+        var ai = character.GetComponent<FollowerAIScript>();
+        ai.overrideFollowTarget = target;
+        ai.needToOverrideFollowTarget = true;
+        ai.AIEnabled = true;
+
+        var playerTransform = character.transform;
+        var targetTransform = target.transform;
+
+        var startTime = Time.time;
+        while (Time.time - startTime < 5)
+        {
+            yield return new WaitForFixedUpdate();
+            if (Vector2.Distance(playerTransform.position, targetTransform.position) <= 2)
+                break;
+        }
+        
+        ai.AIEnabled = false;
+        ai.needToOverrideFollowTarget = false;
+        ai.overrideFollowTarget = null;
     }
 
     private static void InternalAddCharacter(CharacterScript character)

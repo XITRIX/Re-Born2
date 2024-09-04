@@ -31,6 +31,8 @@ public class FollowerAIScript : MonoBehaviour
         if (!_agent.enabled || !_agent.isOnNavMesh) return;
         _agent.speed = _agent.remainingDistance < 1.75 ? 2.3f : 6f;
 
+        if (followTarget == null && overrideFollowTarget == null) return;
+
         var target = needToOverrideFollowTarget ? overrideFollowTarget : followTarget;
         _agent.SetDestination(target.transform.position);
 
