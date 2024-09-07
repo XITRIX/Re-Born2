@@ -117,6 +117,14 @@ public class PlayerInputScript : MonoBehaviour
         cameraPos.y = atPoint.y;
         Camera.main.transform.position = cameraPos;
     }
+
+    public static void SpawnAllCharacters(SpawnPoint spawnPoint)
+    {
+        SpawnAllCharacters(spawnPoint.transform.position);
+        
+        foreach (var character in Shared.AllCharacters)
+            character.SetDirection(spawnPoint.direction);
+    }
     
     public static void SpawnCharacters(List<CharacterScriptableObject> characters, Vector2 atPoint, bool playable = true)
     {

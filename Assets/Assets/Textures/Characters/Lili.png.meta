@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: ef1dfec616e8142e1ac30dda660ce783
+guid: 334e52f5f2100465481ee0f1956ddd7b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1200207341160013149
-    second: FChar_0
+      213: 8217914300005551374
+    second: Lili_0
   - first:
-      213: 6704982987662870925
-    second: FChar_1
+      213: -9187086259481360458
+    second: Lili_1
   - first:
-      213: 5976135488107741431
-    second: FChar_2
+      213: 6056865675520475884
+    second: Lili_2
   - first:
-      213: 6205169383810307631
-    second: FChar_3
+      213: 2856593682435430886
+    second: Lili_3
   - first:
-      213: -7255635991808805331
-    second: FChar_4
+      213: 5434208619392445830
+    second: Lili_4
   - first:
-      213: 6683408001517988713
-    second: FChar_5
+      213: 4869923905138706332
+    second: Lili_5
   - first:
-      213: 3289957958970396202
-    second: FChar_6
+      213: 215932559765115915
+    second: Lili_6
   - first:
-      213: -4479803507705210823
-    second: FChar_7
+      213: 1018426288414112564
+    second: Lili_7
   - first:
-      213: -2614089605849469830
-    second: FChar_8
+      213: -5782101689623244217
+    second: Lili_8
   - first:
-      213: -6404765622343472369
-    second: FChar_9
+      213: 6311454760073184063
+    second: Lili_9
   - first:
-      213: -6638373738271563817
-    second: FChar_10
+      213: -8056918302660596813
+    second: Lili_10
   - first:
-      213: -2581812975820928323
-    second: FChar_11
+      213: 8907604875322749554
+    second: Lili_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -146,7 +146,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Daria_0
+      name: Lili_0
       rect:
         serializedVersion: 2
         x: 0
@@ -159,16 +159,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f2eb3fdfa118e49d491ca3c2a190263b
-      internalID: 174075751
+      spriteID: e0d0f66f385eb0270800000000000000
+      internalID: 8217914300005551374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daria_1
+      name: Lili_1
       rect:
         serializedVersion: 2
         x: 48
@@ -181,16 +181,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f4f3ec8b156a74715b460f445d931a75
-      internalID: 1607539142
+      spriteID: 6b7cdb6e8b9e08080800000000000000
+      internalID: -9187086259481360458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daria_2
+      name: Lili_2
       rect:
         serializedVersion: 2
         x: 96
@@ -203,16 +203,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cf84a1e06523541bbbfee23fb460c2cf
-      internalID: 720459166
+      spriteID: ce287a1cd3f4e0450800000000000000
+      internalID: 6056865675520475884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daria_3
+      name: Lili_3
       rect:
         serializedVersion: 2
         x: 0
@@ -225,16 +225,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4452ccbaebb044ddca078440f8ec1042
-      internalID: 2047484313
+      spriteID: 6e9503db1d8a4a720800000000000000
+      internalID: 2856593682435430886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daria_4
+      name: Lili_4
       rect:
         serializedVersion: 2
         x: 48
@@ -247,16 +247,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9557bf4fb33d04c2aa99afee030d98db
-      internalID: 1453803052
+      spriteID: 68da04a92ff2a6b40800000000000000
+      internalID: 5434208619392445830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daria_5
+      name: Lili_5
       rect:
         serializedVersion: 2
         x: 96
@@ -269,16 +269,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 932a5c0b6bd02401aad5888a10c9a3a7
-      internalID: -1260793224
+      spriteID: c97c9f06df1759340800000000000000
+      internalID: 4869923905138706332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daria_6
+      name: Lili_6
       rect:
         serializedVersion: 2
         x: 0
@@ -291,16 +291,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b9b7dacbf9b174c348d649d86834a7d3
-      internalID: 151997170
+      spriteID: b049d30e4852ff200800000000000000
+      internalID: 215932559765115915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daria_7
+      name: Lili_7
       rect:
         serializedVersion: 2
         x: 48
@@ -313,16 +313,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6626be7f299b545eb8c8bb3bc4b1efba
-      internalID: 1685597591
+      spriteID: 43bb7de305d222e00800000000000000
+      internalID: 1018426288414112564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daria_8
+      name: Lili_8
       rect:
         serializedVersion: 2
         x: 96
@@ -335,16 +335,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c3ef3e41f0185445f9c0216a28b1549c
-      internalID: 1988434778
+      spriteID: 74212dee529d1cfa0800000000000000
+      internalID: -5782101689623244217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daria_9
+      name: Lili_9
       rect:
         serializedVersion: 2
         x: 0
@@ -357,16 +357,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 02aadffff66b744f782a8a94cb98428d
-      internalID: -714046200
+      spriteID: f334c1e2aaac69750800000000000000
+      internalID: 6311454760073184063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daria_10
+      name: Lili_10
       rect:
         serializedVersion: 2
         x: 48
@@ -379,16 +379,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3432de21c81e0460fb59600b1a559313
-      internalID: -808140623
+      spriteID: 3bb6299bd73103090800000000000000
+      internalID: -8056918302660596813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Daria_11
+      name: Lili_11
       rect:
         serializedVersion: 2
         x: 96
@@ -401,10 +401,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 64c35f766b7b24b2daca594111b00591
-      internalID: 2037689696
+      spriteID: 2727629807b2e9b70800000000000000
+      internalID: 8907604875322749554
       vertices: []
       indices: 
       edges: []
@@ -413,7 +413,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 953310c3fac81447689afcaef424337f
+    spriteID: 4f7e020b8f3ab43c083eaa15bf4ecdb2
     internalID: 0
     vertices: []
     indices: 
@@ -421,21 +421,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Daria_0: 174075751
-      Daria_1: 1607539142
-      Daria_10: -808140623
-      Daria_11: 2037689696
-      Daria_12: -666204742
-      Daria_13: -551270057
-      Daria_14: 941553922
-      Daria_2: 720459166
-      Daria_3: 2047484313
-      Daria_4: 1453803052
-      Daria_5: -1260793224
-      Daria_6: 151997170
-      Daria_7: 1685597591
-      Daria_8: 1988434778
-      Daria_9: -714046200
+      Lili_0: 8217914300005551374
+      Lili_1: -9187086259481360458
+      Lili_10: -8056918302660596813
+      Lili_11: 8907604875322749554
+      Lili_2: 6056865675520475884
+      Lili_3: 2856593682435430886
+      Lili_4: 5434208619392445830
+      Lili_5: 4869923905138706332
+      Lili_6: 215932559765115915
+      Lili_7: 1018426288414112564
+      Lili_8: -5782101689623244217
+      Lili_9: 6311454760073184063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

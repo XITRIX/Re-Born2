@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
-  m_Name: Xitrix
+  m_Name: Xitrix_Evil
   m_EditorClassIdentifier: 
   charName: XITRIX
-  avatar: {fileID: -7769564065914359337, guid: 04561391b2ad84ae6a1741d94c7090ba, type: 3}
+  avatar: {fileID: 7531945580129196923, guid: 9a5707e67aa1b45d69e9737b26db6577, type: 3}
   tileset:
   - {fileID: 2942010219306100528, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
   - {fileID: -128106618655104547, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
@@ -27,4 +27,3 @@ MonoBehaviour:
   - {fileID: -2019891097329769794, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
   - {fileID: -4790023340931897525, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
   - {fileID: -1777131890918704481, guid: 8925b52e8713442e98b6ebb2ad39fee2, type: 3}
-  size: 1

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
+  m_Name: Xitrix_Waifu
+  m_EditorClassIdentifier: 
+  charName: "\u041B\u0438\u043B\u0438"
+  avatar: {fileID: 4020365187878095265, guid: 4145947f2a4da47b6bd3bda8d9588b51, type: 3}
+  tileset:
+  - {fileID: 8217914300005551374, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
+  - {fileID: -9187086259481360458, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
+  - {fileID: 6056865675520475884, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
+  - {fileID: 2856593682435430886, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
+  - {fileID: 5434208619392445830, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
+  - {fileID: 4869923905138706332, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
+  - {fileID: 215932559765115915, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
+  - {fileID: 1018426288414112564, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
+  - {fileID: -5782101689623244217, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
+  - {fileID: 6311454760073184063, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
+  - {fileID: -8056918302660596813, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
+  - {fileID: 8907604875322749554, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
+  size: 1

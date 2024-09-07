@@ -12,7 +12,14 @@ public class Identifiable : MonoBehaviour
         if (string.IsNullOrEmpty(objectId)) return;
         GlobalDirector.Shared.GameObjectsStash[objectId] = gameObject;
     }
-    
+
+    public void UpdateObjectId(string objectId)
+    {
+        GlobalDirector.Shared.GameObjectsStash[this.objectId] = null;
+        this.objectId = objectId;
+        GlobalDirector.Shared.GameObjectsStash[objectId] = gameObject;
+    }
+
     public virtual void OnDestroy()
     {
         if (string.IsNullOrEmpty(objectId) || 
