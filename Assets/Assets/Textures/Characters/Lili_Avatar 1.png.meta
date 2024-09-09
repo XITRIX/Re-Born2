@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 527684b2710cb47a686175ea47e1a279
+guid: da473511b5fa145a5a30ca6d073c6f12
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1952491194223587509
-    second: Male1_Passed_0
-  - first:
-      213: 1328525449319275146
-    second: Male1_Passed_1
-  - first:
-      213: -2743456272424992119
-    second: Male1_Passed_2
+      213: 1329914239835430880
+    second: Lili_Avatar 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 48
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Male1_Passed_0
+      name: Lili_Avatar 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 336
-        width: 48
-        height: 48
+        y: 0
+        width: 343
+        height: 343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b076ca7564a81b10800000000000000
-      internalID: 1952491194223587509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Male1_Passed_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 336
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a8addb97bdedf6210800000000000000
-      internalID: 1328525449319275146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Male1_Passed_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 336
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9828a414e094de9d0800000000000000
-      internalID: -2743456272424992119
+      spriteID: 0efdf1774fdc47210800000000000000
+      internalID: 1329914239835430880
       vertices: []
       indices: 
       edges: []
@@ -188,17 +138,14 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cca4b9b13c3134c4f846e24f92ed2e58
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Male1_Passed_0: 1952491194223587509
-      Male1_Passed_1: 1328525449319275146
-      Male1_Passed_2: -2743456272424992119
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

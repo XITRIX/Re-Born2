@@ -186,66 +186,78 @@ public class PlayerInputScript : MonoBehaviour
 
     public static IEnumerator MoveDeltaCoroutine(Vector2 point)
     {
+        return MoveDeltaCoroutine(point, false);
+    }
+
+    public static IEnumerator MoveDeltaCoroutine(Vector2 point, bool forceWalking)
+    {
         Vector3 point3 = point;
         var targetPos = Shared.ActiveCharacter.transform.position + point3;
         var target = Instantiate(new GameObject(), targetPos, Quaternion.identity);
-        yield return MoveCoroutine(target);
+        yield return MoveCoroutine(target, forceWalking);
         Destroy(target);
     }
 
     public static IEnumerator MoveToPointCoroutine(Vector2 point)
     {
+        return MoveToPointCoroutine(point, false);
+    }
+
+    public static IEnumerator MoveToPointCoroutine(Vector2 point, bool forceWalking)
+    {
         var target = new GameObject(); 
         target.transform.position = point;
-        yield return MoveCoroutine(target);
+        yield return MoveCoroutine(target, forceWalking);
         Destroy(target);
     }
     
     public static IEnumerator MoveCoroutine(GameObject target)
     {
-        var ai = Shared.ActiveCharacter.GetComponent<FollowerAIScript>();
-        Shared.DisablePlayerInput();
-        ai.overrideFollowTarget = target;
-        ai.needToOverrideFollowTarget = true;
-        ai.AIEnabled = true;
-
-        var playerTransform = Shared.ActiveCharacter.transform;
-        var targetTransform = target.transform;
-
-        var startTime = Time.time;
-        while (Time.time - startTime < 5)
-        {
-            yield return new WaitForFixedUpdate();
-            if (Vector2.Distance(playerTransform.position, targetTransform.position) <= 2)
-                break;
-        }
-        
-        ai.AIEnabled = false;
-        ai.needToOverrideFollowTarget = false;
-        ai.overrideFollowTarget = null;
-        Shared.EnablePlayerInput();
+        return MoveCharCoroutine(Shared.ActiveCharacter, target, false);
+    }
+    
+    public static IEnumerator MoveCoroutine(GameObject target, bool forceWalking)
+    {
+        return MoveCharCoroutine(Shared.ActiveCharacter, target, forceWalking);
     }
 
     public static IEnumerator MoveCharToPointCoroutine(CharacterScript character, Vector2 point)
     {
+        return MoveCharToPointCoroutine(character, point, false);
+    }
+
+    public static IEnumerator MoveCharToPointCoroutine(CharacterScript character, Vector2 point, bool forceWalking)
+    {
         var target = new GameObject(); 
         target.transform.position = point;
-        yield return MoveCharCoroutine(character, target);
+        yield return MoveCharCoroutine(character, target, forceWalking);
         Destroy(target);
     }
-    
+
     public static IEnumerator MoveCharCoroutine(CharacterScript character, GameObject target)
     {
+        return MoveCharCoroutine(character, target, false);
+    }
+
+    public static IEnumerator MoveCharCoroutine(CharacterScript character, GameObject target, bool forceWalking)
+    {
+        var isActiveCharacter = Shared.ActiveCharacter == character;
+        if (isActiveCharacter)
+            Shared.DisablePlayerInput();
+            
         var ai = character.GetComponent<FollowerAIScript>();
         ai.overrideFollowTarget = target;
         ai.needToOverrideFollowTarget = true;
         ai.AIEnabled = true;
+        
+        var prevValue = ai.forceWalking;
+        ai.forceWalking = forceWalking;
 
         var playerTransform = character.transform;
         var targetTransform = target.transform;
 
         var startTime = Time.time;
-        while (Time.time - startTime < 5)
+        while (Time.time - startTime < 10)
         {
             yield return new WaitForFixedUpdate();
             if (Vector2.Distance(playerTransform.position, targetTransform.position) <= 2)
@@ -255,6 +267,10 @@ public class PlayerInputScript : MonoBehaviour
         ai.AIEnabled = false;
         ai.needToOverrideFollowTarget = false;
         ai.overrideFollowTarget = null;
+        ai.forceWalking = prevValue;
+        
+        if (isActiveCharacter)
+            Shared.EnablePlayerInput();
     }
 
     private static void InternalAddCharacter(CharacterScript character)
@@ -268,6 +284,9 @@ public class PlayerInputScript : MonoBehaviour
     private void FixedUpdate()
     {
         if (AllCharacters.Count == 0) return;
+
+        var ai = ActiveCharacter.GetComponent<FollowerAIScript>();
+        if (ai.AIEnabled) return;
         
         var run = IsRunning ? 2 : 1;
         var movementDirection = _controlMap.Player.Move.ReadValue<Vector2>();

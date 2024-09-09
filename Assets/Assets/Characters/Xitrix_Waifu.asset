@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Xitrix_Waifu
   m_EditorClassIdentifier: 
   charName: "\u041B\u0438\u043B\u0438"
-  avatar: {fileID: 4020365187878095265, guid: 4145947f2a4da47b6bd3bda8d9588b51, type: 3}
+  avatar: {fileID: 1329914239835430880, guid: da473511b5fa145a5a30ca6d073c6f12, type: 3}
   tileset:
   - {fileID: 8217914300005551374, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
   - {fileID: -9187086259481360458, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}

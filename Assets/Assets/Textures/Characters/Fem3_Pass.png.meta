@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 527684b2710cb47a686175ea47e1a279
+guid: 3a239eb040639496d8a860819ec3e3f1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1952491194223587509
-    second: Male1_Passed_0
+      213: -5700764238376256697
+    second: Fem3_Pass_0
   - first:
-      213: 1328525449319275146
-    second: Male1_Passed_1
+      213: 3726244328358242162
+    second: Fem3_Pass_1
   - first:
-      213: -2743456272424992119
-    second: Male1_Passed_2
+      213: 6506833320560976969
+    second: Fem3_Pass_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Male1_Passed_0
+      name: Fem3_Pass_0
       rect:
         serializedVersion: 2
         x: 0
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b076ca7564a81b10800000000000000
-      internalID: 1952491194223587509
+      spriteID: 74b355f0121d2e0b0800000000000000
+      internalID: -5700764238376256697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Male1_Passed_1
+      name: Fem3_Pass_1
       rect:
         serializedVersion: 2
         x: 48
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8addb97bdedf6210800000000000000
-      internalID: 1328525449319275146
+      spriteID: 2776b12697746b330800000000000000
+      internalID: 3726244328358242162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Male1_Passed_2
+      name: Fem3_Pass_2
       rect:
         serializedVersion: 2
         x: 96
@@ -178,8 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9828a414e094de9d0800000000000000
-      internalID: -2743456272424992119
+      spriteID: 94466bc2e6aec4a50800000000000000
+      internalID: 6506833320560976969
       vertices: []
       indices: 
       edges: []
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cca4b9b13c3134c4f846e24f92ed2e58
+    spriteID: a6943f3ff4d0e4b6c9d10dc169b37405
     internalID: 0
     vertices: []
     indices: 
@@ -196,9 +196,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Male1_Passed_0: 1952491194223587509
-      Male1_Passed_1: 1328525449319275146
-      Male1_Passed_2: -2743456272424992119
+      Fem3_Pass_0: -5700764238376256697
+      Fem3_Pass_1: 3726244328358242162
+      Fem3_Pass_2: 6506833320560976969
+      Fem3_Pass_3: 1634061609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
