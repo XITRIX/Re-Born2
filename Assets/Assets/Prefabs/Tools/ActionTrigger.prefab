@@ -160,4 +160,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b8e274e1e054df4b5c1f859c89dbf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectId: KidTarget
+  objectId: 

@@ -125,8 +125,13 @@ public class PlayerInputScript : MonoBehaviour
         foreach (var character in Shared.AllCharacters)
             character.SetDirection(spawnPoint.direction);
     }
+
+    public static void SpawnCharacters(List<CharacterScriptableObject> characters, Vector2 atPoint)
+    {
+        SpawnCharacters(characters, atPoint, true);
+    }
     
-    public static void SpawnCharacters(List<CharacterScriptableObject> characters, Vector2 atPoint, bool playable = true)
+    public static void SpawnCharacters(List<CharacterScriptableObject> characters, Vector2 atPoint, bool playable)
     {
         SetFollowing(true);
         
@@ -349,6 +354,11 @@ public class PlayerInputScript : MonoBehaviour
         }
 
         CameraScript.Shared.followedObject = AllCharacters[activeCharacterIndex].gameObject;
+    }
+
+    public static CharacterScript GetInGameCharacter(CharacterScriptableObject characterModel)
+    {
+        return Shared.AllCharacters.Find(character => character.characterModel == characterModel);
     }
 
     public CharacterScript ActiveCharacter => AllCharacters[activeCharacterIndex];

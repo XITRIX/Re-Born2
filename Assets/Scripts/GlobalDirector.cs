@@ -116,4 +116,10 @@ public class GlobalDirector : MonoBehaviour
 
         currentMap = null;
     }
+    
+    public static Color WithAlpha(Color color, float alpha)
+    {
+        color.a = alpha;
+        return color;
+    }
 }

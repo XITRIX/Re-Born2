@@ -15,7 +15,8 @@ public class CharacterScript : Identifiable
     public CharacterScriptableObject characterModel;
     public bool playable;
     public List<Interactable> objectsToInteract = new();
-
+    public bool forceRotating = false;
+    
     private const int AnimationTick = 8;
     private int _animationCounter;
     private int _animationFrame;
@@ -34,6 +35,24 @@ public class CharacterScript : Identifiable
         transform.localScale = new Vector3(characterModel.size, characterModel.size, 1);
     }
 
+    public void FixedUpdate()
+    {
+        if (!forceRotating) return;
+
+        var directionVal = (int) (Time.time * 8) % 4;
+
+        var direction = directionVal switch
+        {
+            0 => Direction.Left,
+            1 => Direction.Up,
+            2 => Direction.Right,
+            3 => Direction.Down,
+            _ => Direction.Down
+        };
+        
+        SetDirection(direction);
+    }
+
     public void MoveByVector(Vector2 movementDirection, float speed, bool changeObjectVelocity = true)
     {
         if (changeObjectVelocity)
@@ -43,7 +62,9 @@ public class CharacterScript : Identifiable
         if (direction != Vector2.zero)
             _lastNonZeroDirection = direction;
         
-        PerformAnimation(speed);
+        // Do not animate if animation handles by Update rotation (Soloway)
+        if (!forceRotating)
+            PerformAnimation(speed);
     }
 
     public void SetDirection(Direction direction)
