@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Jora
   m_EditorClassIdentifier: 
   charName: "\u0416\u043E\u0440\u0430"
-  avatar: {fileID: 4216864530930941658, guid: c666bd7e9b8c044d7bd0323d0347ee49, type: 3}
+  avatar: {fileID: 3066873704690164262, guid: 918e2043c30ad424ea9a27f672b03a05, type: 3}
   tileset: []
   size: 1
