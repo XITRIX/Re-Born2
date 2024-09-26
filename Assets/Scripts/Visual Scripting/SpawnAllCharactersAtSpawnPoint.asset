@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: SpawnAllCharactersAtSpawnPoint
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"Enter","label":"Enter","summary":"Enter","hideLabel":true}],"controlOutputDefinitions":[{"key":"Exit","label":"Exit","summary":"Exit","hideLabel":true}],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Spawn
+      All Characters","summary":"Using last map ID spawn point","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-367.0,"y":-62.0},"guid":"10a4a3f7-f370-441c-9f7e-863555c2caf1","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"11"},{"defaultValues":{},"position":{"x":92.0,"y":-50.0},"guid":"1673e0dd-b984-48d0-b729-2bc9302e88f4","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"13"},{"chainable":false,"parameterNames":["spawnPoint"],"member":{"name":"SpawnAllCharacters","parameterTypes":["SpawnPoint"],"targetType":"PlayerInputScript","targetTypeName":"PlayerInputScript","$version":"A"},"defaultValues":{"%spawnPoint":null},"position":{"x":-194.0,"y":-64.0},"guid":"5ff45b9e-016f-42c6-8a51-c7e0e19498f7","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"15"},{"chainable":false,"parameterNames":["id"],"member":{"name":"GetEntityById","parameterTypes":["System.String"],"targetType":"GlobalDirector","targetTypeName":"GlobalDirector","$version":"A"},"defaultValues":{"%id":{"$content":"","$type":"System.String"}},"position":{"x":-389.0,"y":90.0},"guid":"a4051d58-9606-406c-8654-2b5642185471","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"19"},{"chainable":false,"parameterNames":[],"member":{"name":"GetLastMapId","parameterTypes":[],"targetType":"GlobalDirector","targetTypeName":"GlobalDirector","$version":"A"},"defaultValues":{},"position":{"x":-590.0,"y":88.0},"guid":"f09b0fdd-d573-4e8f-a0ae-e80ad1e24770","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"23"},{"sourceUnit":{"$ref":"11"},"sourceKey":"Enter","destinationUnit":{"$ref":"15"},"destinationKey":"enter","guid":"244c9f88-5765-43be-acef-78047962d3b3","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"exit","destinationUnit":{"$ref":"13"},"destinationKey":"Exit","guid":"914a1752-ca29-444f-be4e-1ba552b34183","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"result","destinationUnit":{"$ref":"15"},"destinationKey":"%spawnPoint","guid":"56da1314-95d1-4328-8649-e48d98f6998a","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"23"},"sourceKey":"result","destinationUnit":{"$ref":"19"},"destinationKey":"%id","guid":"b1c1c7ce-fbb8-41ed-91cc-67b3b48b5fd0","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

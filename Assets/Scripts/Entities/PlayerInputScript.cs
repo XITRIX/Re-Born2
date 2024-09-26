@@ -332,12 +332,22 @@ public class PlayerInputScript : MonoBehaviour
         var objectsToInteract = AllCharacters[activeCharacterIndex].objectsToInteract;
         if (objectsToInteract.Count <= 0) return;
 
-        var obj = objectsToInteract.LastOrDefault();
-        if (obj == null || obj.InteractionScenario == null) return;
+        // Try to interact with all interactable objects
+        foreach (var obj in objectsToInteract)
+        {
+            if (obj == null || obj.InteractionScenario == null) continue;
         
-        obj.InteractionScenario();
+            obj.InteractionScenario();
         
-        Debug.Log($"Interact with {obj.objectId}");
+            Debug.Log($"Interact with {obj.objectId}");
+        }
+        
+        // var obj = objectsToInteract.LastOrDefault();
+        // if (obj == null || obj.InteractionScenario == null) return;
+        //
+        // obj.InteractionScenario();
+        //
+        // Debug.Log($"Interact with {obj.objectId}");
     }
 
     private void UpdateCharacters()
