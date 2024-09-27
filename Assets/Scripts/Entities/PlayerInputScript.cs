@@ -250,6 +250,8 @@ public class PlayerInputScript : MonoBehaviour
         if (isActiveCharacter)
             Shared.DisablePlayerInput();
             
+        
+        var isCharTriggerSaved = character.GetComponent<BoxCollider2D>().isTrigger;
         var ai = character.GetComponent<FollowerAIScript>();
         ai.overrideFollowTarget = target;
         ai.needToOverrideFollowTarget = true;
@@ -273,6 +275,8 @@ public class PlayerInputScript : MonoBehaviour
         ai.needToOverrideFollowTarget = false;
         ai.overrideFollowTarget = null;
         ai.forceWalking = prevValue;
+
+        character.GetComponent<BoxCollider2D>().isTrigger = isCharTriggerSaved;
         
         if (isActiveCharacter)
             Shared.EnablePlayerInput();

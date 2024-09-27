@@ -678,6 +678,7 @@ MonoBehaviour:
   overrideFollowedObject: {fileID: 0}
   followOverridenObject: 0
   cameraSpeed: 2
+  ppCamera: {fileID: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,7 +1634,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1841,6 +1842,7 @@ MonoBehaviour:
   - {fileID: 4220883545280863815, guid: 2d4ac1433e5724e428fbf73315e1c8bf, type: 3}
   - {fileID: 2267123000091207733, guid: ae3d50f5ac5f84064ae10675a0b97548, type: 3}
   - {fileID: 5155247445395189298, guid: a572a21a0f8fe42e6ac366506b1e84c5, type: 3}
+  - {fileID: 7296243715366763966, guid: d037917cbb93a427d9a1d927a4217ddf, type: 3}
   dialogHUD: {fileID: 1602118275}
   backgroundAudioSource: {fileID: 1624944491}
   glitchEffect: {fileID: 1350829312}

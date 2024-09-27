@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: EndingMap_
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":1530.748,"y":50.25147},"zoom":1.0,"elements":[{"chainable":false,"parameterNames":["targetColor"],"member":{"name":"SetBackstageColor","parameterTypes":["UnityEngine.Color"],"targetType":"UIDialogMessage","targetTypeName":"UIDialogMessage","$version":"A"},"defaultValues":{"%targetColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0,"$type":"UnityEngine.Color"}},"position":{"x":-751.0,"y":-90.0},"guid":"d16df86f-f721-405c-86a0-196fc07b3a91","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"9"},{"coroutine":true,"defaultValues":{},"position":{"x":-920.0,"y":-89.0},"guid":"cd64edfb-94e4-45ca-885e-0467d5d95920","$version":"A","$type":"Unity.VisualScripting.Start","$id":"13"},{"defaultValues":{"Avatar":null,"Name":{"$content":"","$type":"System.String"},"Message":{"$content":"...","$type":"System.String"}},"position":{"x":117.0,"y":-79.0},"guid":"5c34722d-3aef-476f-b843-da0ed7cafa16","$version":"A","$type":"VSMessageUnit","$id":"15"},{"defaultValues":{"Avatar":null,"Name":{"$content":"","$type":"System.String"},"Message":{"$content":"\u041d\u0430\u0441
+      \u043a\u0438\u043a\u043d\u0443\u043b\u043e?","$type":"System.String"}},"position":{"x":366.0,"y":-79.0},"guid":"45a79142-a9c7-41c9-90d8-37f0f3ea516e","$version":"A","$type":"VSMessageUnit","$id":"17"},{"defaultValues":{"Name":{"$content":0,"$type":"UnityEngine.Object"},"Message":{"$content":"\u0417\u0434\u0430\u0440\u043e\u0432\u0430
+      \u0435\u0431\u0430\u0442\u044c ...","$type":"System.String"}},"position":{"x":653.0,"y":-71.0},"guid":"2269fbf7-55f2-49c4-9442-6003ec1d25de","$version":"A","$type":"VSMessageCharUnit","$id":"19"},{"defaultValues":{"Avatar":null,"Name":{"$content":"","$type":"System.String"},"Message":{"$content":"\u0429\u0430
+      ... \u043c\u0435\u043d\u044f \u0435\u0449\u0451 \u043d\u0435\u043c\u043d\u043e\u0433\u043e
+      \u043f\u043e\u0434\u0442\u0430\u0448\u043d\u0438\u0432\u0430\u0435\u0442 \u043e\u0442
+      \u0432\u0441\u0435\u0433\u043e \u0443\u0432\u0438\u0434\u0435\u043d\u043d\u043e\u0433\u043e
+      ...","$type":"System.String"}},"position":{"x":952.0,"y":-70.0},"guid":"ce3d7ac7-14fb-4497-8ff6-343ba1cfc008","$version":"A","$type":"VSMessageUnit","$id":"21"},{"defaultValues":{"Name":{"$content":1,"$type":"UnityEngine.Object"},"Message":{"$content":"\u0414\u0430
+      \u044f \u0442\u043e\u0436\u0435 \u0435\u0449\u0451 \u0432 \u043a\u0430\u043a\u043e\u043c
+      \u0442\u043e \u0448\u043e\u043a\u0435","$type":"System.String"}},"position":{"x":1347.0,"y":-71.0},"guid":"e96b3a72-010b-4958-8289-0f953b4f0565","$version":"A","$type":"VSMessageCharUnit","$id":"23"},{"defaultValues":{"Name":{"$content":2,"$type":"UnityEngine.Object"},"Message":{"$content":"\u0412
+      \u043b\u044e\u0431\u043e\u043c \u0441\u043b\u0443\u0447\u0430\u0435 \u0441\u0435\u0440\u0432\u0430\u043a
+      \u043e\u0442\u043a\u0430\u0442\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u0430\u0437\u0430\u0434,
+      \u0434\u043e \u0442\u043e\u0433\u043e \u043a\u0430\u043a \u041d\u0435\u043a\u0438\u0442
+      \u043d\u0430\u0447\u0430\u043b \u0431\u0443\u044f\u043d\u0438\u0442\u044c","$type":"System.String"}},"position":{"x":1726.0,"y":-70.0},"guid":"a7206e5c-8e45-4995-a61a-b1cdf13fcf52","$version":"A","$type":"VSMessageCharUnit","$id":"25"},{"defaultValues":{"Avatar":null,"Name":{"$content":"","$type":"System.String"},"Message":{"$content":"\u0427\u0442\u043e
+      \u043c\u043e\u0436\u043d\u043e \u0441\u0434\u0435\u043b\u0430\u0442\u044c \u0447\u0442\u043e
+      \u0431\u044b \u043f\u0440\u0435\u0434\u043e\u0442\u0432\u0440\u0430\u0442\u0438\u0442\u044c
+      \u043f\u043e\u0434\u043e\u0431\u043d\u043e\u0435?","$type":"System.String"}},"position":{"x":2111.0,"y":-70.0},"guid":"24988325-ff3b-4b24-81dc-6d0c0cbcbcd1","$version":"A","$type":"VSMessageUnit","$id":"27"},{"defaultValues":{"Name":{"$content":3,"$type":"UnityEngine.Object"},"Message":{"$content":"\u041d\u0443
+      \u0434\u043b\u044f \u043d\u0430\u0447\u0430\u043b\u0430 \u043c\u043e\u0436\u043d\u043e
+      \u043f\u0435\u0440\u0435\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u0442\u044c
+      \u043c\u0430\u043c\u0443 \u043c\u0430\u043b\u044c\u0447\u0438\u043a\u0430 \u0438\u0437
+      \u041c\u0430\u0440\u0438\u0438 \u0432 \u043a\u043e\u0433\u043e-\u0442\u043e
+      \u0434\u0440\u0443\u0433\u043e\u0433\u043e, \u0447\u0442\u043e \u0431\u044b
+      \u043f\u0440\u0435\u0434\u043e\u0442\u0432\u0440\u0430\u0442\u0438\u0442\u044c
+      \u0442\u0440\u0438\u0433\u0433\u0435\u0440 \u043f\u0440\u0438\u0441\u0442\u0443\u043f\u0430","$type":"System.String"}},"position":{"x":2495.0,"y":-70.0},"guid":"42306af2-d084-4a84-b8c9-e6b1f1457a17","$version":"A","$type":"VSMessageCharUnit","$id":"29"},{"defaultValues":{"Avatar":null,"Name":{"$content":"","$type":"System.String"},"Message":{"$content":"\u0423
+      \u043d\u0435\u0433\u043e \u0436\u0435 \u0432 \u043f\u043e\u0434\u0432\u0430\u043b\u0435
+      \u0441\u0435\u043a\u0440\u0435\u0442\u043d\u044b\u0435 \u0442\u044e\u0440\u044c\u043c\u044b,
+      \u043e\u043d \u0438\u0445 \u044f\u0432\u043d\u043e \u043f\u043e\u0441\u0442\u0440\u043e\u0438\u043b
+      \u0435\u0449\u0451 \u0434\u043e \u0441\u0432\u043e\u0435\u0433\u043e \u043f\u0440\u0438\u0441\u0442\u0443\u043f\u0430,
+      \u043e\u043d \u0442\u043e\u0447\u043d\u043e \u0431\u0443\u0434\u0435\u0442
+      \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u0435\u043d?","$type":"System.String"}},"position":{"x":2915.0,"y":-73.0},"guid":"ca488ee1-14ae-471a-962d-aa342e21e35a","$version":"A","$type":"VSMessageUnit","$id":"31"},{"defaultValues":{"Name":{"$content":4,"$type":"UnityEngine.Object"},"Message":{"$content":"\u041d\u0438\u043a\u043e\u0433\u0434\u0430
+      \u043d\u0435\u043b\u044c\u0437\u044f \u0431\u044b\u0442\u044c \u0443\u0432\u0435\u0440\u0435\u043d\u043d\u044b\u043c
+      \u0432 \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u0435 \u0441\u043a\u043b\u043e\u043d\u043d\u044b\u043c
+      \u043a \"\u043f\u0440\u0438\u0441\u0442\u0443\u043f\u0443 \u041d\u0435\u043a\u0438\u0442\u0430\"","$type":"System.String"}},"position":{"x":3305.0,"y":-68.0},"guid":"ec701bed-84db-41c0-a995-22ef402d4d42","$version":"A","$type":"VSMessageCharUnit","$id":"33"},{"defaultValues":{"Name":{"$content":5,"$type":"UnityEngine.Object"},"Message":{"$content":"\u041d\u0443
+      \u0435\u0441\u043b\u0438 \u0447\u0442\u043e, \u0435\u0449\u0451 \u0440\u0430\u0437
+      \u043e\u0442\u043a\u0430\u0442\u0438\u043c\u0441\u044f, \u0432 \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439
+      \u0440\u0430\u0437 \u044f \u0443\u0436 \u0442\u043e\u0447\u043d\u043e \u043d\u0435
+      \u043f\u0440\u043e\u0441\u0440\u0443 \u0430\u0434\u043c\u0438\u043d\u0441\u043a\u0438\u0435
+      \u043f\u0440\u0430\u0432\u0430","$type":"System.String"}},"position":{"x":3690.0,"y":-75.0},"guid":"a560481c-1f26-4127-a512-c64d50a4548f","$version":"A","$type":"VSMessageCharUnit","$id":"35"},{"chainable":false,"parameterNames":["image"],"member":{"name":"SetBackstageImage","parameterTypes":["UnityEngine.Sprite"],"targetType":"UIDialogMessage","targetTypeName":"UIDialogMessage","$version":"A"},"defaultValues":{"%image":{"$content":6,"$type":"UnityEngine.Object"}},"position":{"x":-241.0,"y":-85.0},"guid":"be6ce9ee-160f-4459-a516-c0fad384cabb","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"37"},{"chainable":false,"parameterNames":["audio"],"member":{"name":"PlayBackgroundAudio","parameterTypes":["UnityEngine.Audio.AudioResource"],"targetType":"GlobalDirector","targetTypeName":"GlobalDirector","$version":"A"},"defaultValues":{"%audio":{"$content":7,"$type":"UnityEngine.Object"}},"position":{"x":-503.0,"y":-92.0},"guid":"8d4b2298-ed68-4432-b4f2-dc3aea4da121","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"41"},{"sourceUnit":{"$ref":"25"},"sourceKey":"Exit","destinationUnit":{"$ref":"27"},"destinationKey":"Enter","guid":"1bdaf774-e301-4246-a368-33d05fbf17df","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"23"},"sourceKey":"Exit","destinationUnit":{"$ref":"25"},"destinationKey":"Enter","guid":"e76d8e0e-9c8e-4ef6-a7c7-d0a46f0cc0fe","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"exit","destinationUnit":{"$ref":"41"},"destinationKey":"enter","guid":"cf347652-4aad-4575-827f-be35bb68191b","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"Exit","destinationUnit":{"$ref":"17"},"destinationKey":"Enter","guid":"bc0998ad-ebf7-4ef1-8bbf-66b2d16b2648","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"Exit","destinationUnit":{"$ref":"23"},"destinationKey":"Enter","guid":"55502bda-4237-4a33-85b4-f7b05551526f","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"Exit","destinationUnit":{"$ref":"19"},"destinationKey":"Enter","guid":"ac76b799-7194-49f8-8976-bbe7af6f7835","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"31"},"sourceKey":"Exit","destinationUnit":{"$ref":"33"},"destinationKey":"Enter","guid":"9d07ba3b-1b35-4164-a0cd-050223197a3b","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"27"},"sourceKey":"Exit","destinationUnit":{"$ref":"29"},"destinationKey":"Enter","guid":"aeab366c-af5d-44f0-803b-d1d87e91f8f2","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"33"},"sourceKey":"Exit","destinationUnit":{"$ref":"35"},"destinationKey":"Enter","guid":"81aedf88-b4ec-483e-9402-8d903fcf160d","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"41"},"sourceKey":"exit","destinationUnit":{"$ref":"37"},"destinationKey":"enter","guid":"2fb6e797-9fa0-4a31-a298-efaffa0fb84c","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"37"},"sourceKey":"exit","destinationUnit":{"$ref":"15"},"destinationKey":"Enter","guid":"b059b125-52d0-40f7-96a5-68aea39415a0","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"Exit","destinationUnit":{"$ref":"21"},"destinationKey":"Enter","guid":"a1af2969-9554-4ee9-a880-ad075cb61bff","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"29"},"sourceKey":"Exit","destinationUnit":{"$ref":"31"},"destinationKey":"Enter","guid":"71544884-9812-4e57-b637-105786075f7f","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"trigger","destinationUnit":{"$ref":"9"},"destinationKey":"enter","guid":"c59348e7-1595-4c45-bf1d-4e567464785c","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 5085ac80489ef4330b393b5e4200f63e, type: 2}
+    - {fileID: 11400000, guid: 5085ac80489ef4330b393b5e4200f63e, type: 2}
+    - {fileID: 11400000, guid: 5085ac80489ef4330b393b5e4200f63e, type: 2}
+    - {fileID: 11400000, guid: 5085ac80489ef4330b393b5e4200f63e, type: 2}
+    - {fileID: 11400000, guid: 5085ac80489ef4330b393b5e4200f63e, type: 2}
+    - {fileID: 11400000, guid: 5085ac80489ef4330b393b5e4200f63e, type: 2}
+    - {fileID: 2554537427939641029, guid: 6aa99f155ad2f481ea9e95eb83587d65, type: 3}
+    - {fileID: 8300000, guid: 5386f17209be34bfab8e8ea13569aa80, type: 3}

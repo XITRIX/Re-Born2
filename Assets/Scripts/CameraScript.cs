@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 [RequireComponent(typeof(Camera))]
 public class CameraScript : MonoBehaviour
@@ -11,6 +12,7 @@ public class CameraScript : MonoBehaviour
     public float cameraSpeed = 1;
 
     private Transform Transform { get; set; }
+    public PixelPerfectCamera ppCamera; 
 
     // Start is called before the first frame update
     void Awake()
@@ -55,5 +57,10 @@ public class CameraScript : MonoBehaviour
     {
         Shared.followOverridenObject = false;
         Shared.overrideFollowedObject = null;
+    }
+
+    public static void SetAssetsPpu(int ppu)
+    {
+        Shared.GetComponent<PixelPerfectCamera>().assetsPPU = ppu;
     }
 }
