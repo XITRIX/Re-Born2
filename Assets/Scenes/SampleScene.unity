@@ -582,7 +582,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -607,7 +607,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 6.6875
+  orthographic size: 6.09375
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -675,6 +675,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followedObject: {fileID: 0}
+  overrideFollowedObject: {fileID: 0}
+  followOverridenObject: 0
   cameraSpeed: 2
 --- !u!1 &619394800
 GameObject:
@@ -1837,6 +1839,8 @@ MonoBehaviour:
   - {fileID: 1078851589244000360, guid: b84529105ccc14495800beadf89aed21, type: 3}
   - {fileID: 9056611165992064245, guid: 2b42c13ec5cba4f78bec8043aac6d934, type: 3}
   - {fileID: 4220883545280863815, guid: 2d4ac1433e5724e428fbf73315e1c8bf, type: 3}
+  - {fileID: 2267123000091207733, guid: ae3d50f5ac5f84064ae10675a0b97548, type: 3}
+  - {fileID: 5155247445395189298, guid: a572a21a0f8fe42e6ac366506b1e84c5, type: 3}
   dialogHUD: {fileID: 1602118275}
   backgroundAudioSource: {fileID: 1624944491}
   glitchEffect: {fileID: 1350829312}

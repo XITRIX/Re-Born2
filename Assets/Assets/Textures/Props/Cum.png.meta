@@ -1,0 +1,509 @@
+fileFormatVersion: 2
+guid: eb7d3fb66641a4ad19d1f920bcccdba0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8828049081553579948
+    second: Cum_0
+  - first:
+      213: -2041701041661936389
+    second: Cum_1
+  - first:
+      213: 6164662992443888849
+    second: Cum_2
+  - first:
+      213: 5908560270066647317
+    second: Cum_3
+  - first:
+      213: 7278306033736513672
+    second: Cum_4
+  - first:
+      213: -2143948544328250611
+    second: Cum_5
+  - first:
+      213: 1551300347575746240
+    second: Cum_6
+  - first:
+      213: 5712479622950920382
+    second: Cum_7
+  - first:
+      213: 5867431344390991260
+    second: Cum_8
+  - first:
+      213: -8661724339006225415
+    second: Cum_9
+  - first:
+      213: -1739334441000578135
+    second: Cum_10
+  - first:
+      213: -6290416830853240129
+    second: Cum_11
+  - first:
+      213: -3498960228088606020
+    second: Cum_12
+  - first:
+      213: -3848502324062014704
+    second: Cum_13
+  - first:
+      213: -7193932688410894964
+    second: Cum_14
+  - first:
+      213: 6695049715598646259
+    second: Cum_15
+  - first:
+      213: -2568414689341625398
+    second: Cum_16
+  - first:
+      213: 5944218000423107021
+    second: Cum_17
+  - first:
+      213: 7425680919831848090
+    second: Cum_18
+  - first:
+      213: -376563802140915868
+    second: Cum_19
+  - first:
+      213: 6997276784730767621
+    second: Cum_20
+  - first:
+      213: 779126296661418886
+    second: Cum_21
+  - first:
+      213: 3654221509195119497
+    second: Cum_22
+  - first:
+      213: 7916688803360326978
+    second: Cum_23
+  - first:
+      213: -6555603643782016442
+    second: Cum_24
+  - first:
+      213: 2370786893889205074
+    second: Cum_25
+  - first:
+      213: 690968294417589051
+    second: Cum_26
+  - first:
+      213: -4913970080857727794
+    second: Cum_27
+  - first:
+      213: 6941272451629954380
+    second: Cum_28
+  - first:
+      213: -1248217635328292283
+    second: Cum_29
+  - first:
+      213: -3205812441700033794
+    second: Cum_30
+  - first:
+      213: 7428856589014492555
+    second: Cum_31
+  - first:
+      213: -4819110911793879201
+    second: Cum_32
+  - first:
+      213: 4239657601386233274
+    second: Cum_33
+  - first:
+      213: 4783763570786807904
+    second: Cum_34
+  - first:
+      213: -2403264578939287385
+    second: Cum_35
+  - first:
+      213: 5602047862527678070
+    second: Cum_36
+  - first:
+      213: 51338592814929121
+    second: Cum_37
+  - first:
+      213: -994792900796717668
+    second: Cum_38
+  - first:
+      213: -4543428382351126934
+    second: Cum_39
+  - first:
+      213: 1778933416202408053
+    second: Cum_40
+  - first:
+      213: 6222618814379103449
+    second: Cum_41
+  - first:
+      213: -3775977626993655469
+    second: Cum_42
+  - first:
+      213: 7136543562286145156
+    second: Cum_43
+  - first:
+      213: 5548962341836710530
+    second: Cum_44
+  - first:
+      213: 5954801165953429105
+    second: Cum_45
+  - first:
+      213: -9026658412520947912
+    second: Cum_46
+  - first:
+      213: 887188824048358866
+    second: Cum_47
+  - first:
+      213: -3339813950315191168
+    second: Cum_48
+  - first:
+      213: 8897878267771586651
+    second: Cum_49
+  - first:
+      213: -4386601190759654551
+    second: Cum_50
+  - first:
+      213: 4963352113095428136
+    second: Cum_51
+  - first:
+      213: 6855486245856720749
+    second: Cum_52
+  - first:
+      213: 2087768462186968814
+    second: Cum_53
+  - first:
+      213: 2631192875045398939
+    second: Cum_54
+  - first:
+      213: -5650475360775156141
+    second: Cum_55
+  - first:
+      213: 7242981497391067263
+    second: Cum_56
+  - first:
+      213: -5561992756065131808
+    second: Cum_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cum_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd704140aed9490f98694ed678032e8
+      internalID: -243732659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cum_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b193549ae28064b0fadb944be7cc134b
+      internalID: -1461531244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cum_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82943adcdc75e4fdea147c7ab5a151d1
+      internalID: 1854711480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cum_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8551206bd40437db52c661b864e80d
+      internalID: 2096562649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cum_4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08f7f14e433a48a9a102585fad9457c
+      internalID: 1803172690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cum_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4be641b405924fedb98dfc1bd9c64b4
+      internalID: -1408995632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cum_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee8caf16108f41ca860c45ba6dab868
+      internalID: -2003394675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cum_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9230a09b5d824450cb5e1bf9a8ecdcfc
+      internalID: 657153094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cum_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787649b99efe448e482ebd36b07e2471
+      internalID: 69953085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ee9e8225775ad4e29bd7cf41c301eef2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cum_0: -243732659
+      Cum_1: -1461531244
+      Cum_2: 1854711480
+      Cum_3: 2096562649
+      Cum_4: 1803172690
+      Cum_5: -1408995632
+      Cum_6: -2003394675
+      Cum_7: 657153094
+      Cum_8: 69953085
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

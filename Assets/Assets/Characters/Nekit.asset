@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
+  m_Name: Nekit
+  m_EditorClassIdentifier: 
+  charName: "\u041D\u0435\u043A\u0438\u0442"
+  avatar: {fileID: -6221277176654565392, guid: 1a1f68710f54e43319bc36b03def9527, type: 3}
+  tileset:
+  - {fileID: -3545431648481256027, guid: bcb7778512c8e4eb8bf1179e5f9df354, type: 3}
+  - {fileID: 9064003746793204831, guid: bcb7778512c8e4eb8bf1179e5f9df354, type: 3}
+  - {fileID: 464073557741113962, guid: bcb7778512c8e4eb8bf1179e5f9df354, type: 3}
+  - {fileID: 5573168447904540219, guid: bcb7778512c8e4eb8bf1179e5f9df354, type: 3}
+  - {fileID: 2334250817376786434, guid: bcb7778512c8e4eb8bf1179e5f9df354, type: 3}
+  - {fileID: -2951322249559988524, guid: bcb7778512c8e4eb8bf1179e5f9df354, type: 3}
+  - {fileID: 6589467213128288951, guid: bcb7778512c8e4eb8bf1179e5f9df354, type: 3}
+  - {fileID: -3327379402046612108, guid: bcb7778512c8e4eb8bf1179e5f9df354, type: 3}
+  - {fileID: 1186864650509616062, guid: bcb7778512c8e4eb8bf1179e5f9df354, type: 3}
+  - {fileID: 8039233761387025451, guid: bcb7778512c8e4eb8bf1179e5f9df354, type: 3}
+  - {fileID: -6757292167576585629, guid: bcb7778512c8e4eb8bf1179e5f9df354, type: 3}
+  - {fileID: -8911012635794425541, guid: bcb7778512c8e4eb8bf1179e5f9df354, type: 3}
+  size: 1.7

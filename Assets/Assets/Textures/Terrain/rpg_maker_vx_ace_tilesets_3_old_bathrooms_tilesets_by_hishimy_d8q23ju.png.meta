@@ -1,0 +1,2758 @@
+fileFormatVersion: 2
+guid: 3788b545526c44c12a058a1164851bac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3723205960551975615
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_0
+  - first:
+      213: 3962522108415481209
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_1
+  - first:
+      213: 549513339096568250
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_2
+  - first:
+      213: 8197837861980178461
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_3
+  - first:
+      213: -7611983723479644253
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_4
+  - first:
+      213: -8313324706438862930
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_5
+  - first:
+      213: -4308361107981965270
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_6
+  - first:
+      213: -7886962987164309058
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_7
+  - first:
+      213: -3696456079668359653
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_8
+  - first:
+      213: 2975477393352490968
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_9
+  - first:
+      213: 1067120118508662732
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_10
+  - first:
+      213: -2242509402437303121
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_11
+  - first:
+      213: -4227213818982536649
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_12
+  - first:
+      213: 4075097609753659119
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_13
+  - first:
+      213: 1883182614942162529
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_14
+  - first:
+      213: 3254431393575368048
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_15
+  - first:
+      213: -7935662879882088827
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_16
+  - first:
+      213: -3030365939890901748
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_17
+  - first:
+      213: -3305743175622492804
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_18
+  - first:
+      213: 7816912133297478052
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_19
+  - first:
+      213: 319835082865661737
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_20
+  - first:
+      213: -8337664791405618792
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_21
+  - first:
+      213: -6288869546795894569
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_22
+  - first:
+      213: 8024178998379149652
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_23
+  - first:
+      213: -7336957964562021194
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_24
+  - first:
+      213: 2689697129947710803
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_25
+  - first:
+      213: -3686637459349662901
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_26
+  - first:
+      213: -2809833151757920673
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_27
+  - first:
+      213: 3307417899592318257
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_28
+  - first:
+      213: -4453624886998375173
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_29
+  - first:
+      213: -5412836813393823481
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_30
+  - first:
+      213: 5467306647014776759
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_31
+  - first:
+      213: 3533294569960745682
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_32
+  - first:
+      213: -5485533264878921248
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_33
+  - first:
+      213: 5351412051958822626
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_34
+  - first:
+      213: 1700022306808377080
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_35
+  - first:
+      213: -2600681086591505949
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_36
+  - first:
+      213: -7229213959424970515
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_37
+  - first:
+      213: -331324980487302095
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_38
+  - first:
+      213: 3151764467023728241
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_39
+  - first:
+      213: -6308524719304001803
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_40
+  - first:
+      213: 7154237455246653419
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_41
+  - first:
+      213: -357318668134415315
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_42
+  - first:
+      213: -6208853867720955962
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_43
+  - first:
+      213: 6807137717561820161
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_44
+  - first:
+      213: 8370256744318900743
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_45
+  - first:
+      213: -5077476929167939498
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_46
+  - first:
+      213: 1177632429545989382
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_47
+  - first:
+      213: -1866684973484847574
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_48
+  - first:
+      213: 3898055968574471467
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_49
+  - first:
+      213: 1658563456676297596
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_50
+  - first:
+      213: 8623039031079917127
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_51
+  - first:
+      213: -4662253715793068445
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_52
+  - first:
+      213: -8295967899084337290
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_53
+  - first:
+      213: 2418715602777840965
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_54
+  - first:
+      213: -2092624503399748083
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_55
+  - first:
+      213: -5084429631162000989
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_56
+  - first:
+      213: 2255505772969013560
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_57
+  - first:
+      213: 1240595765470464023
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_58
+  - first:
+      213: 2131030043528132796
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_59
+  - first:
+      213: -9073953341224197333
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_60
+  - first:
+      213: -1880973542942563895
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_61
+  - first:
+      213: -3505980875723943498
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_62
+  - first:
+      213: 8051486180796673067
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_63
+  - first:
+      213: 418856077872363367
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_64
+  - first:
+      213: -9133206162260076710
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_65
+  - first:
+      213: 4697614806104271034
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_66
+  - first:
+      213: -1163211465983643438
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_67
+  - first:
+      213: 4414554707619453341
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_68
+  - first:
+      213: -5565561295418405910
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_69
+  - first:
+      213: -2626651644949821151
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_70
+  - first:
+      213: 3562714779877100133
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_71
+  - first:
+      213: -8252610313538881855
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_72
+  - first:
+      213: -4548961777818544973
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_73
+  - first:
+      213: 8897919193411218992
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_74
+  - first:
+      213: -8517388441074241437
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_75
+  - first:
+      213: 29061050385848215
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_76
+  - first:
+      213: 3196779162231224321
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_77
+  - first:
+      213: -4049380677790444864
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_78
+  - first:
+      213: -7920537966449199926
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_79
+  - first:
+      213: -8618083774524243460
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_80
+  - first:
+      213: 2027729648416125880
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_81
+  - first:
+      213: -5817594919609840715
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_82
+  - first:
+      213: -8823117095997262246
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_83
+  - first:
+      213: -118332722881096318
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_84
+  - first:
+      213: 1192559943646508243
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_85
+  - first:
+      213: -1309015086071984440
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_86
+  - first:
+      213: 4404658503701441392
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_87
+  - first:
+      213: -5398184907532215463
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_88
+  - first:
+      213: 3306851574167292443
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_89
+  - first:
+      213: -9074008404579155286
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_90
+  - first:
+      213: 4802034190254443100
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_91
+  - first:
+      213: 2522273804218715006
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_92
+  - first:
+      213: -5403082569422013951
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_93
+  - first:
+      213: 8619326280165017954
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_94
+  - first:
+      213: -824014449579561239
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_95
+  - first:
+      213: 8818294248380116004
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_96
+  - first:
+      213: -8531774544149014973
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_97
+  - first:
+      213: -9159805127077669369
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_98
+  - first:
+      213: -1603104346831757856
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_99
+  - first:
+      213: -5516960881087360356
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_100
+  - first:
+      213: 1359035601112566458
+    second: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_101
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 466
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba4150481c7ba330800000000000000
+      internalID: 3723205960551975615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 466
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9759cbefcd4bdf630800000000000000
+      internalID: 3962522108415481209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 466
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab19030787340a700800000000000000
+      internalID: 549513339096568250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 466
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d188399f91294c170800000000000000
+      internalID: 8197837861980178461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_4
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 459
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a7c0fd222dcc5690800000000000000
+      internalID: -7611983723479644253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 457
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7ab32b93321ac80800000000000000
+      internalID: -8313324706438862930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 458
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2860a22660a534c0800000000000000
+      internalID: -4308361107981965270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_7
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 485
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9ea6933f0eb8290800000000000000
+      internalID: -7886962987164309058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 485
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ec88bb7cc83bcc0800000000000000
+      internalID: -3696456079668359653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_9
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 484
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dffafbace40b4920800000000000000
+      internalID: 2975477393352490968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_10
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 483
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfa16c081c2fce00800000000000000
+      internalID: 1067120118508662732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_11
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 483
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4404e649101e0e0800000000000000
+      internalID: -2242509402437303121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_12
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 483
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a6ce9ad6be555c0800000000000000
+      internalID: -4227213818982536649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_13
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 485
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe6096e6fa7ad8830800000000000000
+      internalID: 4075097609753659119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_14
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 483
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e91da5c98622a10800000000000000
+      internalID: 1883182614942162529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_15
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 451
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07570f71c101a2d20800000000000000
+      internalID: 3254431393575368048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_16
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 451
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58eef5bd7acded190800000000000000
+      internalID: -7935662879882088827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_17
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 453
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d2c55bb3af1f5d0800000000000000
+      internalID: -3030365939890901748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_18
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 451
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d795aa814af12d0800000000000000
+      internalID: -3305743175622492804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_19
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 451
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a913a16b204b7c60800000000000000
+      internalID: 7816912133297478052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_20
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 451
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9275ae43058407400800000000000000
+      internalID: 319835082865661737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_21
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 450
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8999cfb0c0aaa4c80800000000000000
+      internalID: -8337664791405618792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_22
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 449
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d87570977279b8a0800000000000000
+      internalID: -6288869546795894569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_23
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 372
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459f98cf84c9b5f60800000000000000
+      internalID: 8024178998379149652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_24
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 372
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4ce46aa93ed2a90800000000000000
+      internalID: -7336957964562021194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_25
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 372
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355cbeff949b35520800000000000000
+      internalID: 2689697129947710803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_26
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 372
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4390db63ce66dcc0800000000000000
+      internalID: -3686637459349662901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_27
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 369
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f565a57b2a77109d0800000000000000
+      internalID: -2809833151757920673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_28
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 369
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13df7f46e0f46ed20800000000000000
+      internalID: 3307417899592318257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_29
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 369
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf46f97f2cb8132c0800000000000000
+      internalID: -4453624886998375173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_30
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 369
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709f08eb89db1e4b0800000000000000
+      internalID: -5412836813393823481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_31
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 416
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf927dad66cfdb40800000000000000
+      internalID: 5467306647014776759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_32
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 417
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2daa351f0b8c80130800000000000000
+      internalID: 3533294569960745682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_33
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 417
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e99d472f887fd3b0800000000000000
+      internalID: -5485533264878921248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_34
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 417
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6ffb388e8044a40800000000000000
+      internalID: 5351412051958822626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_35
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 416
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fead8be741b79710800000000000000
+      internalID: 1700022306808377080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_36
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 416
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9e2aba45688ebd0800000000000000
+      internalID: -2600681086591505949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_37
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 416
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0fd27b43cacab90800000000000000
+      internalID: -7229213959424970515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_38
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 416
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13457d88fa5e66bf0800000000000000
+      internalID: -331324980487302095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_39
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 385
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ec5a085115dbb20800000000000000
+      internalID: 3151764467023728241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_40
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 403
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f63d19113e9378a0800000000000000
+      internalID: -6308524719304001803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_41
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 403
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be775ce8f05f84360800000000000000
+      internalID: 7154237455246653419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_42
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 402
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d248b32809c8a0bf0800000000000000
+      internalID: -357318668134415315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_43
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 402
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7ae20ad48b5d9a0800000000000000
+      internalID: -6208853867720955962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_44
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 402
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1048f6830bfc77e50800000000000000
+      internalID: 6807137717561820161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_45
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 402
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a12f35920292470800000000000000
+      internalID: 8370256744318900743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_46
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 387
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65824b172ad2989b0800000000000000
+      internalID: -5077476929167939498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_47
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 356
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605a11f847ac75010800000000000000
+      internalID: 1177632429545989382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_48
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 354
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e40ef18e33816e0800000000000000
+      internalID: -1866684973484847574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_49
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 355
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2df879204da81630800000000000000
+      internalID: 3898055968574471467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_50
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 355
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b72a82da6640710800000000000000
+      internalID: 1658563456676297596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_51
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 355
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746d8dbdf403ba770800000000000000
+      internalID: 8623039031079917127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_52
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 373
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36eb86972f85c4fb0800000000000000
+      internalID: -4662253715793068445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_53
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 372
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fc803562dcedc80800000000000000
+      internalID: -8295967899084337290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_54
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 373
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d944c9601019120800000000000000
+      internalID: 2418715602777840965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_55
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 340
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e6492f91185f2e0800000000000000
+      internalID: -2092624503399748083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_56
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 321
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a95e1d503a7079b0800000000000000
+      internalID: -5084429631162000989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_57
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 320
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83139a2ec8a2d4f10800000000000000
+      internalID: 2255505772969013560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_58
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 320
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71888b6964b773110800000000000000
+      internalID: 1240595765470464023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_59
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 320
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8fd2ea880f29d10800000000000000
+      internalID: 2131030043528132796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_60
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 327
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b23ecd31387d21280800000000000000
+      internalID: -9073953341224197333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_61
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 326
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c1200d478075e5e0800000000000000
+      internalID: -1880973542942563895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_62
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 326
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1592118f0485fc0800000000000000
+      internalID: -3505980875723943498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_63
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 268
+        width: 27
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c2a58d500acbf60800000000000000
+      internalID: 8051486180796673067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_64
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 266
+        width: 27
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7677895326310d500800000000000000
+      internalID: 418856077872363367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_65
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 269
+        width: 27
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57541e9265504180800000000000000
+      internalID: -9133206162260076710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_66
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 268
+        width: 26
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8e571f6c7413140800000000000000
+      internalID: 4697614806104271034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_67
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 268
+        width: 26
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0326ba5517bdfe0800000000000000
+      internalID: -1163211465983643438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_68
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 268
+        width: 26
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d999f250e16a34d30800000000000000
+      internalID: 4414554707619453341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_69
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 268
+        width: 26
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb4cea4d7723c2b0800000000000000
+      internalID: -5565561295418405910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_70
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 269
+        width: 26
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129021ade324c8bd0800000000000000
+      internalID: -2626651644949821151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_71
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 295
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56acb9a573e417130800000000000000
+      internalID: 3562714779877100133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_72
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 295
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c63acfd4a6d87d80800000000000000
+      internalID: -8252610313538881855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_73
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 291
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4db405d57ded0c0800000000000000
+      internalID: -4548961777818544973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_74
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 289
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ee76bfc52cb7b70800000000000000
+      internalID: 8897919193411218992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_75
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 290
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36070c307582cc980800000000000000
+      internalID: -8517388441074241437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_76
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 290
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7975c011fde376000800000000000000
+      internalID: 29061050385848215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_77
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 290
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108b926f5bd3d5c20800000000000000
+      internalID: 3196779162231224321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_78
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 291
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c258f36ab5bdc7c0800000000000000
+      internalID: -4049380677790444864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_79
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 258
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4fccf2fa8941290800000000000000
+      internalID: -7920537966449199926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_80
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 258
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1cce6b77a666880800000000000000
+      internalID: -8618083774524243460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_81
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 259
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3fe523f51f32c10800000000000000
+      internalID: 2027729648416125880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_82
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 259
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbc9895e30c34fa0800000000000000
+      internalID: -5817594919609840715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_83
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 259
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5638618fbdfd8580800000000000000
+      internalID: -8823117095997262246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_84
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 259
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2851e57f3099b5ef0800000000000000
+      internalID: -118332722881096318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_85
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 259
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4f86643f2dc8010800000000000000
+      internalID: 1192559943646508243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_86
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 259
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce4d05f6b175dde0800000000000000
+      internalID: -1309015086071984440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_88
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 226
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95bdaaa6d6bc515b0800000000000000
+      internalID: -5398184907532215463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_89
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 142
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ace2b7cfb44ed20800000000000000
+      internalID: 3306851574167292443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_90
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 142
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa28624ae65a21280800000000000000
+      internalID: -9074008404579155286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_91
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 136
+        width: 27
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a856d57a044a240800000000000000
+      internalID: 4802034190254443100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_92
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 136
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7bcabe49aae00320800000000000000
+      internalID: 2522273804218715006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_93
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 136
+        width: 27
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10afe75a7056405b0800000000000000
+      internalID: -5403082569422013951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_94
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 136
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269cc6ca59ffd9770800000000000000
+      internalID: 8619326280165017954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_95
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 135
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee650359338094f0800000000000000
+      internalID: -824014449579561239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_96
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 133
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c2197c5efd06a70800000000000000
+      internalID: 8818294248380116004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 69
+        width: 257
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3461740614c099980800000000000000
+      internalID: -8531774544149014973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_98
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 17
+        width: 57
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 706dbb484c5d1e080800000000000000
+      internalID: -9159805127077669369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_99
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 10
+        width: 59
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed55351711a0c9e0800000000000000
+      internalID: -1603104346831757856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_100
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 6
+        width: 58
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92df0b0f41df63b0800000000000000
+      internalID: -5516960881087360356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_101
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 9
+        width: 59
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba8c61cda34cd210800000000000000
+      internalID: 1359035601112566458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 55ccd5fed4cf04ab3aa4351f954fef78
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_0: 3723205960551975615
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_1: 3962522108415481209
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_10: 1067120118508662732
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_100: -5516960881087360356
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_101: 1359035601112566458
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_11: -2242509402437303121
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_12: -4227213818982536649
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_13: 4075097609753659119
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_14: 1883182614942162529
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_15: 3254431393575368048
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_16: -7935662879882088827
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_17: -3030365939890901748
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_18: -3305743175622492804
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_19: 7816912133297478052
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_2: 549513339096568250
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_20: 319835082865661737
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_21: -8337664791405618792
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_22: -6288869546795894569
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_23: 8024178998379149652
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_24: -7336957964562021194
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_25: 2689697129947710803
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_26: -3686637459349662901
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_27: -2809833151757920673
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_28: 3307417899592318257
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_29: -4453624886998375173
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_3: 8197837861980178461
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_30: -5412836813393823481
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_31: 5467306647014776759
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_32: 3533294569960745682
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_33: -5485533264878921248
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_34: 5351412051958822626
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_35: 1700022306808377080
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_36: -2600681086591505949
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_37: -7229213959424970515
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_38: -331324980487302095
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_39: 3151764467023728241
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_4: -7611983723479644253
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_40: -6308524719304001803
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_41: 7154237455246653419
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_42: -357318668134415315
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_43: -6208853867720955962
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_44: 6807137717561820161
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_45: 8370256744318900743
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_46: -5077476929167939498
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_47: 1177632429545989382
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_48: -1866684973484847574
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_49: 3898055968574471467
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_5: -8313324706438862930
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_50: 1658563456676297596
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_51: 8623039031079917127
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_52: -4662253715793068445
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_53: -8295967899084337290
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_54: 2418715602777840965
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_55: -2092624503399748083
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_56: -5084429631162000989
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_57: 2255505772969013560
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_58: 1240595765470464023
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_59: 2131030043528132796
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_6: -4308361107981965270
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_60: -9073953341224197333
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_61: -1880973542942563895
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_62: -3505980875723943498
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_63: 8051486180796673067
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_64: 418856077872363367
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_65: -9133206162260076710
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_66: 4697614806104271034
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_67: -1163211465983643438
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_68: 4414554707619453341
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_69: -5565561295418405910
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_7: -7886962987164309058
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_70: -2626651644949821151
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_71: 3562714779877100133
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_72: -8252610313538881855
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_73: -4548961777818544973
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_74: 8897919193411218992
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_75: -8517388441074241437
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_76: 29061050385848215
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_77: 3196779162231224321
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_78: -4049380677790444864
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_79: -7920537966449199926
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_8: -3696456079668359653
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_80: -8618083774524243460
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_81: 2027729648416125880
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_82: -5817594919609840715
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_83: -8823117095997262246
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_84: -118332722881096318
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_85: 1192559943646508243
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_86: -1309015086071984440
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_87: 4404658503701441392
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_88: -5398184907532215463
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_89: 3306851574167292443
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_9: 2975477393352490968
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_90: -9074008404579155286
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_91: 4802034190254443100
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_92: 2522273804218715006
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_93: -5403082569422013951
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_94: 8619326280165017954
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_95: -824014449579561239
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_96: 8818294248380116004
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_97: -8531774544149014973
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_98: -9159805127077669369
+      rpg_maker_vx_ace_tilesets_3_old_bathrooms_tilesets_by_hishimy_d8q23ju_99: -1603104346831757856
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
