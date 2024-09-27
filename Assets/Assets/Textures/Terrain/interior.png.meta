@@ -27280,7 +27280,7 @@ TextureImporter:
       name: interior_1223
       rect:
         serializedVersion: 2
-        x: 768
+        x: 769
         y: 768
         width: 32
         height: 32
@@ -27302,7 +27302,7 @@ TextureImporter:
       name: interior_1224
       rect:
         serializedVersion: 2
-        x: 800
+        x: 801
         y: 768
         width: 32
         height: 32
@@ -27984,7 +27984,7 @@ TextureImporter:
       name: interior_1255
       rect:
         serializedVersion: 2
-        x: 768
+        x: 769
         y: 736
         width: 32
         height: 32
@@ -28006,7 +28006,7 @@ TextureImporter:
       name: interior_1256
       rect:
         serializedVersion: 2
-        x: 800
+        x: 801
         y: 736
         width: 32
         height: 32
@@ -35596,7 +35596,7 @@ TextureImporter:
       name: interior_1601
       rect:
         serializedVersion: 2
-        x: 640
+        x: 642
         y: 384
         width: 32
         height: 32
@@ -35618,7 +35618,7 @@ TextureImporter:
       name: interior_1602
       rect:
         serializedVersion: 2
-        x: 672
+        x: 674
         y: 384
         width: 32
         height: 32
@@ -35640,7 +35640,7 @@ TextureImporter:
       name: interior_1603
       rect:
         serializedVersion: 2
-        x: 704
+        x: 706
         y: 384
         width: 32
         height: 32
@@ -35662,7 +35662,7 @@ TextureImporter:
       name: interior_1604
       rect:
         serializedVersion: 2
-        x: 736
+        x: 738
         y: 384
         width: 32
         height: 32
@@ -35684,7 +35684,7 @@ TextureImporter:
       name: interior_1605
       rect:
         serializedVersion: 2
-        x: 768
+        x: 770
         y: 384
         width: 32
         height: 32
@@ -35706,7 +35706,7 @@ TextureImporter:
       name: interior_1606
       rect:
         serializedVersion: 2
-        x: 800
+        x: 802
         y: 384
         width: 32
         height: 32
@@ -36234,7 +36234,7 @@ TextureImporter:
       name: interior_1630
       rect:
         serializedVersion: 2
-        x: 640
+        x: 642
         y: 352
         width: 32
         height: 32
@@ -36256,7 +36256,7 @@ TextureImporter:
       name: interior_1631
       rect:
         serializedVersion: 2
-        x: 672
+        x: 674
         y: 352
         width: 32
         height: 32
@@ -36278,7 +36278,7 @@ TextureImporter:
       name: interior_1632
       rect:
         serializedVersion: 2
-        x: 704
+        x: 706
         y: 352
         width: 32
         height: 32
@@ -36300,7 +36300,7 @@ TextureImporter:
       name: interior_1633
       rect:
         serializedVersion: 2
-        x: 736
+        x: 738
         y: 352
         width: 32
         height: 32
@@ -36322,7 +36322,7 @@ TextureImporter:
       name: interior_1634
       rect:
         serializedVersion: 2
-        x: 768
+        x: 770
         y: 352
         width: 32
         height: 32
@@ -36344,7 +36344,7 @@ TextureImporter:
       name: interior_1635
       rect:
         serializedVersion: 2
-        x: 800
+        x: 802
         y: 352
         width: 32
         height: 32

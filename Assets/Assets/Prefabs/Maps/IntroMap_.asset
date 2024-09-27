@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
-  m_Name: IntroMap
+  m_Name: IntroMap_
   m_EditorClassIdentifier: 
   _data:
     _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"IntroMap","summary":null,"pan":{"x":1731.167,"y":45.99213},"zoom":1.0,"elements":[{"coroutine":true,"defaultValues":{},"position":{"x":-583.0,"y":-219.0},"guid":"a4fb26f4-6fd9-4758-940b-c69dc14e9e28","$version":"A","$type":"Unity.VisualScripting.Start","$id":"9"},{"chainable":false,"parameterNames":["audio"],"member":{"name":"PlayBackgroundAudio","parameterTypes":["UnityEngine.Audio.AudioResource"],"targetType":"GlobalDirector","targetTypeName":"GlobalDirector","$version":"A"},"defaultValues":{"%audio":{"$content":0,"$type":"UnityEngine.Object"}},"position":{"x":185.0,"y":-227.0},"guid":"8cce6b88-73de-437c-ab3f-b1012bad6821","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"11"},{"chainable":false,"parameterNames":["map"],"member":{"name":"LoadMap","parameterTypes":["System.String"],"targetType":"GlobalDirector","targetTypeName":"GlobalDirector","$version":"A"},"defaultValues":{"%map":{"$content":"FirstHouseMap","$type":"System.String"}},"position":{"x":38.0,"y":255.0},"guid":"32c30d5e-9471-462b-9eaf-dda62047a196","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"15"},{"defaultValues":{"Name":{"$content":1,"$type":"UnityEngine.Object"},"Message":{"$content":"\u0413\u043e
