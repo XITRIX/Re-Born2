@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
+  m_Name: Kirill_IRL
+  m_EditorClassIdentifier: 
+  charName: "\u041A\u0438\u0440\u0438\u043B\u043B"
+  avatar: {fileID: 21300000, guid: 3a07ccb49391a4e66a560be2e6874f5a, type: 3}
+  tileset:
+  - {fileID: -1704466009, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}
+  - {fileID: 1295844272, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}
+  - {fileID: 175352808, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}
+  - {fileID: 270163269, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}
+  - {fileID: 1608388774, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}
+  - {fileID: -1368631989, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}
+  - {fileID: 835548517, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}
+  - {fileID: -963382956, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}
+  - {fileID: 2147359084, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}
+  - {fileID: 738255513, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}
+  - {fileID: 60488881, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}
+  - {fileID: -71631018, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}
+  size: 1
