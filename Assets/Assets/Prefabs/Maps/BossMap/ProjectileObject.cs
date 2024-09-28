@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class ProjectileObject : MonoBehaviour
 {
+    public float speed = 3;
     private Rigidbody2D _rigidbody2D;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,11 +16,12 @@ public class ProjectileObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _rigidbody2D.velocity = Vector2.up;
+        _rigidbody2D.velocity = transform.rotation * Vector3.up * speed;
     }
     
     IEnumerator DestroyByTimer()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(10);
+        Destroy(gameObject);
     }
 }

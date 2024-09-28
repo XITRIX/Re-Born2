@@ -4,30 +4,24 @@ using UnityEngine;
 public class ProjectileShooter : MonoBehaviour
 {
     public GameObject projectilePrefab;
-    
+    public float delay = 1;
+
+    private float _lastShotTime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(ShootEveryTime());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Shoot();
     }
 
     public void Shoot()
     {
+        if (Time.time - _lastShotTime < delay) return;
         Instantiate(projectilePrefab, transform.position, transform.rotation);
-    }
-
-    IEnumerator ShootEveryTime()
-    {
-        while (isActiveAndEnabled)
-        {
-            yield return new WaitForSeconds(1);
-            Shoot();
-        }
+        _lastShotTime = Time.time;
     }
 }

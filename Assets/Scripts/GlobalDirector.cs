@@ -13,6 +13,7 @@ public class GlobalDirector : MonoBehaviour
     public Dictionary<string, GameObject> GameObjectsStash { get; } = new();
     private Dictionary<string, bool> _gameKeys = new();
 
+    public Dictionary<CharacterScriptableObject, float> health = new();
     public List<Identifiable> maps;
     public GameObject dialogHUD;
     public AudioSource backgroundAudioSource;

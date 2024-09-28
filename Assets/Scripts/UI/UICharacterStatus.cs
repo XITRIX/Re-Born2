@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class UICharacterStatus : MonoBehaviour
     public TextMeshProUGUI charName;
     public Color selectedColor;
     public Color unselectedColor;
+    public RectTransform healthBar;
 
     public CharacterScriptableObject characterModel;
 
@@ -20,6 +22,13 @@ public class UICharacterStatus : MonoBehaviour
         _selfImage = GetComponent<Image>();
         avatarImage.sprite = characterModel.avatar;
         charName.text = characterModel.charName;
+    }
+    
+    void Update()
+    {
+        var delta = healthBar.sizeDelta;
+        delta.x = GlobalDirector.Shared.health[characterModel];
+        healthBar.sizeDelta = delta;
     }
 
     public bool IsSelected

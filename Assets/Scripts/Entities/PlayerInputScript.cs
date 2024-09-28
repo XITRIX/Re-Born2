@@ -284,6 +284,7 @@ public class PlayerInputScript : MonoBehaviour
 
     private static void InternalAddCharacter(CharacterScript character)
     {
+        GlobalDirector.Shared.health[character.characterModel] = 80;
         Shared.AllCharacters.Add(character);
         for (var i = 0; i < Shared.AllCharacters.Count; i++)
             Shared.AllCharacters[(i + 1) % Shared.AllCharacters.Count].GetComponent<FollowerAIScript>().followTarget = Shared.AllCharacters[i].gameObject;
