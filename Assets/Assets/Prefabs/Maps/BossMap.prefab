@@ -102,9 +102,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS
-    FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS
-    FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT '
+  m_text: 'OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT
+    OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS
+    OUT OF BOUNDS OUT '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -209,7 +209,7 @@ Transform:
   m_LocalScale: {x: 59.260197, y: 26.608139, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8031634187605611145}
+  m_Father: {fileID: 7723249033502187181}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8922782628898097074
 SpriteRenderer:
@@ -384,9 +384,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS
-    FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS
-    FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT '
+  m_text: 'OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT
+    OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS
+    OUT OF BOUNDS OUT '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -484,14 +484,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903175606427778452}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -12.27, y: -5.1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalPosition: {x: -20.76, y: -5.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 324677714659768297}
   - {fileID: 7071232968837189358}
-  m_Father: {fileID: 8031634187605611145}
+  m_Father: {fileID: 7723249033502187181}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &2159916379836019446
 GameObject:
@@ -595,8 +595,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF
-    BOUNDS OUT O
+  m_text: 'BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS
+    FIGHT '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -702,7 +702,7 @@ Transform:
   m_Children:
   - {fileID: 6954616730393417888}
   - {fileID: 5297324915754934973}
-  m_Father: {fileID: 8031634187605611145}
+  m_Father: {fileID: 7723249033502187181}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &251093315509375052
 Grid:
@@ -818,8 +818,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF
-    BOUNDS OUT O
+  m_text: 'BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS
+    FIGHT BOSS FIGHT BOSS '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -995,9 +995,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS
-    FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS
-    FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT '
+  m_text: 'OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT
+    OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS
+    OUT OF BOUNDS OUT '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1095,14 +1095,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4442229317219274464}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -32.27, y: -8.6, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -32.27, y: 2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4724042515530383179}
   - {fileID: 325027972081721371}
-  m_Father: {fileID: 8031634187605611145}
+  m_Father: {fileID: 7723249033502187181}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &4836601263990756534
 GameObject:
@@ -1206,8 +1206,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF
-    BOUNDS OUT O
+  m_text: 'BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS
+    FIGHT '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1281,6 +1281,46 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1349041297164885356}
   m_maskType: 0
+--- !u!1 &5557986910312206331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7723249033502187181}
+  m_Layer: 0
+  m_Name: Core
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7723249033502187181
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5557986910312206331}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3774462828730684142}
+  - {fileID: 8129658274143904835}
+  - {fileID: 2121483307696684361}
+  - {fileID: 780214015920289082}
+  - {fileID: 6878673417571141969}
+  - {fileID: 2850948388290631956}
+  - {fileID: 5200541271747051478}
+  - {fileID: 6814464035882450847}
+  - {fileID: 89639050494016201}
+  m_Father: {fileID: 8031634187605611145}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5827025217625415662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,7 +1353,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8031634187605611145}
+  m_Father: {fileID: 7723249033502187181}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2239751783697559362
 MonoBehaviour:
@@ -1624,14 +1664,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6533742747715190248}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.7, y: 14.59, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.14, y: 14.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3669798548656186667}
   - {fileID: 6784885131328408829}
-  m_Father: {fileID: 8031634187605611145}
+  m_Father: {fileID: 7723249033502187181}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7243036710222918328
 GameObject:
@@ -1758,14 +1798,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7528547775932472245}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -4.12, y: -8.6, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -4.12, y: 3.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3686766519538575445}
   - {fileID: 2192182324746814995}
-  m_Father: {fileID: 8031634187605611145}
+  m_Father: {fileID: 7723249033502187181}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &7780158511779696484
 GameObject:
@@ -1869,9 +1909,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS
-    FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS
-    FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT '
+  m_text: 'OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT
+    OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS
+    OUT OF BOUNDS OUT OF BOUNDS OUT OF '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1977,15 +2017,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3774462828730684142}
-  - {fileID: 8129658274143904835}
-  - {fileID: 2121483307696684361}
-  - {fileID: 780214015920289082}
-  - {fileID: 6878673417571141969}
-  - {fileID: 2850948388290631956}
-  - {fileID: 5200541271747051478}
-  - {fileID: 6814464035882450847}
-  - {fileID: 89639050494016201}
+  - {fileID: 7961666785977344401}
+  - {fileID: 7723249033502187181}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5155247445395189298
@@ -2134,8 +2167,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF BOUNDS OUT OF
-    BOUNDS OUT O
+  m_text: 'BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS FIGHT BOSS
+    FIGHT '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2215,7 +2248,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 8031634187605611145}
+    m_TransformParent: {fileID: 7723249033502187181}
     m_Modifications:
     - target: {fileID: 3503050387160786804, guid: 274e6aaa99bf14581bd0f3f219421926, type: 3}
       propertyPath: m_Name
@@ -2278,6 +2311,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8153333865672400150, guid: 274e6aaa99bf14581bd0f3f219421926, type: 3}
   m_PrefabInstance: {fileID: 140786775138859349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2079864746357616482
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8031634187605611145}
+    m_Modifications:
+    - target: {fileID: 3682691062505665681, guid: caa4f61fe16024062bac8be032604d50, type: 3}
+      propertyPath: m_Name
+      value: ShootingPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259791063681879795, guid: caa4f61fe16024062bac8be032604d50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -33.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259791063681879795, guid: caa4f61fe16024062bac8be032604d50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259791063681879795, guid: caa4f61fe16024062bac8be032604d50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259791063681879795, guid: caa4f61fe16024062bac8be032604d50, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.35292384
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259791063681879795, guid: caa4f61fe16024062bac8be032604d50, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259791063681879795, guid: caa4f61fe16024062bac8be032604d50, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259791063681879795, guid: caa4f61fe16024062bac8be032604d50, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.935652
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259791063681879795, guid: caa4f61fe16024062bac8be032604d50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259791063681879795, guid: caa4f61fe16024062bac8be032604d50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259791063681879795, guid: caa4f61fe16024062bac8be032604d50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -138.667
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: caa4f61fe16024062bac8be032604d50, type: 3}
+--- !u!4 &7961666785977344401 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8259791063681879795, guid: caa4f61fe16024062bac8be032604d50, type: 3}
+  m_PrefabInstance: {fileID: 2079864746357616482}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6491734579336526959
 PrefabInstance:
@@ -2370,7 +2465,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 8031634187605611145}
+    m_TransformParent: {fileID: 7723249033502187181}
     m_Modifications:
     - target: {fileID: -6344960673106951827, guid: 9bac18516bbff4bf4a6694a2ab0ac4ae, type: 3}
       propertyPath: objectId
