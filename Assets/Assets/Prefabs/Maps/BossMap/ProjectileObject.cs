@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -23,5 +24,14 @@ public class ProjectileObject : MonoBehaviour
     {
         yield return new WaitForSeconds(10);
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        var player = other.gameObject.GetComponent<CharacterScript>();
+        if (player == null) return;
+
+        if (GlobalDirector.Shared.health.ContainsKey(player.characterModel))
+            GlobalDirector.Shared.health[player.characterModel] -= 5;
     }
 }

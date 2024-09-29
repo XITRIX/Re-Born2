@@ -284,7 +284,7 @@ public class PlayerInputScript : MonoBehaviour
 
     private static void InternalAddCharacter(CharacterScript character)
     {
-        GlobalDirector.Shared.health[character.characterModel] = 80;
+        GlobalDirector.Shared.health[character.characterModel] = 100;
         Shared.AllCharacters.Add(character);
         for (var i = 0; i < Shared.AllCharacters.Count; i++)
             Shared.AllCharacters[(i + 1) % Shared.AllCharacters.Count].GetComponent<FollowerAIScript>().followTarget = Shared.AllCharacters[i].gameObject;
@@ -334,7 +334,7 @@ public class PlayerInputScript : MonoBehaviour
     
     private void PerformInteraction(InputAction.CallbackContext ctx)
     {
-        var objectsToInteract = AllCharacters[activeCharacterIndex].objectsToInteract;
+        var objectsToInteract = ActiveCharacter.objectsToInteract;
         if (objectsToInteract.Count <= 0) return;
 
         // Try to interact with all interactable objects
@@ -368,7 +368,7 @@ public class PlayerInputScript : MonoBehaviour
             AllCharacters[i].GetComponent<SpriteRenderer>().sortingOrder = layer;
         }
 
-        CameraScript.Shared.followedObject = AllCharacters[activeCharacterIndex].gameObject;
+        CameraScript.Shared.followedObject = ActiveCharacter.gameObject;
     }
 
     public static CharacterScript GetInGameCharacter(CharacterScriptableObject characterModel)
@@ -376,6 +376,19 @@ public class PlayerInputScript : MonoBehaviour
         return Shared.AllCharacters.Find(character => character.characterModel == characterModel);
     }
 
-    public CharacterScript ActiveCharacter => AllCharacters[activeCharacterIndex];
+    public CharacterScript ActiveCharacter
+    {
+        get
+        {
+            if (AllCharacters.Count > 0 && activeCharacterIndex >= AllCharacters.Count)
+            {
+                activeCharacterIndex = AllCharacters.Count - 1;
+                UpdateCharacters();
+            }
+            
+            return AllCharacters[activeCharacterIndex];
+        }
+    }
+
     private bool IsRunning => Math.Abs(_controlMap.Player.Run.ReadValue<float>() - 1) < 0.1f;
 }

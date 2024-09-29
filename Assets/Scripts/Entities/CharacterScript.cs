@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -125,6 +126,18 @@ public class CharacterScript : Identifiable
     public Vector2 GetLastDirectionVector()
     {
         return _lastNonZeroDirection;
+    }
+
+    public void HitAnimation()
+    {
+        StartCoroutine(HitAnimationCoroutine());
+    }
+    
+    private IEnumerator HitAnimationCoroutine()
+    {
+        _spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.5f);
+        _spriteRenderer.color = Color.white;
     }
 
     private Sprite FrameForDirection(Direction direction, int frame, bool isIdle)
