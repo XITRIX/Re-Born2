@@ -47,7 +47,7 @@ public class GlobalDirector : MonoBehaviour
         
         if (Shared.currentMap != null)
         {
-            Destroy(Shared.currentMap);
+            Destroy(Shared.currentMap.gameObject);
             PlayerInputScript.Shared.AllCharacters.Clear();
         }
 
@@ -63,6 +63,16 @@ public class GlobalDirector : MonoBehaviour
     public static void SetGameKey(string key, bool value)
     {
         Shared._gameKeys[key] = value;
+    }
+
+    public static float GetHealth(CharacterScriptableObject character)
+    {
+        return Shared.health[character];
+    }
+
+    public static void SetHealth(CharacterScriptableObject character, float health)
+    {
+        Shared.health[character] = health;
     }
 
     public static void SetGlitchEffectWeight(float weight)
@@ -92,11 +102,17 @@ public class GlobalDirector : MonoBehaviour
 
     public static void PlayBackgroundAudio(AudioResource audio)
     {
+        PlayBackgroundAudio(audio, true);
+    }
+
+    public static void PlayBackgroundAudio(AudioResource audio, bool loop)
+    {
         var source = Shared.backgroundAudioSource;
         if (source.isPlaying)
             source.Pause();
 
         source.resource = audio;
+        source.loop = loop;
         source.Play();
     }
 

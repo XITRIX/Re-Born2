@@ -32,6 +32,9 @@ public class ProjectileObject : MonoBehaviour
         if (player == null) return;
 
         if (GlobalDirector.Shared.health.ContainsKey(player.characterModel))
+        {
             GlobalDirector.Shared.health[player.characterModel] -= 5;
+            player.HitAnimation();
+        }
     }
 }

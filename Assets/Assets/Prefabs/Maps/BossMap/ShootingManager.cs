@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class ShootingManager : MonoBehaviour
 {
+    public float damageToNekit = 17;
+    
     public List<ProjectileShooter> corners;
     public List<ProjectileShooter> top;
     public List<ProjectileShooter> right;
@@ -22,7 +24,8 @@ public class ShootingManager : MonoBehaviour
     public GameObject nekitShieldObject;
     public static ShootingManager Shared { get; private set; }
 
-    private int phase;
+    private bool _death;
+    private int _phase;
     private int[] _enabledToggles;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -43,8 +46,20 @@ public class ShootingManager : MonoBehaviour
         nekitHealthBar.localScale = scale;
 
         // Update Nekit shield
-        var nekitAlive = phase == 0 || nekitHealth > 0;
+        var nekitAlive = _phase == 0 || nekitHealth > 0;
         nekitShieldObject.SetActive(!CanHitNekit() && nekitAlive);
+
+        if (!_death && nekitHealth > 0 && GlobalDirector.Shared.health[PlayerInputScript.Shared.ActiveCharacter.characterModel] <= 0)
+        {
+            _death = true;
+            
+            HideAllToggles();
+        
+            StopAll();
+            StopAllCoroutines();
+            
+            EventBus.Trigger("InteractionEvent", "GameOver");
+        }
     }
 
     public static void StartBossFight()
@@ -72,7 +87,7 @@ public class ShootingManager : MonoBehaviour
             StopAll();
             yield return new WaitForSeconds(2);
 
-            switch (phase)
+            switch (_phase)
             {
                 case 0:
                     yield return Phase1();
@@ -93,17 +108,6 @@ public class ShootingManager : MonoBehaviour
                     yield return Phase6();
                     break;
             }
-            // Shoot(corners);
-            // yield return new WaitForSeconds(3);
-            // StopAll();
-            // yield return new WaitForSeconds(2);
-            // Shoot(top);
-            // Shoot(bottom);
-            // yield return new WaitForSeconds(3);
-            //
-            // StopAll();
-            // yield return new WaitForSeconds(2);
-            // yield return ShootCircleOnce();
         }
     }
 
@@ -111,7 +115,7 @@ public class ShootingManager : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         
-        switch (phase)
+        switch (_phase)
         {
             case 0:
                 EnableToggles(new[] { 0, 1 });
@@ -142,32 +146,89 @@ public class ShootingManager : MonoBehaviour
 
     public IEnumerator Phase2()
     {
-        Shoot(corners);
-        yield return new WaitForSeconds(3);
+        yield return ShootOnce(top);
+        yield return ShootOnce(right);
+        yield return new WaitForSeconds(2);
+        yield return ShootOnce(right);
+        yield return ShootOnce(bottom);
+        yield return new WaitForSeconds(2);
+        yield return ShootOnce(bottom);
+        yield return ShootOnce(left);
+        yield return new WaitForSeconds(2);
+        yield return ShootOnce(left);
+        yield return ShootOnce(top);
     }
 
     public IEnumerator Phase3()
     {
-        Shoot(corners);
-        yield return new WaitForSeconds(3);
+        yield return ShootOnce(top);
+        yield return ShootOnce(right);
+        yield return new WaitForSeconds(2);
+        yield return ShootOnce(right);
+        yield return ShootOnce(bottom);
+        yield return ShootOnce(corners);
+        yield return new WaitForSeconds(2);
+        yield return ShootOnce(bottom);
+        yield return ShootOnce(left);
+        yield return new WaitForSeconds(2);
+        yield return ShootOnce(left);
+        yield return ShootOnce(top);
+        yield return ShootOnce(corners);
     }
 
     public IEnumerator Phase4()
     {
-        Shoot(corners);
-        yield return new WaitForSeconds(3);
+        yield return ShootOnce(top);
+        yield return ShootWaveOnce(right);
+        yield return new WaitForSeconds(2);
+        yield return ShootOnce(right);
+        yield return ShootWaveOnce(bottom);
+        yield return ShootOnce(corners);
+        yield return new WaitForSeconds(2);
+        yield return ShootOnce(bottom);
+        yield return ShootWaveOnce(left);
+        yield return new WaitForSeconds(2);
+        yield return ShootOnce(left);
+        yield return ShootWaveOnce(top);
+        yield return ShootOnce(corners);
     }
 
     public IEnumerator Phase5()
     {
-        Shoot(corners);
-        yield return new WaitForSeconds(3);
+        yield return ShootOnce(top);
+        yield return ShootWaveOnce(right);
+        yield return new WaitForSeconds(2);
+        yield return ShootOnce(right);
+        yield return ShootWaveOnce(bottom);
+        yield return ShootOnce(corners);
+        yield return new WaitForSeconds(2);
+        yield return ShootOnce(bottom);
+        yield return ShootWaveOnce(left);
+        yield return new WaitForSeconds(2);
+        yield return ShootOnce(left);
+        yield return ShootWaveOnce(top);
+        yield return ShootOnce(corners);
+        yield return new WaitForSeconds(2);
+        yield return ShootOnce(corners);
+        yield return ShootCircleOnce();
     }
 
     public IEnumerator Phase6()
     {
         Shoot(corners);
         yield return new WaitForSeconds(3);
+        StopAll();
+        yield return new WaitForSeconds(2);
+        Shoot(top);
+        Shoot(bottom);
+        yield return new WaitForSeconds(3);
+        StopAll();
+        Shoot(left);
+        Shoot(right);
+        yield return new WaitForSeconds(3);
+        StopAll();
+        yield return new WaitForSeconds(2);
+        yield return ShootCircleOnce();
     }
 
     public void StopAll()
@@ -246,9 +307,8 @@ public class ShootingManager : MonoBehaviour
     {
         Debug.Log("Hit Nekit");
         nekitModel.HitAnimation();
-        nekitHealth -= 17;
-        // nekitHealth -= 50;
-        phase += 1;
+        nekitHealth -= damageToNekit;
+        _phase += 1;
         HideAllToggles();
         
         StopAll();
@@ -261,8 +321,11 @@ public class ShootingManager : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
 
-        if (phase == 1) 
+        if (_phase == 1) 
             yield return ShowMessage(nekitModel.characterModel, "Ах ты мелкое говно ... Ну ничего, теперь я буду серьёзнее");
+        
+        if (_phase == 4) 
+            yield return ShowMessage(nekitModel.characterModel, "СУКА-СУКА-СУКА-СУКА!!! ИДИТЕ НАХУЙ!!! Я НЕ ПРОИГРАЮ!!!");
         
         StartPhase();
     }

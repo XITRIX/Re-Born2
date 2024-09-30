@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
   m_Name: Danya_NPC
   m_EditorClassIdentifier: 
-  charName: Burgerking
+  charName: Black Knight
   avatar: {fileID: 21300000, guid: f5255a74b7804463086b891214b3f400, type: 3}
   tileset:
   - {fileID: 4498544600597911442, guid: 3538df517a02a4a588bd6df884e23739, type: 3}
