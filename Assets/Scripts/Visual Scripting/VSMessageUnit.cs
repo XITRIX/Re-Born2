@@ -33,6 +33,10 @@ public class VSMessageUnit : Unit
     
     private IEnumerator RunCoroutine(Flow flow)
     {
+        // Reset dark overlay
+        foreach (var sharedDialogCharacter in UIDialogMessage.Shared.DialogCharacters)
+            sharedDialogCharacter.Value.BlackMask = 0;
+        
         var avatar = flow.GetValue<Sprite>(Avatar);
         var name = flow.GetValue<string>(Name);
         var message = flow.GetValue<string>(Message);

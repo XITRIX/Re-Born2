@@ -57,7 +57,7 @@ public class CharacterScript : Identifiable
     public void MoveByVector(Vector2 movementDirection, float speed, bool changeObjectVelocity = true)
     {
         if (changeObjectVelocity)
-            _rigidbody2D.velocity = movementDirection * speed;
+            _rigidbody2D.linearVelocity = movementDirection * speed;
         
         direction = movementDirection;
         if (direction != Vector2.zero)

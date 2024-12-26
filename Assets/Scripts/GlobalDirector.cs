@@ -78,7 +78,7 @@ public class GlobalDirector : MonoBehaviour
     public static void SetGlitchEffectWeight(float weight)
     {
         Shared.glitchEffect.weight = weight;
-        GraphicsSettings.renderPipelineAsset = weight != 0 ? Shared.renderPipelineGlitchAsset : Shared.renderPipeline2DLightAsset;
+        GraphicsSettings.defaultRenderPipeline = weight != 0 ? Shared.renderPipelineGlitchAsset : Shared.renderPipeline2DLightAsset;
     }
 
     public static string GetLastMapId() => Shared.lastMapId;

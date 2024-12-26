@@ -7,6 +7,7 @@ public class CharacterScriptableObject : ScriptableObject
 {
     public string charName;
     public Sprite avatar;
+    public Sprite body;
     public List<Sprite> tileset;
     public float size = 1;
 }

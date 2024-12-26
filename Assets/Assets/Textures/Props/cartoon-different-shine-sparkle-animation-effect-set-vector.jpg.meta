@@ -145,7 +145,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cartoon-different-shine-sparkle-animation-effect-set-vector_0: -2131596898992786068
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

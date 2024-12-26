@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Kirill_IRL
   m_EditorClassIdentifier: 
   charName: "\u041A\u0438\u0440\u0438\u043B\u043B"
-  avatar: {fileID: 21300000, guid: 3a07ccb49391a4e66a560be2e6874f5a, type: 3}
+  avatar: {fileID: 21300000, guid: 56beddc84989144c7aeab92476995c12, type: 3}
+  body: {fileID: 21300000, guid: 56beddc84989144c7aeab92476995c12, type: 3}
   tileset:
   - {fileID: -1704466009, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}
   - {fileID: 1295844272, guid: 2fbbcc8a3c91e42e3b0b38fbf068440b, type: 3}

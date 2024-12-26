@@ -145,7 +145,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Nekit_Avatar_0: -6221277176654565392
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

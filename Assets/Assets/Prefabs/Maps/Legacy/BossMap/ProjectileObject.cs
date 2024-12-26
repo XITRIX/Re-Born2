@@ -17,7 +17,7 @@ public class ProjectileObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _rigidbody2D.velocity = transform.rotation * Vector3.up * speed;
+        _rigidbody2D.linearVelocity = transform.rotation * Vector3.up * speed;
     }
     
     IEnumerator DestroyByTimer()

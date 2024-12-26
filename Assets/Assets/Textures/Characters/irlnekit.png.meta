@@ -145,7 +145,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      irlnekit_0: 5786940606470673678
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
