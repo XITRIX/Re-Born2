@@ -39,7 +39,7 @@ public class VSMessageCharUnit : Unit
         UIDialogMessage.Shared.DialogCharacters.TryGetValue(character, out var dialogChar);
 
         if (dialogChar == null)
-            yield return UIDialogMessage.SetMessage(character.avatar, character.charName, message);
+            yield return UIDialogMessage.SetMessage(character.avatar, character.charName, character.nameColor, message);
         else
         {
             // Set dark overlay is not speak

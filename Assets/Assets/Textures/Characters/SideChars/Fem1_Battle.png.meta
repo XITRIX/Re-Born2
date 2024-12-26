@@ -1470,6 +1470,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
       Fem1_Battle_0: 7190031140764014181
       Fem1_Battle_1: -8882392041688281840

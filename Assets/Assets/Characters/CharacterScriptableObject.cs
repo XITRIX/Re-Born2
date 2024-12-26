@@ -6,6 +6,7 @@ using UnityEngine;
 public class CharacterScriptableObject : ScriptableObject
 {
     public string charName;
+    public Color nameColor = Color.white;
     public Sprite avatar;
     public Sprite body;
     public List<Sprite> tileset;

@@ -195,6 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
       Male2_Passed_0: -3432747640546985810
       Male2_Passed_1: 1533524780688358995

@@ -107,13 +107,24 @@ public class GlobalDirector : MonoBehaviour
 
     public static void PlayBackgroundAudio(AudioResource audio, bool loop)
     {
+        PlayBackgroundAudio(audio, 1, true);
+    }
+
+    public static void PlayBackgroundAudio(AudioResource audio, float volume, bool loop)
+    {
         var source = Shared.backgroundAudioSource;
         if (source.isPlaying)
             source.Pause();
 
         source.resource = audio;
         source.loop = loop;
+        source.volume = volume;
         source.Play();
+    }
+
+    public static void SetBackgroundAudioVolume(float volume)
+    {
+        Shared.backgroundAudioSource.volume = volume;
     }
 
     public static void PauseBackgroundAudio()

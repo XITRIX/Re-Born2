@@ -195,6 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
       Fem4_Pass_0: 8957598781703877142
       Fem4_Pass_1: 3686654887015197321

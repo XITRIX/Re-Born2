@@ -986,7 +986,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041F\u0440\u0438\u0432\u0435\u0442 \u043D\u0430\u0445\u0443\u0439 \u0435\u0431\u0430\u0442\u044C "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 717f43d63eec2495f8542f21bed9c21a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a529de39afe5d4c40b053d6c3f07c5af, type: 2}
   m_sharedMaterial: {fileID: -5475222884135812015, guid: 717f43d63eec2495f8542f21bed9c21a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1372410959

@@ -127,12 +127,18 @@ public class UIDialogMessage : MonoBehaviour
             Shared.backstageImage.sprite = null;
         }
     }
-
+    
     public static IEnumerator SetMessage([CanBeNull] Sprite avatar, string name, string message)
+    {
+        yield return SetMessage(avatar, name, Color.white, message);
+    }
+    
+    public static IEnumerator SetMessage([CanBeNull] Sprite avatar, string name, Color nameColor, string message)
     {
         Shared.avatar.transform.parent.gameObject.SetActive(avatar != null);
         Shared.avatar.sprite = avatar;
         Shared.charName.text = name;
+        Shared.charName.color = nameColor;
         yield return Shared.textField.SetText(message);
     }
 
