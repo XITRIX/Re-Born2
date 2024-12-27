@@ -10,6 +10,7 @@ public class UIMessageTypewriterEffect : MonoBehaviour
     private TextMeshProUGUI _textBox;
     private bool startSkipping = false;
     private PlayerControlMap _controlMap;
+    private float _lastTime; 
     
     private bool IsSkipping => Math.Abs(_controlMap.UI.Submit.ReadValue<float>() - 1) < 0.1f;
 
@@ -27,6 +28,10 @@ public class UIMessageTypewriterEffect : MonoBehaviour
     
     IEnumerator RevealText(string originalString)
     {
+        // Надо сохранить время последнего выззова этого метода
+        var callTime = Time.time;
+        _lastTime = callTime;
+        
         startSkipping = false;
 
         var trimmedString = originalString.Trim();
@@ -48,6 +53,10 @@ public class UIMessageTypewriterEffect : MonoBehaviour
             ++numCharsRevealed;
             _textBox.maxVisibleCharacters = numCharsRevealed;
 
+            // если время запуска метода не совпадает со временем последнего запуска, надо дропнуть вызов
+            if (_lastTime - callTime > 0.001)
+                yield break;
+            
             yield return new WaitForSeconds(startSkipping && IsSkipping ? 0.01f : 0.07f);
         }
         

@@ -51,7 +51,7 @@ public class VSMessageCharUnit : Unit
                     sharedDialogCharacter.Value.BlackMask = 0;
             }
             
-            yield return UIDialogMessage.SetMessage(null, character.charName, message);
+            yield return UIDialogMessage.SetMessage(null, character.charName, character.nameColor, message);
         }
 
         yield return new WaitUntil(() => UIDialogMessage.Shared.Submit);

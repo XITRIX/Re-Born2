@@ -25,6 +25,8 @@ public class UIDialogMessage : MonoBehaviour
     public UIMessageTypewriterEffect textField;
     public AudioSource audioSource;
     public TextMeshProUGUI noteLabel;
+    public GameObject dialogOptionsHolder;
+    public GameObject dialogOptionButtonPrefab;
 
     private float noteLabelFadeTime = 0;
     private PlayerControlMap _controlMap;

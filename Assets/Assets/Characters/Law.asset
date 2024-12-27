@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
-  m_Name: Reporter
+  m_Name: Law
   m_EditorClassIdentifier: 
-  charName: "\u0420\u0435\u043F\u043E\u0440\u0442\u0451\u0440"
+  charName: "\u041B\u043E"
   nameColor: {r: 1, g: 1, b: 1, a: 1}
-  avatar: {fileID: 0}
-  body: {fileID: 21300000, guid: 7a88946ebf21a4461897f3ffe7c16a5b, type: 3}
+  avatar: {fileID: 4047136896724665801, guid: 66de3106449ce42f693fad9cb7a65a46, type: 3}
+  body: {fileID: 21300000, guid: e469095a04d724ac0b3e5f33fd11de64, type: 3}
   tileset: []
   size: 1

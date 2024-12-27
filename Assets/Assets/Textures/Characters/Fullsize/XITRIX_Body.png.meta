@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 119fc8ac7d70340beae501a63dd6dfc1
+guid: 147becab6de494c4f93c57737a9f68fb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1466258616541514548
-    second: "\u0420\u0435\u043F\u043E\u0440\u0442\u0435\u0308\u0440_0"
+      213: -2551266702494183807
+    second: XITRIX_Body_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0420\u0435\u043F\u043E\u0440\u0442\u0435\u0308\u0440_0"
+      name: XITRIX_Body_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 106
         y: 0
-        width: 1200
-        height: 1200
+        width: 643
+        height: 995
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43b00d37172395410800000000000000
-      internalID: 1466258616541514548
+      spriteID: 18e4d868374189cd0800000000000000
+      internalID: -2551266702494183807
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u0420\u0435\u043F\u043E\u0440\u0442\u0435\u0308\u0440_0": 1466258616541514548
+      XITRIX_Body_0: -2551266702494183807
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

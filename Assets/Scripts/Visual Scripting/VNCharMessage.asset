@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: VNCharMessage
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"Enter","label":"Enter","summary":"Enter","hideLabel":true}],"controlOutputDefinitions":[{"key":"Exit","label":"Exit","summary":"Exit","hideLabel":true}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":null,"_type":"CharacterScriptableObject","key":"Char","label":"Char","summary":"Char","hideLabel":true},{"hasDefaultValue":true,"defaultValue":null,"_type":"System.String","key":"Message","label":"Message","summary":"Message","hideLabel":true}],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-94.25677,"y":5.499573},"zoom":1.0,"elements":[{"defaultValues":{"Name":null,"Message":{"$content":"","$type":"System.String"}},"position":{"x":-178.0,"y":-60.0},"guid":"f9195fd8-5fc3-41ca-9f7c-e78286248671","$version":"A","$type":"VSMessageCharUnit","$id":"13"},{"defaultValues":{},"position":{"x":-353.0,"y":-60.0},"guid":"0607919f-65eb-432d-b1f6-5d99ac486e51","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"15"},{"defaultValues":{},"position":{"x":95.0,"y":-62.0},"guid":"bed4b838-0656-485f-a2d3-48ae26a67cc3","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"17"},{"sourceUnit":{"$ref":"15"},"sourceKey":"Enter","destinationUnit":{"$ref":"13"},"destinationKey":"Enter","guid":"db8604ee-8a2c-4b07-b35f-95bf5250c423","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"Exit","destinationUnit":{"$ref":"17"},"destinationKey":"Exit","guid":"add8467c-05b6-4e55-a238-275a6ff78e3b","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"Char","destinationUnit":{"$ref":"13"},"destinationKey":"Name","guid":"361e72c7-99e7-4c48-9a18-f7d72b395e57","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"Message","destinationUnit":{"$ref":"13"},"destinationKey":"Message","guid":"27c90b7c-c5ab-47dc-aa31-075a3d88a45b","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

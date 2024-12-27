@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Daria
   m_EditorClassIdentifier: 
   charName: "\u0414\u0430\u0448\u0430"
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
   avatar: {fileID: 2752925893978231334, guid: f92ed1023e59b4dcf938e400a5a73c5d, type: 3}
+  body: {fileID: 21300000, guid: 5bd02f52c677d4ff1aa973199804aff8, type: 3}
   tileset:
   - {fileID: 174075751, guid: ef1dfec616e8142e1ac30dda660ce783, type: 3}
   - {fileID: 1607539142, guid: ef1dfec616e8142e1ac30dda660ce783, type: 3}

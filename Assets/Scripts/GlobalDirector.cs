@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -132,6 +133,11 @@ public class GlobalDirector : MonoBehaviour
         var source = Shared.backgroundAudioSource;
         if (source.isPlaying)
             source.Pause();
+    }
+
+    public static void RunCoroutine(IEnumerator routine)
+    {
+        Shared.StartCoroutine(routine);
     }
 
     private void PrepareToLoadMap()
