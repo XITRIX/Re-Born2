@@ -31,7 +31,7 @@ public class VSMessageUnit : Unit
         Exit = ControlOutput("Exit");
         Avatar = ValueInput<Sprite>("Avatar", null);
         Name = ValueInput<string>("Name", "");
-        NameColor = ValueInput<string>("NameColor", "");
+        NameColor = ValueInput<Color>("NameColor", Color.white);
         Message = ValueInput<string>("Message", "");
     }
     
