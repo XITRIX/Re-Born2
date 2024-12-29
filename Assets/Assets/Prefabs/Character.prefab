@@ -61,7 +61,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: f377bc87b9649462286579e2b784ebbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,10 +108,12 @@ MonoBehaviour:
   objectId: 
   direction: {x: 0, y: 1}
   characterModel: {fileID: 11400000, guid: eeb71d5a30b794db781e1197b81fe900, type: 2}
+  playable: 0
   objectsToInteract: []
+  forceRotating: 0
 --- !u!50 &9076674215199899157
 Rigidbody2D:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -122,8 +124,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -216,7 +218,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a9c7b0900ee948fd96afe8cc9dff452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  forceWalking: 0
   followTarget: {fileID: 0}
+  needToOverrideFollowTarget: 0
+  overrideFollowTarget: {fileID: 0}
 --- !u!114 &3379259070624471224
 MonoBehaviour:
   m_ObjectHideFlags: 0

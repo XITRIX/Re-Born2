@@ -58,7 +58,7 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
                     ""name"": ""NextCharacter"",
                     ""type"": ""Value"",
                     ""id"": ""50e11e72-04a6-4a3f-aef0-ce8f73e775dc"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -67,7 +67,7 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
                     ""name"": ""PrevCharacter"",
                     ""type"": ""Value"",
                     ""id"": ""501a8e65-2d8e-46b6-bfc2-c4ed205db8de"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -386,7 +386,7 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
                     ""name"": ""Submit"",
                     ""type"": ""Button"",
                     ""id"": ""5c0c71d9-c5d0-4351-8e56-dfb2f373356e"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -395,7 +395,7 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
                     ""name"": ""Cancel"",
                     ""type"": ""Button"",
                     ""id"": ""c9fa7803-4cf5-416e-99d5-f9c84508b57c"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -459,6 +459,24 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
                     ""type"": ""PassThrough"",
                     ""id"": ""deae048b-4261-411c-8542-11361e7d2592"",
                     ""expectedControlType"": ""Quaternion"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""DialogNext"",
+                    ""type"": ""Button"",
+                    ""id"": ""4a3428b2-761d-42bf-9ce5-ca17b00e935b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""DialogFast"",
+                    ""type"": ""Button"",
+                    ""id"": ""a08af910-a181-4a0f-a20c-fb15e7e3e50f"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -893,6 +911,94 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
                     ""action"": ""TrackedDeviceOrientation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1b6246fe-09c2-4a1b-834c-179bdb3bbad9"",
+                    ""path"": ""*/{Submit}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse;Gamepad;Touch;Joystick;XR"",
+                    ""action"": ""DialogNext"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bee23068-ae61-4b10-a53f-b3c667e5ee4c"",
+                    ""path"": ""<Touchscreen>/primaryTouch/tap"",
+                    ""interactions"": ""Tap"",
+                    ""processors"": """",
+                    ""groups"": "";Touch"",
+                    ""action"": ""DialogNext"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a70b7e39-f0cb-49de-bc33-72aa695e1e36"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""DialogNext"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""aa46aaf2-e9c0-45a6-8c68-165c44ff81ce"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DialogNext"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""48de5e54-34ec-4dae-bab1-efef946da9d9"",
+                    ""path"": ""*/{Submit}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse;Gamepad;Touch;Joystick;XR"",
+                    ""action"": ""DialogFast"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b1cd671e-23e3-48b5-95b0-e044d811b953"",
+                    ""path"": ""<Touchscreen>/primaryTouch/press"",
+                    ""interactions"": ""Hold"",
+                    ""processors"": """",
+                    ""groups"": "";Touch"",
+                    ""action"": ""DialogFast"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""afda927f-5f8e-4e79-9ac0-a5bcd7554e6a"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""DialogFast"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4159e671-8b26-4674-999f-19c0d691b9e6"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""DialogFast"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -981,6 +1087,8 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
         m_UI_RightClick = m_UI.FindAction("RightClick", throwIfNotFound: true);
         m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
+        m_UI_DialogNext = m_UI.FindAction("DialogNext", throwIfNotFound: true);
+        m_UI_DialogFast = m_UI.FindAction("DialogFast", throwIfNotFound: true);
     }
 
     ~@PlayerControlMap()
@@ -1152,6 +1260,8 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_RightClick;
     private readonly InputAction m_UI_TrackedDevicePosition;
     private readonly InputAction m_UI_TrackedDeviceOrientation;
+    private readonly InputAction m_UI_DialogNext;
+    private readonly InputAction m_UI_DialogFast;
     public struct UIActions
     {
         private @PlayerControlMap m_Wrapper;
@@ -1166,6 +1276,8 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
         public InputAction @RightClick => m_Wrapper.m_UI_RightClick;
         public InputAction @TrackedDevicePosition => m_Wrapper.m_UI_TrackedDevicePosition;
         public InputAction @TrackedDeviceOrientation => m_Wrapper.m_UI_TrackedDeviceOrientation;
+        public InputAction @DialogNext => m_Wrapper.m_UI_DialogNext;
+        public InputAction @DialogFast => m_Wrapper.m_UI_DialogFast;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1205,6 +1317,12 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
             @TrackedDeviceOrientation.started += instance.OnTrackedDeviceOrientation;
             @TrackedDeviceOrientation.performed += instance.OnTrackedDeviceOrientation;
             @TrackedDeviceOrientation.canceled += instance.OnTrackedDeviceOrientation;
+            @DialogNext.started += instance.OnDialogNext;
+            @DialogNext.performed += instance.OnDialogNext;
+            @DialogNext.canceled += instance.OnDialogNext;
+            @DialogFast.started += instance.OnDialogFast;
+            @DialogFast.performed += instance.OnDialogFast;
+            @DialogFast.canceled += instance.OnDialogFast;
         }
 
         private void UnregisterCallbacks(IUIActions instance)
@@ -1239,6 +1357,12 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
             @TrackedDeviceOrientation.started -= instance.OnTrackedDeviceOrientation;
             @TrackedDeviceOrientation.performed -= instance.OnTrackedDeviceOrientation;
             @TrackedDeviceOrientation.canceled -= instance.OnTrackedDeviceOrientation;
+            @DialogNext.started -= instance.OnDialogNext;
+            @DialogNext.performed -= instance.OnDialogNext;
+            @DialogNext.canceled -= instance.OnDialogNext;
+            @DialogFast.started -= instance.OnDialogFast;
+            @DialogFast.performed -= instance.OnDialogFast;
+            @DialogFast.canceled -= instance.OnDialogFast;
         }
 
         public void RemoveCallbacks(IUIActions instance)
@@ -1323,5 +1447,7 @@ public partial class @PlayerControlMap: IInputActionCollection2, IDisposable
         void OnRightClick(InputAction.CallbackContext context);
         void OnTrackedDevicePosition(InputAction.CallbackContext context);
         void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
+        void OnDialogNext(InputAction.CallbackContext context);
+        void OnDialogFast(InputAction.CallbackContext context);
     }
 }

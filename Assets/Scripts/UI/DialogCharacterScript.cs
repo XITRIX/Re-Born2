@@ -114,7 +114,7 @@ namespace UI
         public float Alpha
         {
             get => _image.color.a;
-            set => _image.color = _image.color.WithAlpha(value);
+            set => _image.color = GlobalDirector.WithAlpha(_image.color, value);
         }
     }
 }

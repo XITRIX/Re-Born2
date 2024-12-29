@@ -13,12 +13,16 @@ public class UIMessageTypewriterEffect : MonoBehaviour
     private float _lastTime; 
     
     private bool IsSkipping => Math.Abs(_controlMap.UI.Submit.ReadValue<float>() - 1) < 0.1f;
+    private bool IsGoNext => Math.Abs(_controlMap.UI.DialogNext.ReadValue<float>() - 1) < 0.1f;
+    private bool IsGoFast => Math.Abs(_controlMap.UI.DialogFast.ReadValue<float>() - 1) < 0.1f;
 
     private void Awake()
     {
         _textBox = GetComponent<TextMeshProUGUI>();
         _controlMap = new PlayerControlMap();
         _controlMap.UI.Submit.Enable();
+        _controlMap.UI.DialogNext.Enable();
+        _controlMap.UI.DialogFast.Enable();
     }
 
     public IEnumerator SetText(string text)
@@ -45,7 +49,7 @@ public class UIMessageTypewriterEffect : MonoBehaviour
         _textBox.ForceMeshUpdate();
         while (numCharsRevealed < _textBox.textInfo.characterCount)
         {
-            startSkipping |= !IsSkipping;
+            startSkipping |= !IsGoFast;
             
             while (numCharsRevealed < originalString.Length && originalString[numCharsRevealed] == ' ')
                 ++numCharsRevealed;
@@ -57,7 +61,7 @@ public class UIMessageTypewriterEffect : MonoBehaviour
             if (_lastTime - callTime > 0.001)
                 yield break;
             
-            yield return new WaitForSeconds(startSkipping && IsSkipping ? 0.01f : 0.07f);
+            yield return new WaitForSeconds(startSkipping && IsGoFast ? 0.01f : 0.07f);
         }
         
         UIDialogMessage.Shared.audioSource.Stop();

@@ -664,12 +664,12 @@ Camera:
     x: 0
     y: 0
     width: 1
-    height: 1
+    height: 0.99999994
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
-  orthographic: 1
-  orthographic size: 5.625
+  orthographic: 0
+  orthographic size: 6.6875
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -694,7 +694,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 19.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1780,7 +1780,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 79.53}
-  m_SizeDelta: {x: -60, y: 120}
+  m_SizeDelta: {x: -120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1624944490
 GameObject:
@@ -2009,6 +2009,7 @@ MonoBehaviour:
   maps:
   - {fileID: -7799068752442069829, guid: 9aeb1336349274e038d65c3fcc833efd, type: 3}
   - {fileID: -7799068752442069829, guid: 6b4937609e5e24ed5ab7ca68027322c1, type: 3}
+  - {fileID: 6472710696608472207, guid: 2922e1a6306f94afc89f179ad8b886d1, type: 3}
   dialogHUD: {fileID: 1602118275}
   backgroundAudioSource: {fileID: 1624944491}
   glitchEffect: {fileID: 1350829312}
@@ -2218,7 +2219,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 38, y: -60}
-  m_SizeDelta: {x: 40, y: 120}
+  m_SizeDelta: {x: 90, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1877268806
 MonoBehaviour:

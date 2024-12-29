@@ -126,6 +126,14 @@ public class PlayerInputScript : MonoBehaviour
             character.SetDirection(spawnPoint.direction);
     }
 
+    public static void SpawnCharacters(List<CharacterScriptableObject> characters, SpawnPoint spawnPoint)
+    {
+        SpawnCharacters(characters, spawnPoint.transform.position, true);
+        
+        foreach (var character in Shared.AllCharacters)
+            character.SetDirection(spawnPoint.direction);
+    }
+
     public static void SpawnCharacters(List<CharacterScriptableObject> characters, Vector2 atPoint)
     {
         SpawnCharacters(characters, atPoint, true);

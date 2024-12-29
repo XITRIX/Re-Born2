@@ -52,7 +52,7 @@ public class VSMessageArrayUnit : Unit
             UIDialogMessage.OpenMessageView();
             yield return UIDialogMessage.SetMessage(avatar, name, nameColor, message);
             
-            yield return new WaitUntil(() => UIDialogMessage.Shared.Submit);
+            yield return new WaitUntil(() => UIDialogMessage.Shared.DialogNext);
             yield return new WaitForSeconds(0.1f);
             
             UIDialogMessage.CloseMessageView();

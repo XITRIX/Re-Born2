@@ -33,6 +33,7 @@ public class UIDialogMessage : MonoBehaviour
     public Dictionary<CharacterScriptableObject, DialogCharacterScript> DialogCharacters { get; private set; } = new();
 
     public bool Submit => _controlMap.UI.Submit.triggered;
+    public bool DialogNext => _controlMap.UI.DialogNext.triggered;
 
     public void Awake()
     {
@@ -40,6 +41,7 @@ public class UIDialogMessage : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         _controlMap = new PlayerControlMap();
         _controlMap.UI.Submit.Enable();
+        _controlMap.UI.DialogNext.Enable();
     }
     void Update()
     {

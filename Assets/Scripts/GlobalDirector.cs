@@ -108,7 +108,7 @@ public class GlobalDirector : MonoBehaviour
 
     public static void PlayBackgroundAudio(AudioResource audio, bool loop)
     {
-        PlayBackgroundAudio(audio, 1, true);
+        PlayBackgroundAudio(audio, 1, loop);
     }
 
     public static void PlayBackgroundAudio(AudioResource audio, float volume, bool loop)
