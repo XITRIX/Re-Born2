@@ -74,7 +74,7 @@ MonoBehaviour:
     m_Value: 0
   scatter:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 0.71
   clamp:
     m_OverrideState: 1
     m_Value: 65472
@@ -514,7 +514,7 @@ MonoBehaviour:
   active: 1
   normalBias:
     m_OverrideState: 1
-    m_Value: 0.33
+    m_Value: 0.296
   viewBias:
     m_OverrideState: 1
     m_Value: 0

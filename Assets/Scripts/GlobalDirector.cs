@@ -17,6 +17,7 @@ public class GlobalDirector : MonoBehaviour
     public Dictionary<CharacterScriptableObject, float> health = new();
     public List<Identifiable> maps;
     public GameObject dialogHUD;
+    public GameObject rainOverlay;
     public AudioSource backgroundAudioSource;
     public Volume glitchEffect;
     public UniversalRenderPipelineAsset renderPipelineGlitchAsset;
@@ -39,7 +40,7 @@ public class GlobalDirector : MonoBehaviour
 
     public static void LoadMap(string map)
     {
-        SetGlitchEffectWeight(0);
+        // SetGlitchEffectWeight(0);
         
         UIDialogMessage.SetBackstageColor(Color.clear);
         UIDialogMessage.SetBackstageImage(null);
@@ -138,6 +139,12 @@ public class GlobalDirector : MonoBehaviour
     public static void RunCoroutine(IEnumerator routine)
     {
         Shared.StartCoroutine(routine);
+    }
+
+    public static bool RainEnabled
+    {
+        get => Shared.rainOverlay.activeSelf;
+        set => Shared.rainOverlay.SetActive(value);
     }
 
     private void PrepareToLoadMap()
