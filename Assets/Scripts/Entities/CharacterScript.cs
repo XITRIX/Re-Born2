@@ -114,7 +114,7 @@ public class CharacterScript : Identifiable
         
         _spriteRenderer.sprite = FrameForDirection(_lastDirection, _animationFrame, isIdle);
 
-        _animationCounter += Math.Min((int)speed / 2, 2);
+        _animationCounter += Math.Min(Math.Max(1, (int)speed / 2), 2);
         if (_animationCounter >= AnimationTick)
         {
             _animationCounter = 0;

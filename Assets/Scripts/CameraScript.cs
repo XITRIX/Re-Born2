@@ -11,6 +11,10 @@ public class CameraScript : MonoBehaviour
     public bool followOverridenObject;
     public float cameraSpeed = 1;
 
+    public bool useSidePerspective = true;
+    public float sidePerspectiveYOffset = 10;
+    public float sidePerspectiveAngle = 9;
+
     private Transform Transform { get; set; }
     public PixelPerfectCamera ppCamera; 
 
@@ -29,22 +33,40 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateCameraPosition();
+        _UpdateCameraPosition();
     }
 
-    private void UpdateCameraPosition()
+    private void _UpdateCameraPosition(bool force = false)
     {
         var objectToFollow = followOverridenObject ? overrideFollowedObject : followedObject;
         if (!objectToFollow) return;
         
         var position = Transform.position;
+        
+        var followPosition = objectToFollow.transform.position;
+        if (useSidePerspective)
+            followPosition.y -= sidePerspectiveYOffset;
 
-        var target = Vector3.Lerp(transform.position, objectToFollow.transform.position, Time.deltaTime * cameraSpeed);
+        var target = force ? 
+            followPosition : 
+            Vector3.Lerp(transform.position, followPosition, Time.deltaTime * cameraSpeed);
+        
         target.z = position.z;
         
         Transform.position = target;
 
+        var rotation = transform.rotation;
+        var rotationAngle = rotation.eulerAngles;
+        rotationAngle.x = useSidePerspective ? -sidePerspectiveAngle : 0;
+        rotation.eulerAngles = rotationAngle;
+        transform.rotation = rotation;
+
         // Transform.position = position;
+    }
+
+    public static void UpdateCameraPosition(bool force = false)
+    {
+        Shared._UpdateCameraPosition(force);
     }
 
     public static void StartFollowingObject(GameObject obj)

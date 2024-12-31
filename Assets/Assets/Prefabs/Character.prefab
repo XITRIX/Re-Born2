@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -1195751345388287493}
   - component: {fileID: 3905945883528631332}
   - component: {fileID: 3379259070624471224}
+  - component: {fileID: 484783991018984342}
   m_Layer: 6
   m_Name: Character
   m_TagString: Untagged
@@ -219,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceWalking: 0
+  forceWalkingSpeed: 2.3
   followTarget: {fileID: 0}
   needToOverrideFollowTarget: 0
   overrideFollowTarget: {fileID: 0}
@@ -236,3 +238,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isStatic: 0
   spriteRenderer: {fileID: 0}
+--- !u!114 &484783991018984342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18416297776831903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4759021c5ae40c09b8f568cf9e4173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

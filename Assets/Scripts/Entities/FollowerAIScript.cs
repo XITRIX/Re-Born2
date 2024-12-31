@@ -7,6 +7,7 @@ public class FollowerAIScript : MonoBehaviour
 {
 
     public bool forceWalking = false;
+    public float forceWalkingSpeed = 2.3f;
     public GameObject followTarget;
     public bool needToOverrideFollowTarget = false;
     public GameObject overrideFollowTarget;
@@ -30,7 +31,7 @@ public class FollowerAIScript : MonoBehaviour
     void FixedUpdate()
     {
         if (!_agent.enabled || !_agent.isOnNavMesh) return;
-        _agent.speed = _agent.remainingDistance < 1.75 || forceWalking ? 2.3f : 6f;
+        _agent.speed = _agent.remainingDistance < 1.75 || forceWalking ? forceWalkingSpeed : 6f;
 
         if (followTarget == null && overrideFollowTarget == null) return;
 

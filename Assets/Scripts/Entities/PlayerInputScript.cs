@@ -35,6 +35,8 @@ public class PlayerInputScript : MonoBehaviour
     public static List<CharacterScriptableObject> CharactersInParty = new();
     public static List<CharacterScriptableObject> CharactersInFolowers = new();
     
+    private static Dictionary<CharacterScriptableObject, bool> _charIsMoving = new();
+    
     public PlayerInputScript()
     {
         Shared = this;
@@ -204,10 +206,15 @@ public class PlayerInputScript : MonoBehaviour
 
     public static IEnumerator MoveDeltaCoroutine(Vector2 point, bool forceWalking)
     {
+        return MoveDeltaCoroutine(point, forceWalking, 2.3f, 10);
+    }
+
+    public static IEnumerator MoveDeltaCoroutine(Vector2 point, bool forceWalking, float forceWalkingSpeed, float timeout)
+    {
         Vector3 point3 = point;
         var targetPos = Shared.ActiveCharacter.transform.position + point3;
         var target = Instantiate(new GameObject(), targetPos, Quaternion.identity);
-        yield return MoveCoroutine(target, forceWalking);
+        yield return MoveCoroutine(target, forceWalking, forceWalkingSpeed, timeout);
         Destroy(target);
     }
 
@@ -218,9 +225,14 @@ public class PlayerInputScript : MonoBehaviour
 
     public static IEnumerator MoveToPointCoroutine(Vector2 point, bool forceWalking)
     {
+        return MoveToPointCoroutine(point, forceWalking, 2.3f, 10);
+    }
+
+    public static IEnumerator MoveToPointCoroutine(Vector2 point, bool forceWalking, float forceWalkingSpeed, float timeout)
+    {
         var target = new GameObject(); 
         target.transform.position = point;
-        yield return MoveCoroutine(target, forceWalking);
+        yield return MoveCoroutine(target, forceWalking, forceWalkingSpeed, timeout);
         Destroy(target);
     }
     
@@ -231,7 +243,12 @@ public class PlayerInputScript : MonoBehaviour
     
     public static IEnumerator MoveCoroutine(GameObject target, bool forceWalking)
     {
-        return MoveCharCoroutine(Shared.ActiveCharacter, target, forceWalking);
+        return MoveCharCoroutine(Shared.ActiveCharacter, target, forceWalking,  2.3f, 10);
+    }
+    
+    public static IEnumerator MoveCoroutine(GameObject target, bool forceWalking, float forceWalkingSpeed, float timeout)
+    {
+        return MoveCharCoroutine(Shared.ActiveCharacter, target, forceWalking, forceWalkingSpeed, timeout);
     }
 
     public static IEnumerator MoveCharToPointCoroutine(CharacterScript character, Vector2 point)
@@ -239,21 +256,28 @@ public class PlayerInputScript : MonoBehaviour
         return MoveCharToPointCoroutine(character, point, false);
     }
 
-    public static IEnumerator MoveCharToPointCoroutine(CharacterScript character, Vector2 point, bool forceWalking)
+    public static IEnumerator MoveCharToPointCoroutine(CharacterScript character, Vector2 point, bool forceWalking, float forceWalkingSpeed = 2.3f, float timeout = 10)
     {
         var target = new GameObject(); 
         target.transform.position = point;
-        yield return MoveCharCoroutine(character, target, forceWalking);
+        yield return MoveCharCoroutine(character, target, forceWalking, forceWalkingSpeed, timeout);
         Destroy(target);
     }
 
     public static IEnumerator MoveCharCoroutine(CharacterScript character, GameObject target)
     {
-        return MoveCharCoroutine(character, target, false);
+        yield return MoveCharCoroutine(character, target, false, 2.3f, 10);
     }
 
     public static IEnumerator MoveCharCoroutine(CharacterScript character, GameObject target, bool forceWalking)
     {
+        yield return MoveCharCoroutine(character, target, forceWalking, 2.3f, 10);
+    }
+
+    public static IEnumerator MoveCharCoroutine(CharacterScript character, GameObject target, bool forceWalking, float forceWalkingSpeed, float timeout)
+    {
+        _charIsMoving.Add(character.characterModel, true);
+        
         var isActiveCharacter = Shared.ActiveCharacter == character;
         if (isActiveCharacter)
             Shared.DisablePlayerInput();
@@ -267,12 +291,13 @@ public class PlayerInputScript : MonoBehaviour
         
         var prevValue = ai.forceWalking;
         ai.forceWalking = forceWalking;
+        ai.forceWalkingSpeed = forceWalkingSpeed;
 
         var playerTransform = character.transform;
         var targetTransform = target.transform;
 
         var startTime = Time.time;
-        while (Time.time - startTime < 10)
+        while (Time.time - startTime < timeout && _charIsMoving[character.characterModel])
         {
             yield return new WaitForFixedUpdate();
             if (Vector2.Distance(playerTransform.position, targetTransform.position) <= 2)
@@ -288,6 +313,29 @@ public class PlayerInputScript : MonoBehaviour
         
         if (isActiveCharacter)
             Shared.EnablePlayerInput();
+
+        _charIsMoving.Remove(character.characterModel);
+    }
+
+    public static IEnumerator MoveCharCoroutine(CharacterScriptableObject characterModel, GameObject target, bool forceWalking, float forceWalkingSpeed, float timeout)
+    {
+        var character = Shared.AllCharacters.FirstOrDefault(x => x.characterModel == characterModel);
+        if (character == null) yield break;
+        
+        yield return MoveCharCoroutine(character, target, forceWalking, forceWalkingSpeed, timeout);
+    }
+
+    public static void StopMoveCharCoroutine(CharacterScriptableObject characterModel)
+    {
+        var character = Shared.AllCharacters.FirstOrDefault(x => x.characterModel == characterModel);
+        if (character == null) return;
+        
+        _charIsMoving[character.characterModel] = false;
+    }
+
+    public static void StopMoveCharCoroutine(CharacterScript character)
+    {
+        _charIsMoving[character.characterModel] = false;
     }
 
     private static void InternalAddCharacter(CharacterScript character)

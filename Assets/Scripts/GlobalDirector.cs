@@ -141,6 +141,11 @@ public class GlobalDirector : MonoBehaviour
         Shared.StartCoroutine(routine);
     }
 
+    public static void VSStopCoroutine(IEnumerator routine)
+    {
+        Shared.StopCoroutine(routine);
+    }
+
     public static bool RainEnabled
     {
         get => Shared.rainOverlay.activeSelf;
