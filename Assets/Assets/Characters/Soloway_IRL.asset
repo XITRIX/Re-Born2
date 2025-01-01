@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
+  m_Name: Soloway_IRL
+  m_EditorClassIdentifier: 
+  charName: "\u0421\u043E\u043B\u043E\u0432\u0435\u0439"
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  avatar: {fileID: -6414010611306874887, guid: 0e35250a6f648413c9b0926c5beaa8ea, type: 3}
+  body: {fileID: 7714074418856078102, guid: 14362a9853c374b668042cc5109a37c2, type: 3}
+  tileset:
+  - {fileID: -4263327222788378858, guid: 373e61785321f42feb73554aafd94589, type: 3}
+  - {fileID: -6990985166833923995, guid: 373e61785321f42feb73554aafd94589, type: 3}
+  - {fileID: -6001332247813001688, guid: 373e61785321f42feb73554aafd94589, type: 3}
+  - {fileID: -4219416058879938998, guid: 373e61785321f42feb73554aafd94589, type: 3}
+  - {fileID: -7526442951195065321, guid: 373e61785321f42feb73554aafd94589, type: 3}
+  - {fileID: -4000302984812669429, guid: 373e61785321f42feb73554aafd94589, type: 3}
+  - {fileID: 8205439349087182785, guid: 373e61785321f42feb73554aafd94589, type: 3}
+  - {fileID: -2065129800320967703, guid: 373e61785321f42feb73554aafd94589, type: 3}
+  - {fileID: 6208030902445670743, guid: 373e61785321f42feb73554aafd94589, type: 3}
+  - {fileID: -445327046, guid: 373e61785321f42feb73554aafd94589, type: 3}
+  - {fileID: 1649808728, guid: 373e61785321f42feb73554aafd94589, type: 3}
+  - {fileID: 420418789, guid: 373e61785321f42feb73554aafd94589, type: 3}
+  size: 1

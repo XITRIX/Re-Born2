@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: ToBeContMap_
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"chainable":false,"parameterNames":["targetColor"],"member":{"name":"SetBackstageColor","parameterTypes":["UnityEngine.Color"],"targetType":"UIDialogMessage","targetTypeName":"UIDialogMessage","$version":"A"},"defaultValues":{"%targetColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0,"$type":"UnityEngine.Color"}},"position":{"x":-221.0,"y":-112.0},"guid":"7e100b0b-0a47-4920-87c7-dd39c5b573bc","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"9"},{"coroutine":true,"defaultValues":{},"position":{"x":-430.0,"y":-109.0},"guid":"8441ccf5-22bc-45e1-a020-4aa704fc2c70","$version":"A","$type":"Unity.VisualScripting.Start","$id":"13"},{"defaultValues":{"Avatar":null,"Name":{"$content":"","$type":"System.String"},"NameColor":{"r":1.0,"g":1.0,"b":1.0,"a":1.0,"$type":"UnityEngine.Color"},"Message":{"$content":"To
+      Be Continued","$type":"System.String"}},"position":{"x":50.0,"y":-120.0},"guid":"df440b4e-eb22-40c7-8963-19f647089f5f","$version":"A","$type":"VSMessageUnit","$id":"15"},{"sourceUnit":{"$ref":"9"},"sourceKey":"exit","destinationUnit":{"$ref":"15"},"destinationKey":"Enter","guid":"ecaa727f-1ff5-451f-bd27-e3397de7f4d1","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"trigger","destinationUnit":{"$ref":"9"},"destinationKey":"enter","guid":"cc4fac7a-c04e-402c-b1d2-b586ef121c1a","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}}'
+    _objectReferences: []

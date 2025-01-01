@@ -851,8 +851,8 @@ Transform:
   m_GameObject: {fileID: 369625976332913754}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.72, y: -60.0866, z: 0}
-  m_LocalScale: {x: 2.9500668, y: 204.95284, z: 1}
+  m_LocalPosition: {x: 3.8146, y: -60.0866, z: 0}
+  m_LocalScale: {x: 2.7609675, y: 204.95284, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6862671937100708809}
@@ -39766,6 +39766,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 108630166504307290, guid: 48c232ddc1938bc40b73a1685a1672b1, type: 3}
+      propertyPath: m_Range
+      value: 4.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64399,7 +64403,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1646981259178978, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6834523913868570100}
+      addedObject: {fileID: 4085130733390545697}
   m_SourcePrefab: {fileID: 100100000, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
 --- !u!4 &2396584676947248292 stripped
 Transform:
@@ -64411,7 +64415,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
   m_PrefabInstance: {fileID: 2401311905910596598}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6834523913868570100
+--- !u!114 &4085130733390545697
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95910,10 +95914,6 @@ PrefabInstance:
       value: street_lamp 1 prefab (55)
       objectReference: {fileID: 0}
     - target: {fileID: 4759262865471542, guid: 6825a3fe8a1605f42a0d0589e582ac40, type: 3}
-      propertyPath: m_RootOrder
-      value: 1734
-      objectReference: {fileID: 0}
-    - target: {fileID: 4759262865471542, guid: 6825a3fe8a1605f42a0d0589e582ac40, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.477325
       objectReference: {fileID: 0}
@@ -95944,6 +95944,10 @@ PrefabInstance:
     - target: {fileID: 4759262865471542, guid: 6825a3fe8a1605f42a0d0589e582ac40, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -180.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 108374899102069224, guid: 6825a3fe8a1605f42a0d0589e582ac40, type: 3}
+      propertyPath: m_Range
+      value: 336.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -145340,10 +145344,6 @@ PrefabInstance:
     - target: {fileID: 1417219977137284, guid: 7c09194ef6a23a947948e105b6da62b2, type: 3}
       propertyPath: m_Name
       value: Lamp_3_prefab (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4553146277779704, guid: 7c09194ef6a23a947948e105b6da62b2, type: 3}
-      propertyPath: m_RootOrder
-      value: 391
       objectReference: {fileID: 0}
     - target: {fileID: 4553146277779704, guid: 7c09194ef6a23a947948e105b6da62b2, type: 3}
       propertyPath: m_LocalPosition.x

@@ -217,6 +217,15 @@ public class PlayerInputScript : MonoBehaviour
         yield return MoveCoroutine(target, forceWalking, forceWalkingSpeed, timeout);
         Destroy(target);
     }
+    
+    public static IEnumerator MoveCharDeltaCoroutine(CharacterScript character, Vector2 point, bool forceWalking, float forceWalkingSpeed, float timeout)
+    {
+        Vector3 point3 = point;
+        var targetPos = character.transform.position + point3;
+        var target = Instantiate(new GameObject(), targetPos, Quaternion.identity);
+        yield return MoveCharCoroutine(character, target, forceWalking, forceWalkingSpeed, timeout);
+        Destroy(target);
+    }
 
     public static IEnumerator MoveToPointCoroutine(Vector2 point)
     {
