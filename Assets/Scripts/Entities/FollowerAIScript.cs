@@ -47,7 +47,7 @@ public class FollowerAIScript : MonoBehaviour
         set
         {
             GetComponent<NavMeshAgent>().enabled = value;
-            GetComponent<BoxCollider2D>().isTrigger = value;
+            GetComponent<BoxCollider>().isTrigger = value;
         }
     }
 }

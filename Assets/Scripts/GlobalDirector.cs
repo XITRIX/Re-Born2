@@ -23,6 +23,9 @@ public class GlobalDirector : MonoBehaviour
     public UniversalRenderPipelineAsset renderPipelineGlitchAsset;
     public UniversalRenderPipelineAsset renderPipeline2DLightAsset;
     
+    public float typeWriterSpeedNormal = 0.03f;
+    public float typeWriterSpeedFast = 0.09f;
+    
     public Identifiable currentMap;
     public string lastMapId;
 

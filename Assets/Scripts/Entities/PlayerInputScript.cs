@@ -292,7 +292,7 @@ public class PlayerInputScript : MonoBehaviour
             Shared.DisablePlayerInput();
             
         
-        var isCharTriggerSaved = character.GetComponent<BoxCollider2D>().isTrigger;
+        var isCharTriggerSaved = character.GetComponent<BoxCollider>().isTrigger;
         var ai = character.GetComponent<FollowerAIScript>();
         ai.overrideFollowTarget = target;
         ai.needToOverrideFollowTarget = true;
@@ -318,7 +318,7 @@ public class PlayerInputScript : MonoBehaviour
         ai.overrideFollowTarget = null;
         ai.forceWalking = prevValue;
 
-        character.GetComponent<BoxCollider2D>().isTrigger = isCharTriggerSaved;
+        character.GetComponent<BoxCollider>().isTrigger = isCharTriggerSaved;
         
         if (isActiveCharacter)
             Shared.EnablePlayerInput();
@@ -429,8 +429,8 @@ public class PlayerInputScript : MonoBehaviour
             var enableAI = enableFollowing && i != activeCharacterIndex;
             AllCharacters[i].GetComponent<FollowerAIScript>().AIEnabled = enableAI;
 
-            var layer = (AllCharacters.Count - 1 - i + activeCharacterIndex) % AllCharacters.Count;
-            AllCharacters[i].GetComponent<SpriteRenderer>().sortingOrder = layer;
+            // var layer = (AllCharacters.Count - 1 - i + activeCharacterIndex) % AllCharacters.Count;
+            // AllCharacters[i].GetComponentInChildren<SpriteRenderer>().sortingOrder = layer;
         }
 
         CameraScript.Shared.followedObject = ActiveCharacter.gameObject;

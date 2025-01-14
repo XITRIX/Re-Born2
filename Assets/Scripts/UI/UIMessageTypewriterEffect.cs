@@ -60,8 +60,9 @@ public class UIMessageTypewriterEffect : MonoBehaviour
             // если время запуска метода не совпадает со временем последнего запуска, надо дропнуть вызов
             if (_lastTime - callTime > 0.001)
                 yield break;
-            
-            yield return new WaitForSeconds(startSkipping && IsGoFast ? 0.01f : 0.07f);
+
+            var globalDirector = GlobalDirector.Shared;
+            yield return new WaitForSeconds(startSkipping && IsGoFast ? globalDirector.typeWriterSpeedNormal : globalDirector.typeWriterSpeedFast);
         }
         
         UIDialogMessage.Shared.audioSource.Stop();

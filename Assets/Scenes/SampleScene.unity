@@ -783,15 +783,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.0007199424
-    y: 0.0015576323
-    width: 1.187905
-    height: 1.5498441
+    x: 0
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 0
-  orthographic size: 6.6875
+  orthographic size: 5.625
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2365,12 +2365,15 @@ MonoBehaviour:
   - {fileID: -7799068752442069829, guid: 6b4937609e5e24ed5ab7ca68027322c1, type: 3}
   - {fileID: 6472710696608472207, guid: 2922e1a6306f94afc89f179ad8b886d1, type: 3}
   - {fileID: 3974390414267336993, guid: e762194a37b734b43ba2a74dd197a3bd, type: 3}
+  - {fileID: 2436707617887902418, guid: f398ab00e637246cfb4869597b2142e7, type: 3}
   dialogHUD: {fileID: 1602118275}
   rainOverlay: {fileID: 975426144}
   backgroundAudioSource: {fileID: 1624944491}
   glitchEffect: {fileID: 1350829312}
   renderPipelineGlitchAsset: {fileID: 11400000, guid: 19ba41d7c0026c3459d37c2fe90c55a0, type: 2}
   renderPipeline2DLightAsset: {fileID: 11400000, guid: 681886c5eb7344803b6206f758bf0b1c, type: 2}
+  typeWriterSpeedNormal: 0.03
+  typeWriterSpeedFast: 0.09
   currentMap: {fileID: 0}
   lastMapId: 
 --- !u!114 &1711905295
@@ -2676,63 +2679,6 @@ MonoBehaviour:
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
   m_ScrollDeltaPerTick: 6
---- !u!1001 &576232208776334142
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3690147489479617972, guid: e762194a37b734b43ba2a74dd197a3bd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1388.9922
-      objectReference: {fileID: 0}
-    - target: {fileID: 3690147489479617972, guid: e762194a37b734b43ba2a74dd197a3bd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 642.00134
-      objectReference: {fileID: 0}
-    - target: {fileID: 3690147489479617972, guid: e762194a37b734b43ba2a74dd197a3bd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3690147489479617972, guid: e762194a37b734b43ba2a74dd197a3bd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3690147489479617972, guid: e762194a37b734b43ba2a74dd197a3bd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3690147489479617972, guid: e762194a37b734b43ba2a74dd197a3bd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3690147489479617972, guid: e762194a37b734b43ba2a74dd197a3bd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3690147489479617972, guid: e762194a37b734b43ba2a74dd197a3bd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3690147489479617972, guid: e762194a37b734b43ba2a74dd197a3bd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3690147489479617972, guid: e762194a37b734b43ba2a74dd197a3bd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5628306494533828117, guid: e762194a37b734b43ba2a74dd197a3bd, type: 3}
-      propertyPath: m_Name
-      value: ToBeContMap
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e762194a37b734b43ba2a74dd197a3bd, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2745,4 +2691,3 @@ SceneRoots:
   - {fileID: 2041388973}
   - {fileID: 1350829313}
   - {fileID: 308603373}
-  - {fileID: 576232208776334142}
