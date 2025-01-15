@@ -35,7 +35,7 @@ public class CharacterScript : Identifiable
         // _rigidbody2D = GetComponent<Rigidbody2D>();
         _rigidbody = GetComponent<Rigidbody>();
         PerformAnimation(0);
-        transform.localScale = new Vector3(characterModel.size, characterModel.size, 1);
+        _spriteRenderer.transform.localScale = new Vector3(characterModel.size, characterModel.size, 1);
     }
 
     public void FixedUpdate()

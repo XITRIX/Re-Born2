@@ -62,7 +62,7 @@ public class UIMessageTypewriterEffect : MonoBehaviour
                 yield break;
 
             var globalDirector = GlobalDirector.Shared;
-            yield return new WaitForSeconds(startSkipping && IsGoFast ? globalDirector.typeWriterSpeedNormal : globalDirector.typeWriterSpeedFast);
+            yield return new WaitForSeconds(startSkipping && IsGoFast ? globalDirector.typeWriterSpeedFast : globalDirector.typeWriterSpeedNormal);
         }
         
         UIDialogMessage.Shared.audioSource.Stop();
