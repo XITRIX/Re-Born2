@@ -16,6 +16,15 @@
       "dependencies": {},
       "hash": "576ec35230801ec68f50b91d108d7ebaa699c275"
     },
+    "com.subbu.urp-glitch": {
+      "version": "https://github.com/saimarei/URPGlitch.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "17.0.3"
+      },
+      "hash": "8e2501645ab47225eb91db0221a020659bc404e4"
+    },
     "com.unity.2d.animation": {
       "version": "10.1.4",
       "depth": 1,

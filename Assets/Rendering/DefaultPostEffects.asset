@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70afe9e12c7a7ed47911bb608a23a8ff, type: 3}
   m_Name: SplitToning
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   shadows:
     m_OverrideState: 1
     m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -37,7 +37,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: -0.07
   xMultiplier:
     m_OverrideState: 1
     m_Value: 1
@@ -68,13 +68,13 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 1.84
+    m_Value: 0.49
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   scatter:
     m_OverrideState: 1
-    m_Value: 0.71
+    m_Value: 0.781
   clamp:
     m_OverrideState: 1
     m_Value: 65472
@@ -92,11 +92,11 @@ MonoBehaviour:
     m_Value: 6
   dirtTexture:
     m_OverrideState: 1
-    m_Value: {fileID: 0}
+    m_Value: {fileID: 2800000, guid: 3ed20e4fc59be4f6d8b41d03364eb382, type: 3}
     dimension: 1
   dirtIntensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.71
 --- !u!114 &-7387000017479033889
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -112,10 +112,10 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.5
   tintColor:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 0.625081, g: 0.1745283, b: 0.6981132, a: 1}
   bloomMip:
     m_OverrideState: 1
     m_Value: 1
@@ -148,22 +148,47 @@ MonoBehaviour:
     m_Value: 1.5
   streaksIntensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2
   streaksLength:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.194
   streaksOrientation:
     m_OverrideState: 1
     m_Value: 0
   streaksThreshold:
     m_OverrideState: 1
-    m_Value: 0.25
+    m_Value: 0.141
   resolution:
     m_OverrideState: 1
     m_Value: 4
   chromaticAbberationIntensity:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 1
+--- !u!114 &-7055698207613757384
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f3b4540a238c4a4ca10ab62f5e544bf, type: 3}
+  m_Name: AnalogGlitchVolume
+  m_EditorClassIdentifier: 
+  active: 0
+  scanLineJitter:
+    m_OverrideState: 1
+    m_Value: 0.314
+  verticalJump:
+    m_OverrideState: 1
+    m_Value: 0
+  horizontalShake:
+    m_OverrideState: 1
+    m_Value: 0
+  colorDrift:
+    m_OverrideState: 1
+    m_Value: 0
 --- !u!114 &-6956559915277039243
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -185,10 +210,10 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.195
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.54
   rounded:
     m_OverrideState: 1
     m_Value: 0
@@ -204,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
   m_Name: LiftGammaGain
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   lift:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: 0}
@@ -229,7 +254,7 @@ MonoBehaviour:
   active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2
   neutralHDRRangeReductionMode:
     m_OverrideState: 1
     m_Value: 2
@@ -266,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221518ef91623a7438a71fef23660601, type: 3}
   m_Name: WhiteBalance
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   temperature:
     m_OverrideState: 1
     m_Value: 0
@@ -283,7 +308,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: DefaultVolumeProfile
+  m_Name: DefaultPostEffects
   m_EditorClassIdentifier: 
   components:
   - {fileID: 2365546923463213823}
@@ -306,7 +331,7 @@ MonoBehaviour:
   - {fileID: 9181983238549736547}
   - {fileID: 5114723885633202021}
   - {fileID: 2967316972869444924}
-  - {fileID: 4642023470962473636}
+  - {fileID: -7055698207613757384}
 --- !u!114 &675866620614461307
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -325,7 +350,7 @@ MonoBehaviour:
     m_Value: 0
   contrast:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 38
   colorFilter:
     m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -334,7 +359,7 @@ MonoBehaviour:
     m_Value: 0
   saturation:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 14
 --- !u!114 &984638714345360700
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -347,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
   m_Name: ShadowsMidtonesHighlights
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   shadows:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: 0}
@@ -401,13 +426,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb60a22f311433c4c962b888d1393f88, type: 3}
   m_Name: PaniniProjection
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   distance:
     m_OverrideState: 1
     m_Value: 0
   cropToFit:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
 --- !u!114 &2967316972869444924
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -420,10 +445,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d536c364ebc24dd6b769ef6affde936a, type: 3}
   m_Name: DigitalGlitchVolume
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.011
 --- !u!114 &2974909498278924921
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -442,7 +467,7 @@ MonoBehaviour:
     m_Value: 0
   quality:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2
   intensity:
     m_OverrideState: 1
     m_Value: 0
@@ -464,41 +489,16 @@ MonoBehaviour:
   active: 1
   type:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 4
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.518
   response:
     m_OverrideState: 1
-    m_Value: 0.8
+    m_Value: 0.579
   texture:
     m_OverrideState: 1
     m_Value: {fileID: 0}
---- !u!114 &4642023470962473636
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3b4540a238c4a4ca10ab62f5e544bf, type: 3}
-  m_Name: AnalogGlitchVolume
-  m_EditorClassIdentifier: 
-  active: 1
-  scanLineJitter:
-    m_OverrideState: 1
-    m_Value: 0
-  verticalJump:
-    m_OverrideState: 1
-    m_Value: 0
-  horizontalShake:
-    m_OverrideState: 1
-    m_Value: 0
-  colorDrift:
-    m_OverrideState: 1
-    m_Value: 0
 --- !u!114 &5112994660467025869
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -511,14 +511,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45fac1424df44990a90443d3cf649a75, type: 3}
   m_Name: AnalogGlitchVolume
   m_EditorClassIdentifier: 
-  active: 1
-  <displayName>k__BackingField: 
+  active: 0
   scanLineJitter:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.274
   verticalJump:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.055
   horizontalShake:
     m_OverrideState: 1
     m_Value: 0
@@ -537,7 +536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bd486065ce11414fa40e631affc4900, type: 3}
   m_Name: ProbeVolumesOptions
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   normalBias:
     m_OverrideState: 1
     m_Value: 0.296
@@ -586,7 +585,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.13
 --- !u!114 &6721569612834063473
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -599,7 +598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eb4b772797da9440885e8bd939e9560, type: 3}
   m_Name: ColorCurves
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   master:
     m_OverrideState: 1
     m_Value:
@@ -613,7 +612,7 @@ MonoBehaviour:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 1
+          inSlope: 0
           outSlope: 1
           tangentMode: 0
           weightedMode: 0
@@ -623,7 +622,7 @@ MonoBehaviour:
           time: 1
           value: 1
           inSlope: 1
-          outSlope: 1
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
@@ -788,7 +787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdfbdbb87d3286943a057f7791b43141, type: 3}
   m_Name: ChannelMixer
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   redOutRedIn:
     m_OverrideState: 1
     m_Value: 100
@@ -828,7 +827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   mode:
     m_OverrideState: 1
     m_Value: 0

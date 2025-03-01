@@ -8,6 +8,7 @@ using UI;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using Quaternion = UnityEngine.Quaternion;
 using Vector2 = UnityEngine.Vector2;
 
 public class UIDialogMessage : MonoBehaviour
@@ -168,6 +169,8 @@ public class UIDialogMessage : MonoBehaviour
         var prefab = Instantiate(Shared.dialogCharPrefab, Shared.dialogCharactersHolder.transform);
         Shared.DialogCharacters[character] = prefab;
         prefab.Set(character);
+        
+        prefab.transform.localRotation = Quaternion.identity;
         
         if (flipped)
             prefab.Flip();

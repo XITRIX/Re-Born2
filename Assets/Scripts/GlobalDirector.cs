@@ -7,6 +7,7 @@ using UnityEngine.Audio;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Serialization;
+using URPGlitch;
 
 public class GlobalDirector : MonoBehaviour
 {
@@ -18,8 +19,9 @@ public class GlobalDirector : MonoBehaviour
     public List<Identifiable> maps;
     public GameObject dialogHUD;
     public GameObject rainOverlay;
+    public Camera uiOverlayCamera;
     public AudioSource backgroundAudioSource;
-    public Volume glitchEffect;
+    public VolumeProfile dreamPostEffectsProfile;
     public UniversalRenderPipelineAsset renderPipelineGlitchAsset;
     public UniversalRenderPipelineAsset renderPipeline2DLightAsset;
     
@@ -80,10 +82,12 @@ public class GlobalDirector : MonoBehaviour
         Shared.health[character] = health;
     }
 
-    public static void SetGlitchEffectWeight(float weight)
+    public static void SetDreamGlitchEffectWeight(float weight)
     {
-        Shared.glitchEffect.weight = weight;
-        GraphicsSettings.defaultRenderPipeline = weight != 0 ? Shared.renderPipelineGlitchAsset : Shared.renderPipeline2DLightAsset;
+        if (Shared.dreamPostEffectsProfile.TryGet<AnalogGlitchVolume>(out var dreamGlitchEffect))
+        {
+            dreamGlitchEffect.scanLineJitter.Override(weight);
+        }
     }
 
     public static string GetLastMapId() => Shared.lastMapId;

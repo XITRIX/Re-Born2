@@ -30,13 +30,11 @@ namespace UI
         public void Flip()
         {
             _flipped = !_flipped;
-            var rotation = _rectTransform.rotation;
-            var rotationAngles = rotation.eulerAngles;
-            
-            rotationAngles.y = _flipped ? 180 : 0;
+            var rotation = _rectTransform.localRotation;
+            var rotationAngles = new Vector3(0, 180, 0);
             
             rotation.eulerAngles = rotationAngles;
-            _rectTransform.rotation = rotation;
+            _rectTransform.localRotation = rotation;
         }
 
         public IEnumerator Flip(float seconds)
@@ -54,13 +52,13 @@ namespace UI
                 {
                     var timePass = Time.time - startTime;
 
-                    var rotation = _rectTransform.rotation;
+                    var rotation = _rectTransform.localRotation;
                     var rotationAngles = rotation.eulerAngles;
 
                     rotationAngles.y = Mathf.Lerp(start, target, timePass / seconds);
 
                     rotation.eulerAngles = rotationAngles;
-                    _rectTransform.rotation = rotation;
+                    _rectTransform.localRotation = rotation;
 
                     if (timePass >= seconds) break;
                     yield return null;
