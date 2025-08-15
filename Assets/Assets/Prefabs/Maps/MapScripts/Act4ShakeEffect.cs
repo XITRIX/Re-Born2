@@ -28,10 +28,11 @@ public class Act4ShakeEffect : MonoBehaviour
         color.a = alpha;
         _image.color = color;
         
-        if (_rectTransform.anchoredPosition == _nextTarget)
+        if (Vector2.Distance(_rectTransform.anchoredPosition, _nextTarget) < 0.1)
             SetNextTarget();
         
-        _rectTransform.anchoredPosition = Vector2.Lerp(origin, _nextTarget, shakeSpeed * Time.deltaTime);
+        _rectTransform.anchoredPosition = Vector2.Lerp(_rectTransform.anchoredPosition, _nextTarget, shakeSpeed * Time.deltaTime);
+        // Debug.Log($"{_rectTransform.anchoredPosition} to ");
     }
 
     private void SetNextTarget()

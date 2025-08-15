@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Rendering;
@@ -17,6 +18,7 @@ public class GlobalDirector : MonoBehaviour
 
     public Dictionary<CharacterScriptableObject, float> health = new();
     public List<Identifiable> maps;
+    public Volume postEffectVolume;
     public GameObject dialogHUD;
     public GameObject rainOverlay;
     public Camera uiOverlayCamera;
@@ -80,14 +82,6 @@ public class GlobalDirector : MonoBehaviour
     public static void SetHealth(CharacterScriptableObject character, float health)
     {
         Shared.health[character] = health;
-    }
-
-    public static void SetDreamGlitchEffectWeight(float weight)
-    {
-        if (Shared.dreamPostEffectsProfile.TryGet<AnalogGlitchVolume>(out var dreamGlitchEffect))
-        {
-            dreamGlitchEffect.scanLineJitter.Override(weight);
-        }
     }
 
     public static string GetLastMapId() => Shared.lastMapId;
@@ -157,6 +151,12 @@ public class GlobalDirector : MonoBehaviour
     {
         get => Shared.rainOverlay.activeSelf;
         set => Shared.rainOverlay.SetActive(value);
+    }
+
+    public static void SetPostEffectsProfile([CanBeNull] VolumeProfile profile)
+    {
+        Shared.postEffectVolume.profile = profile == null ? null : Instantiate(profile);
+        Shared.postEffectVolume.weight = 1;
     }
 
     private void PrepareToLoadMap()

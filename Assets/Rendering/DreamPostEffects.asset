@@ -179,13 +179,13 @@ MonoBehaviour:
   active: 1
   scanLineJitter:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.25
   verticalJump:
     m_OverrideState: 1
     m_Value: 0
   horizontalShake:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.054
   colorDrift:
     m_OverrideState: 1
     m_Value: 0
