@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Muchkin2_BaseColor_0: 200049716098121663
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

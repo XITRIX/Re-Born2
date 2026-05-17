@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dingus_whiskers.tga_0: -1933189379393477022
+      dingus_whiskers.tga_1: 7772384128591252509
+      dingus_whiskers.tga_2: -2220837289907899495
+      dingus_whiskers.tga_3: -2121890496318607920
+      dingus_whiskers.tga_4: -7663136628507587468
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

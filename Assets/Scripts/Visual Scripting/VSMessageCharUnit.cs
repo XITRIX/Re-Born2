@@ -13,6 +13,9 @@ public class VSMessageCharUnit : Unit
     public ValueInput HideFace { get; private set; }
     
     [DoNotSerialize]
+    public ValueInput HideName { get; private set; }
+    
+    [DoNotSerialize]
     public ValueInput Message { get; private set; }
     
     [DoNotSerialize]
@@ -30,6 +33,7 @@ public class VSMessageCharUnit : Unit
         Character = ValueInput<CharacterScriptableObject>("Name", null);
         Message = ValueInput("Message", "");
         HideFace = ValueInput("HideFace", false);
+        HideName = ValueInput("HideName", false);
     }
     
     private IEnumerator RunCoroutine(Flow flow)
@@ -37,6 +41,7 @@ public class VSMessageCharUnit : Unit
         var character = flow.GetValue<CharacterScriptableObject>(Character);
         var message = flow.GetValue<string>(Message);
         var hideFace = flow.GetValue<bool>(HideFace);
+        var hideName = flow.GetValue<bool>(HideName);
 
         GlobalDirector.ShowDialog();
         UIDialogMessage.OpenMessageView();
@@ -44,7 +49,7 @@ public class VSMessageCharUnit : Unit
         UIDialogMessage.Shared.DialogCharacters.TryGetValue(character, out var dialogChar);
 
         if (dialogChar == null)
-            yield return UIDialogMessage.SetMessage(hideFace ? null : character.avatar, character.charName, character.nameColor, message);
+            yield return UIDialogMessage.SetMessage(hideFace ? null : character.avatar, hideName ? null : character.charName, character.nameColor, message);
         else
         {
             // Set dark overlay is not speak
@@ -56,7 +61,7 @@ public class VSMessageCharUnit : Unit
                     sharedDialogCharacter.Value.BlackMask = 0;
             }
             
-            yield return UIDialogMessage.SetMessage(null, character.charName, character.nameColor, message);
+            yield return UIDialogMessage.SetMessage(null, hideName ? null : character.charName, character.nameColor, message);
         }
 
         yield return new WaitUntil(() => UIDialogMessage.Shared.DialogNext);
