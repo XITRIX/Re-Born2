@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
   m_Name: Andrea
   m_EditorClassIdentifier: 
-  charName: Lili
-  avatar: {fileID: 1329914239835430880, guid: da473511b5fa145a5a30ca6d073c6f12, type: 3}
-  body: {fileID: 21300000, guid: 7b1f8e2d9ecae4166a9d644cd284b59a, type: 3}
+  charName: Andrea
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  avatar: {fileID: -6058151128578842215, guid: 9b691239ced9a4b2f8ad0735fca58207, type: 3}
+  body: {fileID: 7019163139210836031, guid: 4ba2ed12ff4284075b6f1ec1f3d68b12, type: 3}
   tileset:
   - {fileID: 8217914300005551374, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}
   - {fileID: -9187086259481360458, guid: 334e52f5f2100465481ee0f1956ddd7b, type: 3}

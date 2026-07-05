@@ -25,20 +25,26 @@ namespace URPGlitch
             requiresIntermediateTexture = true;
         }
 
-        private void UpdateSettings()
+        private bool UpdateSettings()
         {
-            if (analogGlitchMat == null) { Debug.LogError("update settings material null"); return; }
-            var _volume = VolumeManager.instance.stack.GetComponent<AnalogGlitchVolume>();
+            if (analogGlitchMat == null) { Debug.LogError("update settings material null"); return false; }
+            var volumeStack = VolumeManager.instance.stack;
+            if (volumeStack == null) return false;
 
-            var scanLineJitter = _volume.scanLineJitter.value;
-            var verticalJump = _volume.verticalJump.value;
-            var horizontalShake = _volume.horizontalShake.value;
-            var colorDrift = _volume.colorDrift.value;
+            var volume = volumeStack.GetComponent<AnalogGlitchVolume>();
+            if (volume == null || !volume.IsActive) return false;
+
+            var scanLineJitter = volume.scanLineJitter.value;
+            var verticalJump = volume.verticalJump.value;
+            var horizontalShake = volume.horizontalShake.value;
+            var colorDrift = volume.colorDrift.value;
 
             _verticalJumpTime += Time.deltaTime * verticalJump * 11.3f;
 
             var slThresh = Mathf.Clamp01(1.0f - scanLineJitter * 1.2f);
-            var slDisp = 0.002f + Mathf.Pow(scanLineJitter, 3) * 0.05f;
+            var slDisp = scanLineJitter <= AnalogGlitchVolume.ActiveEpsilon
+                ? 0f
+                : 0.002f + Mathf.Pow(scanLineJitter, 3) * 0.05f;
             analogGlitchMat.SetVector(ScanLineJitterID, new Vector2(slDisp, slThresh));
 
             var vj = new Vector2(verticalJump, _verticalJumpTime);
@@ -47,6 +53,7 @@ namespace URPGlitch
 
             var cd = new Vector2(colorDrift * 0.04f, Time.time * 606.11f);
             analogGlitchMat.SetVector(ColorDriftID, cd);
+            return true;
         }
 
         public void Dispose()
@@ -82,14 +89,15 @@ namespace URPGlitch
                 Debug.LogError($"Skipping render pass. BlitAndSwapColorRendererFeature requires an intermediate ColorTexture, we can't use the BackBuffer as a texture input.");
                 return;
             }
+
+            if (!UpdateSettings()) return;
+
             var src = resourceData.activeColorTexture;
             var destinationDesc = renderGraph.GetTextureDesc(src);
             destinationDesc.name = $"CameraColor-{k_AnalogPassName}";
             destinationDesc.clearBuffer = false;
 
             TextureHandle dst = renderGraph.CreateTexture(destinationDesc);
-
-            UpdateSettings();
 
             using (IRasterRenderGraphBuilder builder = renderGraph.AddRasterRenderPass(k_AnalogPassName, out PassData passData, profilingSampler))
             {
