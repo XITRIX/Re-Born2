@@ -32,7 +32,7 @@ public class UIMessageTypewriterEffect : MonoBehaviour
     
     IEnumerator RevealText(string originalString)
     {
-        // Надо сохранить время последнего выззова этого метода
+        // Store the time of the latest call to this method
         var callTime = Time.time;
         _lastTime = callTime;
         
@@ -57,7 +57,7 @@ public class UIMessageTypewriterEffect : MonoBehaviour
             ++numCharsRevealed;
             _textBox.maxVisibleCharacters = numCharsRevealed;
 
-            // если время запуска метода не совпадает со временем последнего запуска, надо дропнуть вызов
+            // If this call's start time no longer matches the latest start time, drop it
             if (_lastTime - callTime > 0.001)
                 yield break;
 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
   m_Name: Nekit
   m_EditorClassIdentifier: 
-  charName: "\u041D\u0435\u043A\u0438\u0442"
+  charName: Nekit
   avatar: {fileID: -6221277176654565392, guid: 1a1f68710f54e43319bc36b03def9527, type: 3}
   tileset:
   - {fileID: -3545431648481256027, guid: bcb7778512c8e4eb8bf1179e5f9df354, type: 3}

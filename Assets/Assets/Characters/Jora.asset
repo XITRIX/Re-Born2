@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
   m_Name: Jora
   m_EditorClassIdentifier: 
-  charName: "\u0416\u043E\u0440\u0430"
+  charName: Jora
   avatar: {fileID: 3066873704690164262, guid: 918e2043c30ad424ea9a27f672b03a05, type: 3}
   tileset: []
   size: 1

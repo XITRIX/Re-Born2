@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
   m_Name: Child
   m_EditorClassIdentifier: 
-  charName: "\u041F\u0430\u0440\u043D\u0438\u0448\u043A\u0430"
+  charName: Kid
   avatar: {fileID: 7644591141837322070, guid: b144f8c89f25e45acab7515bd35f2942, type: 3}
   tileset:
   - {fileID: -6927259670506710092, guid: ee130d5f76a9940e4bd1a4b6e6c975db, type: 3}

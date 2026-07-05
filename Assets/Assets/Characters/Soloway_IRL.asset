@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
   m_Name: Soloway_IRL
   m_EditorClassIdentifier: 
-  charName: "\u0421\u043E\u043B\u043E\u0432\u0435\u0439"
+  charName: Soloway
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   avatar: {fileID: -6414010611306874887, guid: 0e35250a6f648413c9b0926c5beaa8ea, type: 3}
   body: {fileID: 7714074418856078102, guid: 14362a9853c374b668042cc5109a37c2, type: 3}

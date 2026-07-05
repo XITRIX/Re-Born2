@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d99e148459dd4707899a5d1ab362f8f, type: 3}
   m_Name: Law_Taxi
   m_EditorClassIdentifier: 
-  charName: "\u041B\u043E"
+  charName: Lo
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   avatar: {fileID: -3214869580617242181, guid: a93d2f12efe5147c886edb48b9091bc2, type: 3}
   body: {fileID: 0}
