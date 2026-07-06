@@ -34,4 +34,32 @@ public class Interactable : Identifiable
         entity.objectsToInteract.Remove(this);
         EventBus.Trigger("InteractionTriggerExitUnit", (objectId, entity));
     }
+
+    private void OnTriggerEnter(Collider col)
+    {
+        var entity = col.GetComponent<CharacterScript>();
+        if (!entity || string.IsNullOrEmpty(objectId))
+        {
+            return;
+        }
+
+        Debug.Log($"Enter: {entity.objectId}");
+
+        entity.objectsToInteract.Add(this);
+        EventBus.Trigger("InteractionTriggerEnterUnit", (objectId, entity));
+    }
+
+    public virtual void OnTriggerExit(Collider col)
+    {
+        var entity = col.GetComponent<CharacterScript>();
+        if (!entity || string.IsNullOrEmpty(objectId))
+        {
+            return;
+        }
+
+        Debug.Log($"Exit: {entity.objectId}");
+
+        entity.objectsToInteract.Remove(this);
+        EventBus.Trigger("InteractionTriggerExitUnit", (objectId, entity));
+    }
 }
