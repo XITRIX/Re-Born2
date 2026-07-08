@@ -84,6 +84,9 @@ MonoBehaviour:
   highQualityFiltering:
     m_OverrideState: 1
     m_Value: 0
+  filter:
+    m_OverrideState: 0
+    m_Value: 0
   downscale:
     m_OverrideState: 1
     m_Value: 0
@@ -115,7 +118,7 @@ MonoBehaviour:
     m_Value: 0.5
   tintColor:
     m_OverrideState: 1
-    m_Value: {r: 0.625081, g: 0.1745283, b: 0.6981132, a: 1}
+    m_Value: {r: 0.8490566, g: 0.5609535, b: 0.27634388, a: 1}
   bloomMip:
     m_OverrideState: 1
     m_Value: 1
@@ -179,7 +182,7 @@ MonoBehaviour:
   active: 0
   scanLineJitter:
     m_OverrideState: 1
-    m_Value: 0.314
+    m_Value: 0
   verticalJump:
     m_OverrideState: 1
     m_Value: 0

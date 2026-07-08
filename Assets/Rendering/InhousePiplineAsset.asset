@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf2edee5c58d82540a51f03df9d42094, type: 3}
-  m_Name: DreamPiplelineAsset
+  m_Name: InhousePiplineAsset
   m_EditorClassIdentifier: 
   k_AssetVersion: 13
   k_AssetPreviousVersion: 13
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_MaxPixelLights: 0
   m_ShadowAtlasResolution: 256
   m_VolumeFrameworkUpdateMode: 0
-  m_VolumeProfile: {fileID: 11400000, guid: 07d35b96d268d4135a064dd0d39fe523, type: 2}
+  m_VolumeProfile: {fileID: 11400000, guid: 1979b721a0dc749a19778400d1fcf714, type: 2}
   apvScenesData:
     obsoleteSceneBounds:
       m_Keys: []

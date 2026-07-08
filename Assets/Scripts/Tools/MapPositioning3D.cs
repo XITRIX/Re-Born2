@@ -6,7 +6,7 @@ public class MapPositioning3D : MonoBehaviour
     void Awake()
     {
         var rotation = transform.rotation;
-        rotation.eulerAngles = new Vector3(-90, 0, 0);
+        rotation.eulerAngles = new Vector3(0, 0, 0);
         transform.rotation = rotation;
     }
 

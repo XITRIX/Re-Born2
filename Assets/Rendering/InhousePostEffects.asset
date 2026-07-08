@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   balance:
     m_OverrideState: 1
-    m_Value: -4
+    m_Value: 0
 --- !u!114 &-8738489439957566790
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -37,7 +37,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: -0.11
+    m_Value: -0.07
   xMultiplier:
     m_OverrideState: 1
     m_Value: 1
@@ -118,7 +118,7 @@ MonoBehaviour:
     m_Value: 0.5
   tintColor:
     m_OverrideState: 1
-    m_Value: {r: 0.625081, g: 0.1745283, b: 0.6981132, a: 1}
+    m_Value: {r: 0.8396226, g: 0.44805288, b: 0.24951048, a: 1}
   bloomMip:
     m_OverrideState: 1
     m_Value: 1
@@ -179,16 +179,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f3b4540a238c4a4ca10ab62f5e544bf, type: 3}
   m_Name: AnalogGlitchVolume
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   scanLineJitter:
     m_OverrideState: 1
-    m_Value: 0.25
+    m_Value: 0.314
   verticalJump:
     m_OverrideState: 1
     m_Value: 0
   horizontalShake:
     m_OverrideState: 1
-    m_Value: 0.054
+    m_Value: 0
   colorDrift:
     m_OverrideState: 1
     m_Value: 0
@@ -213,13 +213,13 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.146
+    m_Value: 0.195
   smoothness:
     m_OverrideState: 1
     m_Value: 0.54
   rounded:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
 --- !u!114 &-6018029203888846079
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -232,16 +232,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
   m_Name: LiftGammaGain
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.9934485, y: 1, z: 0.9720308, w: 0.017652249}
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.8639304, z: 0.6641617, w: -0.10591351}
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.8026728, z: 0.5987459, w: 0.07060901}
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
 --- !u!114 &-5826600600479673334
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -294,13 +294,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221518ef91623a7438a71fef23660601, type: 3}
   m_Name: WhiteBalance
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   temperature:
     m_OverrideState: 1
-    m_Value: 100
+    m_Value: 0
   tint:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: DreamPostEffects
+  m_Name: InhousePostEffects
   m_EditorClassIdentifier: 
   components:
   - {fileID: 2365546923463213823}
@@ -350,19 +350,19 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 0.05
+    m_Value: 0
   contrast:
     m_OverrideState: 1
-    m_Value: 29
+    m_Value: 38
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.8045771, b: 0.7122642, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
     m_OverrideState: 1
     m_Value: 0
   saturation:
     m_OverrideState: 1
-    m_Value: -46
+    m_Value: 14
 --- !u!114 &984638714345360700
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -542,7 +542,7 @@ MonoBehaviour:
   active: 0
   normalBias:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.296
   viewBias:
     m_OverrideState: 1
     m_Value: 0

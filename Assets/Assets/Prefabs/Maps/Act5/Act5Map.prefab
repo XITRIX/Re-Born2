@@ -48819,6 +48819,7 @@ GameObject:
   - component: {fileID: 7052582158425316147}
   - component: {fileID: 8121450880243931189}
   - component: {fileID: 5046769431270263486}
+  - component: {fileID: 1729899005970241303}
   m_Layer: 0
   m_Name: Act5Map
   m_TagString: Untagged
@@ -48834,7 +48835,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3820004450618579784}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -48855,7 +48856,7 @@ Transform:
   - {fileID: 2824200309825117196}
   - {fileID: 43245094147830650}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &7052582158425316147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48900,6 +48901,18 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: c0442aa208d3240f5a1dff90f3a8df7a, type: 2}
+--- !u!114 &1729899005970241303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820004450618579784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a597c22cd72e47be83a5eab4c5aae70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MapPositioning3D
 --- !u!1 &3823049319345453724
 GameObject:
   m_ObjectHideFlags: 0
