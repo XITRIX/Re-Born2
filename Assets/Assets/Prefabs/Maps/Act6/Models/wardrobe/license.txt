@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wardrobe
+* source:	https://sketchfab.com/3d-models/wardrobe-e48bb01993c7464ea09a02465c87d25d
+* author:	rizky alamsyah (https://sketchfab.com/rizki29)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wardrobe" (https://sketchfab.com/3d-models/wardrobe-e48bb01993c7464ea09a02465c87d25d) by rizky alamsyah (https://sketchfab.com/rizki29) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
