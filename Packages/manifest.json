@@ -3,6 +3,8 @@
     "com.annulusgames.enhanced-on-screen-stick": "https://github.com/AnnulusGames/EnhancedOnScreenStick.git?path=Assets/EnhancedOnScreenStick",
     "com.h8man.2d.navmeshplus": "https://github.com/h8man/NavMeshPlus.git",
     "com.subbu.urp-glitch": "file:com.subbu.urp-glitch",
+    "com.unity.ai.assistant": "2.16.0-pre.1",
+    "com.unity.ai.inference": "2.6.1",
     "com.unity.ai.navigation": "2.0.12",
     "com.unity.cloud.gltfast": "6.19.0",
     "com.unity.collab-proxy": "2.12.4",

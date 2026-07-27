@@ -31,6 +31,7 @@ public class PlayerInputScript : MonoBehaviour
     
     public readonly List<CharacterScript> AllCharacters = new();
     private PlayerControlMap _controlMap;
+    public bool IsPlayerInputEnabled => _controlMap != null && _controlMap.Player.Move.enabled;
 
     public static List<CharacterScriptableObject> CharactersInParty = new();
     public static List<CharacterScriptableObject> CharactersInFolowers = new();
