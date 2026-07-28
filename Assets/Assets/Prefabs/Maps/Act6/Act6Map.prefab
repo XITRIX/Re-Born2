@@ -18712,6 +18712,38 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1502793419294062337, guid: 4f2c82438232f4fab8b07a1f00129645, type: 3}
+--- !u!1 &2564980017762085388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2865532434088826025}
+  m_Layer: 0
+  m_Name: Door holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2865532434088826025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2564980017762085388}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -5.9021254, y: 25.368023, z: -1.0020008}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1334922569250247788}
+  m_Father: {fileID: 3783567113967867341}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2574769017965157430
 GameObject:
   m_ObjectHideFlags: 0
@@ -40225,7 +40257,7 @@ Transform:
   - {fileID: 7870951929000529963}
   - {fileID: 1083035797572763745}
   - {fileID: 8524500380820283224}
-  - {fileID: 1334922569250247788}
+  - {fileID: 2865532434088826025}
   - {fileID: 8219776482404439496}
   - {fileID: 4214851575611746758}
   - {fileID: 5338845246475780644}
@@ -72556,6 +72588,7 @@ GameObject:
   - component: {fileID: 4408786060810394702}
   - component: {fileID: 6750117084056717126}
   - component: {fileID: 3398174955087821273}
+  - component: {fileID: 7807644240433052636}
   m_Layer: 0
   m_Name: Room door
   m_TagString: Untagged
@@ -72571,12 +72604,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8384406780790592007}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -5.9021254, y: 25.368, z: -1.002}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3783567113967867341}
+  m_Father: {fileID: 2865532434088826025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2992745308462630748
 MonoBehaviour:
@@ -72898,6 +72931,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &7807644240433052636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8384406780790592007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688aeff48aa3b4c4282d56ce9e934c63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Identifiable
+  objectId: Door
 --- !u!1 &8385930775491919991
 GameObject:
   m_ObjectHideFlags: 0

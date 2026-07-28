@@ -2,8 +2,8 @@
 
 > Working story bible for the current birthday game. This document describes
 > the private series canon supplied by Danya and the story currently implemented
-> in the active Act 1–5 Visual Scripting graphs. Act 6 is included only as a
-> work-in-progress boundary.
+> in the active Visual Scripting graphs. Material beyond the current Act 6
+> implementation is explicitly labeled as planned rather than playable.
 
 ## High-Concept Premise
 
@@ -40,6 +40,28 @@ This establishes that souls can be digitized, copied or moved between a real
 body, an artificial body, and a game world. It is the foundation of the
 technology Kirill later abuses.
 
+### XITRIX, the Shattered Danya
+
+The final boss of the game in which Kirill died was **Evil Danya**, later known
+as **XITRIX**. XITRIX was a representation of a shattered piece of Danya's mind
+created during alpha testing of the soul-transfer app.
+
+XITRIX wanted to satisfy Danya's desire to play games, but the test world was
+populated entirely by unintelligent NPCs. Kirill was the first real person to
+enter it. XITRIX finally had somebody genuine to play with and therefore refused
+to let Kirill escape.
+
+In later games, XITRIX learned to hack the game world and disguise himself as an
+ordinary NPC with administrator rights. He settled in a shattered pocket of
+virtual space containing his house, garden, and "wife," Lili from Tekken. After
+learning to create NPCs and fill them with artificial souls, XITRIX became an
+uneasy ally. He eventually helped Danya and Kirill defeat an evil griefer inside
+the virtual world.
+
+This history makes XITRIX neither a simple villain nor a safe companion. He is a
+fragment of Danya, a former captor of Kirill, an artificial-soul creator, and an
+experienced administrator of virtual reality.
+
 ### The Clone-Army Game
 
 In the next game, made by Kirill for Danya, Kirill was able to create an army of
@@ -69,20 +91,27 @@ both a personal betrayal and an obstacle to limitless power.
   while secretly developing a dangerous transfer project. His self-clone souls
   are no longer passive additions to his mind.
 
-- **Andrea** is with Danya during the morning scene. She tries to pull him away
-  from dwelling on the past and provides a grounded counterpoint to his anger.
+- **Andrea** is Danya's real-life girlfriend. She is with him during the morning
+  scene, tries to pull him away from dwelling on the past, and provides a
+  grounded counterpoint to his anger.
 
 - **Lo** (`Law` and `Law_Taxi` in the assets) is Danya's friend, house-worker,
   cupcake baker, and once-again taxi driver. He provides comic relief but also
   acts as practical support during the infiltration.
 
-- **Dasha** (`Daria` in the assets) is Kirill's aide. She accepts his order to
-  reinforce security and silently observes his increasingly abusive behavior.
-  Her true opinion and future loyalty are not yet established.
+- **Dasha** (`Daria` in the assets) is Kirill's real-life wife and works with him
+  inside PyCorp. She accepts his order to reinforce security and silently
+  observes his increasingly abusive behavior. Behind his back, she wants the
+  good person she married to return and begins organizing an intervention.
 
-- **Soloway** is the covert contact who intercepts Danya in the city. Depending
-  on the player's choice, he either keeps his identity hidden or is immediately
-  recognized by Danya.
+- **Soloway** is Danya and Kirill's real-life friend. Dasha secretly hires him to
+  intercept Danya in the city. Depending on the player's choice, he either keeps
+  his identity hidden or is immediately recognized by Danya.
+
+- **XITRIX** (`Xitrix_Evil`/`Xitrix` in the assets) is the digital fragment of
+  Danya who once trapped Kirill in the game world. The planned story brings him
+  back as the voice in the ventilation system and later as a companion living
+  on Danya's phone.
 
 - **The scientists** are developing Kirill's unstable prototype. Their fear of
   him demonstrates how different his private behavior is from his public image.
@@ -238,10 +267,27 @@ his obsession and is now fighting him for control.
 
 ## Act 5 — Night: The SkyTower Infiltration
 
-The currently connected Act 5 opening begins as Lo's taxi reaches SkyTower. Lo
-wakes Danya, who is still too tired to open his eyes. Danya gets out of the car,
-tries to reassure himself that this will be a simple "in and out" thirty-minute
-adventure, and receives Lo's warning not to get caught.
+The full taxi sequence is now connected to Act 5's main Start.
+
+During the journey, Danya reviews the letter promised by Soloway. It orders him
+to reach SkyTower in the middle of the night and provides a map for avoiding
+security cameras and guards. His target is the laboratory, where an inside
+contact is supposed to meet him. The route requires crawling through the
+ventilation system, which Danya is not excited about.
+
+Lo notices that Danya is lost in thought. Danya admits that Lo was the last
+person he expected to see when ordering a taxi. Lo explains that "a taxi driver
+once is a taxi driver forever": after seeing Danya looking for a car, he
+canceled his other ride and came to help.
+
+Danya asks Lo to wait near SkyTower, watch for anything suspicious, and call him
+if necessary. Keeping the taxi nearby also guarantees an escape vehicle if
+something goes wrong. Lo agrees and lets Danya sleep for the rest of the trip.
+
+When the taxi reaches SkyTower, Lo wakes Danya, who is still too tired to open
+his eyes. Danya gets out of the car, tries to reassure himself that this will be
+a simple "in and out" thirty-minute adventure, and receives Lo's warning not to
+get caught.
 
 The exterior becomes playable. Returning to the taxi produces a joke from Lo
 about how impressively fast Danya would have been if he had actually entered the
@@ -254,24 +300,6 @@ chosen direction is not the building's left side.
 
 Danya finds the ladder. Despite his fear of heights, he climbs it and proceeds
 into the laboratory. The map then loads the unfinished Act 6 interior.
-
-### Drafted but Currently Disconnected Taxi Setup
-
-The Act 5 graph also contains an earlier car-ride setup that is not connected to
-the active Start path. It provides useful intended context:
-
-- Danya did receive Soloway's promised letter.
-- It orders him to reach SkyTower in the middle of the night.
-- It includes a map for avoiding security cameras and guards.
-- It says to crawl through the ventilation system, reach the laboratory, and
-  meet the contact waiting inside.
-- Lo unexpectedly arrives as Danya's taxi driver, jokes that "a taxi driver once
-  is a taxi driver forever," and offers to let Danya sleep during the ride.
-- Danya asks Lo to remain near SkyTower, report anything suspicious, and keep
-  the car available in case an escape is necessary.
-
-This sequence fits the connected arrival scene, but it should be reconnected and
-tested before being treated as part of the playable cutscene.
 
 **Act function:** Danya's investigation becomes direct action. The daylight
 conflict and evening warning lead into a nighttime break-in, placing Danya on a
@@ -295,13 +323,77 @@ The material already present suggests the following provisional progression:
   puzzle.
 - A nearby door remains locked from the outside.
 
-No current scene explains what Project HELIOS is, reveals the undercover agent,
-or gives Danya the promised evidence against Kirill. Those are open story beats,
-not established answers. The Init graph also currently launches `Act6Map`
-directly, which appears to be a development shortcut rather than the intended
-opening of the game.
+The current scene does not yet reveal the caller, the undercover agent, or the
+contents of the computer. The author-level plan below supplies those answers,
+but they remain future reveals for the player. `HELIOS` is the current working
+codename for Kirill's prototype and may be renamed later.
 
-## Established Revelations
+The Init graph still launches `Act6Map` directly, which appears to be a
+development shortcut for testing the interior rather than the intended opening
+of the finished game.
+
+## Planned Story Progression
+
+### The Voice in the Ventilation
+
+The unknown caller is XITRIX.
+
+Kirill previously found a way to extract XITRIX from the virtual game world and
+brought him into the PyCorp laboratory for experimentation. XITRIX escaped
+physical containment by moving into the laboratory's local network. From there,
+he notices Danya inside the ventilation system, contacts his phone, and disables
+the laser barrier.
+
+After Danya solves the HELIOS password puzzle, he connects his phone to the
+terminal to copy the project documents. XITRIX uses that connection to copy
+himself from the PyCorp network onto the phone. He then becomes Danya's digital
+companion for the rest of the game.
+
+This reunion should carry deliberate uncertainty. XITRIX has helped both
+brothers before, but he is also the fragment of Danya who once refused to let
+Kirill escape. Danya needs his access and knowledge without being able to treat
+him as completely harmless.
+
+### Dasha, the Undercover Agent
+
+After Danya unlocks the computer, Dasha enters the room. Danya does not know who
+is coming and hides inside a wardrobe. Dasha discovers and exposes him.
+
+She then reveals that she is the inside contact:
+
+- She hired Soloway to approach Danya.
+- She arranged for the letter and SkyTower infiltration instructions.
+- She has watched Kirill transform and wants her husband to become a good
+  person again.
+- She shares her current understanding of Kirill's cloning, soul-transfer, and
+  HELIOS project.
+
+Dasha is therefore not betraying Kirill out of hatred. She is acting against
+his project because she wants to save him from what he has become.
+
+### Gathering the Team
+
+After the SkyTower revelations, Danya must gather a team of their real-life
+friends. The group will need enough different abilities and personal connections
+to reach Kirill, survive the final confrontation, and stop HELIOS from being
+completed.
+
+The recruiting arc should run in parallel with Kirill's viewpoint. While Danya
+finds allies, Kirill continues pushing the scientists and moves closer to
+finishing the prototype. His internal collective should also become stronger,
+making each return to Kirill more unstable than the last.
+
+### Final Confrontation
+
+The collected team ultimately confronts Kirill in a final fight before he can
+complete his project. The exact structure and outcome are not yet defined. The
+emotional objective is larger than defeating a villain: Dasha wants her husband
+back, Danya is fighting his brother, and the group must decide whether Kirill can
+be separated from the absorbed consciousnesses and saved.
+
+## Story Truths and Planned Reveals
+
+### Already Revealed in the Implemented Story
 
 1. Danya created the original technology capable of transferring real souls.
 2. Cloning is already possible in this universe.
@@ -315,28 +407,42 @@ opening of the game.
    attempting to control Kirill.
 9. PyCorp's public monopoly gives Kirill the money, hardware, staff, and secrecy
    needed to continue the project.
-10. Soloway and at least one undercover operative know enough about the project
-    to send Danya into SkyTower, but their full organization and motives remain
-    unknown.
+
+### Author-Confirmed but Not Yet Revealed to the Player
+
+1. HELIOS is the working codename for Kirill's unstable prototype.
+2. Dasha hired Soloway and is the undercover agent inside SkyTower.
+3. Dasha's motive is to save Kirill and restore the person he used to be.
+4. Kirill extracted XITRIX from the virtual world to experiment on him.
+5. XITRIX escaped into PyCorp's local network.
+6. XITRIX is the caller who removes the ventilation laser barrier.
+7. XITRIX will copy himself onto Danya's phone and become a companion.
+8. Danya will gather a team of friends while Kirill approaches HELIOS
+   completion.
+9. The two progressions will converge in a final fight against Kirill.
 
 ## Open Questions for Future Plot Development
 
 - What exactly is Kazuya's power, and where is it physically stored?
 - Has Kirill already used that power, or is the unstable prototype meant to
   complete the process?
+- Is HELIOS the final codename, or should it be replaced by a name more directly
+  connected to Kirill, Kazuya, cloning, or soul fusion?
 - What is the scientists' planned "mass use," and why is there only one attempt?
 - How much of Kirill's behavior is his own obsession, and how much is controlled
   by the absorbed collective?
 - Can the clone souls be separated from Kirill without killing him?
 - Does Kirill want to be rescued, even if he cannot admit it?
-- What does Dasha know, and will she remain loyal when the project escalates?
-- Who recruited Soloway?
-- Who is the undercover agent inside SkyTower?
-- Is the unknown caller at the laser barrier the promised agent, one of
-  Soloway's allies, Dasha, or someone else?
-- What is Project HELIOS?
-- What evidence will finally show Danya the full experiment?
+- How much has Dasha learned directly, and which parts of her explanation are
+  still only a theory?
+- Which friends form the final team, and what unique role does each one play?
+- How will recruiting each friend alter or advance Kirill's parallel scenes?
+- What information and abilities will XITRIX provide as a phone companion?
+- How will the story address Danya's reasons for distrusting XITRIX?
+- What exact evidence will Danya copy from the HELIOS computer?
 - What event will bring Danya and Kirill face to face?
+- Will the final fight be physical, psychological, virtual, or a combination of
+  all three?
 - Is the final goal to stop Kirill, save Kirill, destroy Kazuya's power, or find
   a way to do all three?
 
@@ -359,13 +465,19 @@ opening of the game.
   consequence of Kirill's power.
 - Danya's "thirty-minute adventure" line deliberately understates an infiltration
   involving guards, cameras, vents, lasers, and an unstable soul experiment.
+- Kirill once needed rescue from XITRIX's virtual prison; now XITRIX has escaped
+  from Kirill's physical laboratory and returns inside Danya's phone.
+- Danya's shattered gaming impulse becomes an actual party companion, allowing
+  XITRIX to comment on the game from inside the game.
 
 ## Current Story Boundary
 
-The completed dramatic arc presently ends when Danya climbs into SkyTower. The
-interior mechanics establish obstacles and another mysterious helper, but the
-next major revelation, confrontation, and ending have not yet been written.
+The implemented dramatic arc currently reaches the SkyTower interior, laser
+encounter, and HELIOS terminal puzzle. The next major planned sequence is
+XITRIX's transfer onto the phone followed by Dasha entering the room, finding
+Danya in the wardrobe, and revealing her role in the investigation.
 
-That boundary is a strong handoff for future development: Danya has entered the
-physical center of Kirill's conspiracy at the same moment the player understands
-that Kirill may be both the antagonist and a victim who needs to be saved.
+That sequence will turn the story from investigation into preparation for the
+final conflict. Danya will leave SkyTower with evidence, an unexpected digital
+companion, the truth about Dasha and Soloway, and a reason to assemble their
+friends before Kirill completes HELIOS.
