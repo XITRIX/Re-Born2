@@ -2,8 +2,24 @@
 
 > Private working document for the birthday game. This is the authoritative
 > tracker for future story development, production scope, and unresolved
-> decisions. `MAIN_GAME_PLOT.md` remains the detailed record of existing canon
-> and implemented story.
+> decisions. `MAIN_GAME_PLOT.md` remains the detailed narrative bible for series
+> canon, implemented story, and the confirmed dramatic arc.
+
+## Document Contract
+
+- [MAIN_GAME_PLOT.md](MAIN_GAME_PLOT.md) is the narrative source of truth for
+  series continuity, relationships, act summaries, player-facing revelations,
+  and the confirmed dramatic arc.
+- `STORY_PLAN.md` is the production source of truth for decision status, scope,
+  mechanics, deadlines, fallbacks, and unresolved implementation choices.
+- A **CONFIRMED** future decision in this plan should also appear as planned
+  narrative in `MAIN_GAME_PLOT.md`; it must not remain listed there as an open
+  story question.
+- When planned content becomes playable, update its status here and move the
+  corresponding plot description from planned to implemented in
+  `MAIN_GAME_PLOT.md`.
+- If implementation status is uncertain, the current Unity assets determine
+  what is playable; the documents should then be corrected together.
 
 ## Decision Status
 
@@ -17,6 +33,27 @@
 
 Planned material must retain one of these labels until it becomes playable.
 Descriptions of implemented content are labeled **IMPLEMENTED**.
+
+## Continuity Anchors
+
+- **CONFIRMED:** Andrea is Danya's real-life girlfriend.
+- **CONFIRMED:** Dasha is Kirill's real-life wife. Her opposition to HELIOS is
+  motivated by wanting to save her husband and restore the good person he used
+  to be.
+- **CONFIRMED:** Soloway is Danya and Kirill's real-life friend. Dasha hires him
+  to approach Danya without exposing her own position inside PyCorp.
+- **CONFIRMED:** Kirill previously died after being hit by a bus, was trapped by
+  the soul-transfer app, and was extracted into an artificial Cat Boy body.
+- **CONFIRMED:** XITRIX is a fragment of Danya's mind created during alpha
+  testing of that app. He was once Kirill's captor, later became an
+  administrator-like NPC and uneasy ally, learned to create artificial souls,
+  lived with Lili in a shattered virtual space, and helped both brothers defeat
+  an evil griefer.
+- **CONFIRMED:** XITRIX's history makes him useful but not automatically
+  trustworthy when he returns as Danya's phone companion.
+- **CONFIRMED:** Kirill's earlier clone-army technology and Danya's
+  soul-transfer technology are separate pieces of series continuity that Kirill
+  combines in the present story.
 
 ## Production Goal and Constraints
 
@@ -48,8 +85,12 @@ Descriptions of implemented content are labeled **IMPLEMENTED**.
 - **IMPLEMENTED:** Act 4 reveals through Kirill's nightmare that he combined
   cloning and soul-transfer technology, absorbed alternative versions of
   himself, and is losing control of their collective.
-- **IMPLEMENTED:** Act 5 brings Danya and Lo to SkyTower and ends with Danya
-  entering the laboratory through the planned infiltration route.
+- **IMPLEMENTED:** Act 5 contains the complete taxi journey: Danya reviews
+  Soloway's letter and infiltration instructions, unexpectedly finds Lo driving
+  the taxi, asks him to remain nearby as an escape option, sleeps during the
+  trip, and wakes at SkyTower.
+- **IMPLEMENTED:** Act 5 then makes the SkyTower exterior playable and ends with
+  Danya using the ladder and ventilation route to enter the laboratory.
 
 ### Act 6 — SkyTower Interior
 
@@ -71,6 +112,9 @@ Descriptions of implemented content are labeled **IMPLEMENTED**.
 - **CONFIRMED:** The next story sequence is XITRIX transferring onto Danya's
   phone, followed by Dasha entering the room and revealing herself as the
   inside contact.
+- **CURRENT DEVELOPMENT STATE:** The Init graph launches `Act6Map` directly for
+  interior testing. This is not the intended narrative opening and must be
+  restored to the full Act 1–6 sequence for integration testing.
 
 ## HELIOS
 
@@ -380,6 +424,10 @@ Descriptions of implemented content are labeled **IMPLEMENTED**.
 - **TBD:** Decide exactly how much Dasha already knows when she finds Danya.
 - **TBD:** Define the evidence Danya copies from the Act 6 terminal and how it
   communicates HELIOS without becoming a long exposition dump.
+- **TBD:** Define XITRIX's exact phone-companion abilities and the limits that
+  prevent him from solving every technical or virtual obstacle.
+- **TBD:** Define the Kirill escalation scene that accompanies each recruitment
+  beat as HELIOS approaches activation.
 - **TBD:** Lock final recovery/QTE timing and retry behavior.
 - **TBD:** Write Kirill's accountability and consequence scene after the rescue.
 - **TBD:** Define the hidden bad ending's final scene.

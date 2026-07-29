@@ -1,9 +1,16 @@
-# Main Game Plot
+# Re-Born 2 — Main Game Plot
 
 > Working story bible for the current birthday game. This document describes
 > the private series canon supplied by Danya and the story currently implemented
 > in the active Visual Scripting graphs. Material beyond the current Act 6
 > implementation is explicitly labeled as planned rather than playable.
+
+This file is the narrative source of truth: series continuity, character
+relationships, act-by-act events, player-facing revelations, and the confirmed
+dramatic arc. [STORY_PLAN.md](STORY_PLAN.md) is the production source of truth
+for decision status, scope, mechanics, deadlines, fallbacks, and unresolved
+implementation choices. When a planned scene becomes playable, both files
+should be updated together.
 
 ## High-Concept Premise
 
@@ -24,6 +31,13 @@ The story follows one day from two viewpoints. Danya investigates the public
 consequences of Kirill's transformation, while Kirill's scenes reveal the secret
 project and the psychological horror behind it. Their plotlines converge when
 Danya infiltrates Kirill's laboratory at night.
+
+Kirill's prototype, **HELIOS**, is the global expression of the same obsession.
+It combines Danya's soul-transfer system with Kazuya's captured power to place
+humanity inside one shared virtual world under Kirill's administrator control.
+The population's physical bodies would remain mind-controlled in the real world
+to maintain the servers, energy, food, communications, and other infrastructure
+keeping Kirill's virtual reality alive.
 
 ## Series Continuity
 
@@ -129,7 +143,7 @@ both a personal betrayal and an obstacle to limitless power.
 | 3 | Evening | Danya | `CityMap` | Soloway recruits Danya into the investigation |
 | 4 | Night | Kirill | `Act4Map` | A nightmare reveals the origin and cost of Kirill's obsession |
 | 5 | Night | Danya | `Act5Map` | Danya reaches SkyTower and begins the infiltration |
-| WIP continuation | Same night | Danya | `Act6Map` | Danya enters the laboratory; the story beyond this point is unfinished |
+| 6, partially implemented | Same night | Danya | `Act6Map` | Danya enters the laboratory, bypasses lasers, and unlocks the HELIOS terminal |
 
 The automatic map chain is currently
 `IntroMap` → `KirillIntroMap` → `CityMap` → `Act4Map` → `Act5Map` →
@@ -305,28 +319,28 @@ into the laboratory. The map then loads the unfinished Act 6 interior.
 conflict and evening warning lead into a nighttime break-in, placing Danya on a
 collision course with Kirill's project and the promised undercover agent.
 
-## Work-in-Progress Interior — `Act6Map`
+## Act 6 — Work-in-Progress SkyTower Interior
 
-The interior map is present and is the next target loaded by the Act 5 ladder,
-but its graph and prefab are currently under active development. It should not
-yet be treated as a finished sixth act.
+The interior map is the next target loaded by the Act 5 ladder. The following
+portion of the sixth act is implemented:
 
-The material already present suggests the following provisional progression:
-
-- Danya enters through dark ventilation and worries that he may be lost. This
-  introductory chain is currently disconnected from the active graph.
+- Danya enters the dark laboratory interior through the ventilation system and
+  worries that he may be lost.
 - He encounters a laser barrier.
 - His phone buzzes. An unknown voice tells him to wait, and the laser object is
   removed.
 - Danya wonders who contacted him and how that person knew he was there.
-- A PyCorp terminal uses documents from "Project HELIOS — R6" as a password
-  puzzle.
+- He can read HELIOS records, an obsolete R5 archive, the current R6 approval
+  chain, a staff directory, and an IT recovery reminder.
+- Those documents form a password puzzle for a protected PyCorp terminal. The
+  puzzle has progressive hints and a persistent unlock state.
+- Unlocking the terminal triggers Danya's initial reaction that the project is
+  insane and must be stopped.
 - A nearby door remains locked from the outside.
 
 The current scene does not yet reveal the caller, the undercover agent, or the
-contents of the computer. The author-level plan below supplies those answers,
-but they remain future reveals for the player. `HELIOS` is the current working
-codename for Kirill's prototype and may be renamed later.
+full evidence stored on the computer. The confirmed plan below supplies those
+answers, but they remain future revelations for the player.
 
 The Init graph still launches `Act6Map` directly, which appears to be a
 development shortcut for testing the interior rather than the intended opening
@@ -348,6 +362,17 @@ After Danya solves the HELIOS password puzzle, he connects his phone to the
 terminal to copy the project documents. XITRIX uses that connection to copy
 himself from the PyCorp network onto the phone. He then becomes Danya's digital
 companion for the rest of the game.
+
+The copied evidence reveals HELIOS's purpose. Kazuya's captured power amplifies
+Danya's individual soul-transfer technology into global influence and control.
+PyCorp's ownership of game engines, hardware, software, servers, and consumer
+infrastructure is not merely the result of Kirill's greed; it is the delivery
+network for HELIOS.
+
+Kirill intends to transfer or confine humanity's minds inside a shared virtual
+world where he holds god-like administrator authority. Their physical bodies
+would remain in the real world as controlled workers, sustaining the machinery
+and infrastructure required to keep the virtual population alive.
 
 This reunion should carry deliberate uncertainty. XITRIX has helped both
 brothers before, but he is also the fragment of Danya who once refused to let
@@ -373,23 +398,60 @@ his project because she wants to save him from what he has become.
 
 ### Gathering the Team
 
-After the SkyTower revelations, Danya must gather a team of their real-life
-friends. The group will need enough different abilities and personal connections
-to reach Kirill, survive the final confrontation, and stop HELIOS from being
-completed.
+After the SkyTower revelations, Danya gathers three real-life friends who will
+become playable during the virtual finale. Additional friends may join in
+support roles. Every participant needs a distinct personal strength or
+capability rather than existing only as a cameo.
 
-The recruiting arc should run in parallel with Kirill's viewpoint. While Danya
-finds allies, Kirill continues pushing the scientists and moves closer to
-finishing the prototype. His internal collective should also become stronger,
-making each return to Kirill more unstable than the last.
+Recruitment uses compact scenes, calls, or a shared meeting rather than three
+large independent quests. It runs in parallel with Kirill's viewpoint: while
+Danya assembles allies, Kirill pushes the scientists toward activation and the
+collective gains more influence over him.
 
-### Final Confrontation
+### Return to SkyTower and Local Debug Activation
 
-The collected team ultimately confronts Kirill in a final fight before he can
-complete his project. The exact structure and outcome are not yet defined. The
-emotional objective is larger than defeating a villain: Dasha wants her husband
-back, Danya is fighting his brother, and the group must decide whether Kirill can
-be separated from the absorbed consciousnesses and saved.
+The assembled team returns to SkyTower to stop HELIOS and save Kirill. A
+physical confrontation becomes a chase that corners Kirill near the HELIOS
+core. Under pressure and the collective's influence, Kirill activates an
+unstable local debug mode before the global system is ready.
+
+Debug mode transfers only characters inside a limited secured area of SkyTower.
+Dasha and selected support characters remain in the physical world to operate
+HELIOS machinery, protect the bodies, maintain power, open routes, and weaken or
+stabilize the transfer. XITRIX preserves communication between the virtual
+party and the outside team through a maintenance connection.
+
+### Separation of the Kirill Minds
+
+The unstable virtualization repeats the kind of transfer fault that originally
+shattered XITRIX from Danya. Because Kirill already contains several absorbed
+consciousnesses, HELIOS cannot render him as one stable virtual person. Three
+dominant alternative Kirill minds separate from the original.
+
+Each playable friend confronts one separated mind inside a single transforming
+virtual arena. The three minds embody different corrupted traits, and each
+friend succeeds because a personal quality or relationship counters the
+corresponding worldview. External support materially changes each encounter.
+
+Defeating a mind removes its control over the original Kirill. XITRIX quarantines
+the defeated minds instead of the heroes knowingly destroying stable souls.
+Their long-term fate is not yet decided.
+
+### Final Danya–Kirill Duel
+
+After the three alternative minds are removed, Danya confronts the original
+Kirill. The player may continue as Danya or switch perspective and play as
+Kirill. Both perspectives are planned to use the same underlying duel rules,
+with human and AI control exchanged between the brothers.
+
+The confrontation tests whether Kirill can reject absolute control and accept
+help. Coordinated friendship, specialization, and trust—not unexplained magical
+sentiment—make the rescue possible.
+
+The good ending saves Kirill but does not erase his responsibility. When playing
+as Kirill, knowingly choosing to kill Danya after defeating him opens a hidden
+bad-ending path. That ending requires deliberate commitment rather than an
+accidental failed input.
 
 ## Story Truths and Planned Reveals
 
@@ -410,41 +472,53 @@ be separated from the absorbed consciousnesses and saved.
 
 ### Author-Confirmed but Not Yet Revealed to the Player
 
-1. HELIOS is the working codename for Kirill's unstable prototype.
-2. Dasha hired Soloway and is the undercover agent inside SkyTower.
-3. Dasha's motive is to save Kirill and restore the person he used to be.
-4. Kirill extracted XITRIX from the virtual world to experiment on him.
-5. XITRIX escaped into PyCorp's local network.
-6. XITRIX is the caller who removes the ventilation laser barrier.
-7. XITRIX will copy himself onto Danya's phone and become a companion.
-8. Danya will gather a team of friends while Kirill approaches HELIOS
-   completion.
-9. The two progressions will converge in a final fight against Kirill.
+1. HELIOS combines Danya's transfer system with Kazuya's power to control minds
+   on a global scale.
+2. HELIOS would confine humanity inside Kirill's shared virtual world while
+   mind-controlled bodies maintain its physical infrastructure.
+3. PyCorp's monopoly is the intended global delivery network for HELIOS.
+4. Dasha hired Soloway and is the undercover agent inside SkyTower.
+5. Dasha's motive is to save Kirill and restore the person he used to be.
+6. Kirill extracted XITRIX from the virtual world to experiment on him.
+7. XITRIX escaped into PyCorp's local network.
+8. XITRIX is the caller who removes the ventilation laser barrier.
+9. XITRIX will copy himself onto Danya's phone and become a companion.
+10. Danya will gather three playable friends plus possible support allies.
+11. Kirill will activate HELIOS in unstable local debug mode before global
+    activation.
+12. Three dominant alternative Kirill minds will separate in the virtual world.
+13. Each playable friend will confront one separated mind in a transforming
+    shared arena.
+14. Danya will then confront the original Kirill, with a player choice to
+    continue as Danya or switch to Kirill.
+15. Saving Kirill through distributed cooperation is the canonical resolution.
+16. A deliberate choice by player-controlled Kirill to kill Danya opens a
+    hidden bad ending.
 
 ## Open Questions for Future Plot Development
 
-- What exactly is Kazuya's power, and where is it physically stored?
-- Has Kirill already used that power, or is the unstable prototype meant to
-  complete the process?
-- Is HELIOS the final codename, or should it be replaced by a name more directly
-  connected to Kirill, Kazuya, cloning, or soul fusion?
-- What is the scientists' planned "mass use," and why is there only one attempt?
-- How much of Kirill's behavior is his own obsession, and how much is controlled
-  by the absorbed collective?
-- Can the clone souls be separated from Kirill without killing him?
-- Does Kirill want to be rescued, even if he cannot admit it?
-- How much has Dasha learned directly, and which parts of her explanation are
-  still only a theory?
-- Which friends form the final team, and what unique role does each one play?
-- How will recruiting each friend alter or advance Kirill's parallel scenes?
-- What information and abilities will XITRIX provide as a phone companion?
-- How will the story address Danya's reasons for distrusting XITRIX?
-- What exact evidence will Danya copy from the HELIOS computer?
-- What event will bring Danya and Kirill face to face?
-- Will the final fight be physical, psychological, virtual, or a combination of
-  all three?
-- Is the final goal to stop Kirill, save Kirill, destroy Kazuya's power, or find
-  a way to do all three?
+- Which three friends become playable, and what personal strength does each
+  bring?
+- Which additional friends join as support, and what concrete responsibility
+  does each receive?
+- Which three corrupted traits define the separated Kirill minds?
+- What objective or minigame drives each virtual encounter?
+- How does each external support action alter its corresponding encounter?
+- What is the long-term fate of the quarantined Kirill minds?
+- What exact physical area does HELIOS local debug mode affect?
+- How much does Dasha know when she finds Danya, and which conclusions are still
+  her theory?
+- What evidence does Danya copy from the terminal, and how can it explain
+  HELIOS without becoming a long exposition dump?
+- What limited abilities does XITRIX provide as a phone companion and during the
+  finale?
+- Which Kirill escalation scene accompanies each recruitment beat as HELIOS
+  approaches activation?
+- What recovery prompts, retry behavior, and accessibility rules will the final
+  duel use?
+- What consequences and accountability does Kirill face after the good ending?
+- What exactly happens in the hidden bad ending after Kirill chooses to kill
+  Danya?
 
 ## Recurring Jokes and Continuity Payoffs
 
@@ -469,13 +543,17 @@ be separated from the absorbed consciousnesses and saved.
   from Kirill's physical laboratory and returns inside Danya's phone.
 - Danya's shattered gaming impulse becomes an actual party companion, allowing
   XITRIX to comment on the game from inside the game.
+- Kirill loses because he tries to centralize every useful mind and capability
+  inside himself, while the heroes distribute responsibility among people who
+  trust one another and specialize in different things.
 
 ## Current Story Boundary
 
 The implemented dramatic arc currently reaches the SkyTower interior, laser
-encounter, and HELIOS terminal puzzle. The next major planned sequence is
-XITRIX's transfer onto the phone followed by Dasha entering the room, finding
-Danya in the wardrobe, and revealing her role in the investigation.
+encounter, HELIOS document puzzle, terminal unlock, and Danya's initial reaction
+to the project. The next major planned sequence is XITRIX's transfer onto the
+phone followed by Dasha entering the room, finding Danya in the wardrobe, and
+revealing her role in the investigation.
 
 That sequence will turn the story from investigation into preparation for the
 final conflict. Danya will leave SkyTower with evidence, an unexpected digital
