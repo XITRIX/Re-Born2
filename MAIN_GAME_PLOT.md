@@ -109,7 +109,7 @@ both a personal betrayal and an obstacle to limitless power.
   scene, tries to pull him away from dwelling on the past, and provides a
   grounded counterpoint to his anger.
 
-- **Lo** (`Law` and `Law_Taxi` in the assets) is Danya's friend, house-worker,
+- **Law** (`Law` and `Law_Taxi` in the assets) is Danya's friend, house-worker,
   cupcake baker, and once-again taxi driver. He provides comic relief but also
   acts as practical support during the infiltration.
 
@@ -169,13 +169,13 @@ graphics APIs beneath restrictive licenses, and gained control over the hardware
 needed to build an independent alternative. Attempting to compete with PyCorp
 now leads directly to a lawsuit.
 
-Lo interrupts the argument with cupcakes. The joke also shows how far Kirill's
-monopoly reaches: Lo lost his home to debt and now lives with Danya and Andrea,
+Law interrupts the argument with cupcakes. The joke also shows how far Kirill's
+monopoly reaches: Law lost his home to debt and now lives with Danya and Andrea,
 works around the house, and sleeps in one of Andrea's many dressing rooms.
 
-After Andrea leaves, Lo recognizes that the situation is genuinely troubling.
+After Andrea leaves, Law recognizes that the situation is genuinely troubling.
 Danya admits that Kirill has changed and become obsessed with something. He
-decides that he cannot ignore it and must discover what is happening. Lo wishes
+decides that he cannot ignore it and must discover what is happening. Law wishes
 him luck.
 
 **Act function:** Kirill is introduced first through a polished public image,
@@ -289,21 +289,21 @@ security cameras and guards. His target is the laboratory, where an inside
 contact is supposed to meet him. The route requires crawling through the
 ventilation system, which Danya is not excited about.
 
-Lo notices that Danya is lost in thought. Danya admits that Lo was the last
-person he expected to see when ordering a taxi. Lo explains that "a taxi driver
+Law notices that Danya is lost in thought. Danya admits that Law was the last
+person he expected to see when ordering a taxi. Law explains that "a taxi driver
 once is a taxi driver forever": after seeing Danya looking for a car, he
 canceled his other ride and came to help.
 
-Danya asks Lo to wait near SkyTower, watch for anything suspicious, and call him
+Danya asks Law to wait near SkyTower, watch for anything suspicious, and call him
 if necessary. Keeping the taxi nearby also guarantees an escape vehicle if
-something goes wrong. Lo agrees and lets Danya sleep for the rest of the trip.
+something goes wrong. Law agrees and lets Danya sleep for the rest of the trip.
 
-When the taxi reaches SkyTower, Lo wakes Danya, who is still too tired to open
+When the taxi reaches SkyTower, Law wakes Danya, who is still too tired to open
 his eyes. Danya gets out of the car, tries to reassure himself that this will be
-a simple "in and out" thirty-minute adventure, and receives Lo's warning not to
+a simple "in and out" thirty-minute adventure, and receives Law's warning not to
 get caught.
 
-The exterior becomes playable. Returning to the taxi produces a joke from Lo
+The exterior becomes playable. Returning to the taxi produces a joke from Law
 about how impressively fast Danya would have been if he had actually entered the
 building.
 
@@ -534,7 +534,7 @@ accidental failed input.
 - The corporate empire exaggerates real game-development frustrations:
   monopolies, engine ownership, hardware control, licensing, Jira, and the
   impossibility of fixing a soul-transfer disaster with a day-one patch.
-- Lo losing his home to the monopoly, becoming a house-worker, baking cupcakes,
+- Law losing his home to the monopoly, becoming a house-worker, baking cupcakes,
   and returning to taxi driving makes him both a running joke and a visible
   consequence of Kirill's power.
 - Danya's "thirty-minute adventure" line deliberately understates an infiltration

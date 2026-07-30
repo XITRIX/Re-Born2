@@ -86,7 +86,7 @@ Descriptions of implemented content are labeled **IMPLEMENTED**.
   cloning and soul-transfer technology, absorbed alternative versions of
   himself, and is losing control of their collective.
 - **IMPLEMENTED:** Act 5 contains the complete taxi journey: Danya reviews
-  Soloway's letter and infiltration instructions, unexpectedly finds Lo driving
+  Soloway's letter and infiltration instructions, unexpectedly finds Law driving
   the taxi, asks him to remain nearby as an escape option, sleeps during the
   trip, and wakes at SkyTower.
 - **IMPLEMENTED:** Act 5 then makes the SkyTower exterior playable and ends with
