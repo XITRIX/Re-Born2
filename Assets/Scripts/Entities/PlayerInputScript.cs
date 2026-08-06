@@ -293,7 +293,8 @@ public class PlayerInputScript : MonoBehaviour
             Shared.DisablePlayerInput();
             
         
-        var isCharTriggerSaved = character.GetComponent<BoxCollider>().isTrigger;
+        var characterCollider = character.GetComponent<Collider>();
+        var isCharTriggerSaved = characterCollider.isTrigger;
         var ai = character.GetComponent<FollowerAIScript>();
         ai.overrideFollowTarget = target;
         ai.needToOverrideFollowTarget = true;
@@ -319,7 +320,7 @@ public class PlayerInputScript : MonoBehaviour
         ai.overrideFollowTarget = null;
         ai.forceWalking = prevValue;
 
-        character.GetComponent<BoxCollider>().isTrigger = isCharTriggerSaved;
+        characterCollider.isTrigger = isCharTriggerSaved;
         
         if (isActiveCharacter)
             Shared.EnablePlayerInput();
@@ -406,7 +407,7 @@ public class PlayerInputScript : MonoBehaviour
         // Try to interact with all interactable objects
         foreach (var obj in objectsToInteract)
         {
-            if (obj == null || obj.InteractionScenario == null) continue;
+            if (obj == null || !obj.isActiveAndEnabled || obj.InteractionScenario == null) continue;
         
             obj.InteractionScenario();
         

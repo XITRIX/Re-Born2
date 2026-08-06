@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3905945883528631332}
   - component: {fileID: 8407761762412023332}
   - component: {fileID: 981798435385586897}
+  - component: {fileID: 7594611806917351739}
   m_Layer: 6
   m_Name: Character
   m_TagString: Untagged
@@ -121,8 +122,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 1
---- !u!65 &981798435385586897
-BoxCollider:
+--- !u!64 &981798435385586897
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -139,9 +140,26 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.66, y: 0.75, z: 0.27}
-  m_Center: {x: 0, y: 0.38, z: -0.13}
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!114 &7594611806917351739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18416297776831903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a82d9d4503b4086993715c924e7e6c1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  center: {x: 0, y: 0.38, z: -0.13}
+  size: {x: 0.66, y: 0.75, z: 0.27}
+  cornerRadius: 0.14
+  cornerSegments: 3
 --- !u!1 &9063645770963990646
 GameObject:
   m_ObjectHideFlags: 0

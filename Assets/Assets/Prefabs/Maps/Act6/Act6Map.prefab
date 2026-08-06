@@ -81039,14 +81039,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7071028054558876161, guid: 85ede432e5e2b45b09b64bc2d0f49738, type: 3}
       propertyPath: objectId
-      value: pc_terminal
+      value: act6_badge_tail_note
       objectReference: {fileID: 0}
     - target: {fileID: 7475462483293840749, guid: 85ede432e5e2b45b09b64bc2d0f49738, type: 3}
       propertyPath: m_Name
       value: IT Badge Tail Note
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7071028054558876161, guid: 85ede432e5e2b45b09b64bc2d0f49738, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5842343432558046209, guid: 85ede432e5e2b45b09b64bc2d0f49738, type: 3}
@@ -81074,7 +81073,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7256645066855601104}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cc94b27d9d964582856acd3968c8263, type: 3}
   m_Name: 
@@ -81318,14 +81317,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7071028054558876161, guid: 85ede432e5e2b45b09b64bc2d0f49738, type: 3}
       propertyPath: objectId
-      value: pc_terminal
+      value: act6_helios_r5_archive
       objectReference: {fileID: 0}
     - target: {fileID: 7475462483293840749, guid: 85ede432e5e2b45b09b64bc2d0f49738, type: 3}
       propertyPath: m_Name
       value: HELIOS R5 Archived Sheet
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7071028054558876161, guid: 85ede432e5e2b45b09b64bc2d0f49738, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -81350,7 +81348,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8572146424896811357}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cc94b27d9d964582856acd3968c8263, type: 3}
   m_Name: 
@@ -82084,14 +82082,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7071028054558876161, guid: 85ede432e5e2b45b09b64bc2d0f49738, type: 3}
       propertyPath: objectId
-      value: pc_terminal
+      value: act6_staff_directory
       objectReference: {fileID: 0}
     - target: {fileID: 7475462483293840749, guid: 85ede432e5e2b45b09b64bc2d0f49738, type: 3}
       propertyPath: m_Name
       value: PyCorp Staff Directory
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7071028054558876161, guid: 85ede432e5e2b45b09b64bc2d0f49738, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -82116,7 +82113,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4491429595079620217}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cc94b27d9d964582856acd3968c8263, type: 3}
   m_Name: 
@@ -82626,14 +82623,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7071028054558876161, guid: 85ede432e5e2b45b09b64bc2d0f49738, type: 3}
       propertyPath: objectId
-      value: pc_terminal
+      value: act6_helios_r6_signoff
       objectReference: {fileID: 0}
     - target: {fileID: 7475462483293840749, guid: 85ede432e5e2b45b09b64bc2d0f49738, type: 3}
       propertyPath: m_Name
       value: HELIOS R6 Sign-Off Sheet
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7071028054558876161, guid: 85ede432e5e2b45b09b64bc2d0f49738, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -82653,7 +82649,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521572750140804339}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cc94b27d9d964582856acd3968c8263, type: 3}
   m_Name: 
