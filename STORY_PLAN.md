@@ -49,8 +49,32 @@ Descriptions of implemented content are labeled **IMPLEMENTED**.
   administrator-like NPC and uneasy ally, learned to create artificial souls,
   lived with Lili in a shattered virtual space, and helped both brothers defeat
   an evil griefer.
+- **CONFIRMED:** Kirill secretly extracted XITRIX from that stable pocket and
+  used him as an artificial-soul test subject while already influenced by the
+  absorbed Kirill collective. The collective amplified his cruelty and weakened
+  the restraint that would once have made such treatment of a soul unacceptable.
+- **CONFIRMED:** The collective's influence explains Kirill's willingness to
+  conduct the trials but does not erase his responsibility for choosing to do so.
+- **CONFIRMED:** **Tower of XITRIX** and **XITRIX Elysium** were literal,
+  sequential virtual trials experienced exclusively by XITRIX while imprisoned
+  by PyCorp.
+- **CONFIRMED:** In-game Danya did not play, control, or know about those worlds.
+  Their relationship to the real birthday gifts is meta-level rather than an
+  event inside the current story.
+- **CONFIRMED:** References in the original ELYSIUM material that describe
+  "The Last Tekken" as an XITRIX past life are excluded from this continuity.
+  The real Danya and Kirill remain the participants in Last Tekken.
+- **CONFIRMED:** TOWER tested XITRIX through forced reincarnation and hostile
+  loops. ELYSIUM tested memory removal, death, regeneration, branching choices,
+  resets, and submission to an administrator-controlled world.
+- **CONFIRMED:** ELYSIUM's memory cards, attributes, regeneration, and the
+  Barbarian, Mage, Empathy, and Leader interfaces were real within that world
+  but do not persist as present-day abilities.
 - **CONFIRMED:** XITRIX's history makes him useful but not automatically
   trustworthy when he returns as Danya's phone companion.
+- **CONFIRMED:** XITRIX knows that the collective influenced Kirill during his
+  captivity. He wants HELIOS stopped, the collective separated, and the original
+  Kirill saved rather than punished through another prison.
 - **CONFIRMED:** Kirill's earlier clone-army technology and Danya's
   soul-transfer technology are separate pieces of series continuity that Kirill
   combines in the present story.
@@ -109,12 +133,43 @@ Descriptions of implemented content are labeled **IMPLEMENTED**.
 - **CONFIRMED:** XITRIX is the anonymous presence that disabled the lasers.
 - **CONFIRMED:** XITRIX escaped physical containment by moving into PyCorp's
   local network.
-- **CONFIRMED:** The next story sequence is XITRIX transferring onto Danya's
-  phone, followed by Dasha entering the room and revealing herself as the
-  inside contact.
+- **CONFIRMED:** XITRIX's identity remains hidden throughout Act 6. When Danya
+  connects his phone to the terminal, XITRIX silently copies himself onto it.
+- **CONFIRMED:** Dasha then enters the room and reveals herself as the inside
+  contact. XITRIX does not introduce himself until the planned Act 7 taxi ride.
 - **CURRENT DEVELOPMENT STATE:** The Init graph launches `Act6Map` directly for
   interior testing. This is not the intended narrative opening and must be
   restored to the full Act 1–6 sequence for integration testing.
+
+## XITRIX Trial Canon
+
+### Tower of XITRIX
+
+- **CONFIRMED:** TOWER is the first PyCorp world imposed on XITRIX after Kirill
+  removes him from his stable pocket reality.
+- **CONFIRMED:** Its hostile reincarnation loops and threats—including Zhora,
+  Evil Paimon, and mimics with guns—are genuine experiences for XITRIX rather
+  than fictional references he merely observed.
+- **CONFIRMED:** TOWER measures whether an artificial soul retains identity and
+  adapts when repeatedly transferred, killed, and returned to play.
+
+### XITRIX Elysium
+
+- **CONFIRMED:** ELYSIUM is the more advanced follow-up trial.
+- **CONFIRMED:** XITRIX wakes with damaged memory, builds and defends the snowy
+  kingdom, confronts Kirill as the world's god-like ruler, and experiences the
+  resets and ending choices as real events inside that reality.
+- **CONFIRMED:** Death and regeneration consume "Memories from Past Life" cards.
+  The four inner voices are decision interfaces installed by Kirill to provoke
+  and measure different responses.
+- **CONFIRMED:** The cards, voices, skills, and regeneration belong to ELYSIUM's
+  rules. XITRIX retains their memories and experience after extraction, not the
+  mechanics themselves.
+- **CONFIRMED:** ELYSIUM tests whether XITRIX remains coherent when memory,
+  identity, apparent freedom, and the ability to leave are controlled by an
+  administrator.
+- **CONFIRMED:** ELYSIUM foreshadows HELIOS: Kirill presents an endless virtual
+  existence as a gift while withholding meaningful consent to leave.
 
 ## HELIOS
 
@@ -167,24 +222,64 @@ Descriptions of implemented content are labeled **IMPLEMENTED**.
 
 ## Remaining Narrative Arc
 
-### Act 6 Completion — XITRIX and Dasha
+### Act 6 Completion — Silent Escape and Dasha
 
 - **CONFIRMED:** Danya connects his phone to the unlocked terminal while copying
   HELIOS evidence.
 - **CONFIRMED:** XITRIX uses that connection to copy himself from PyCorp's
-  network onto the phone.
-- **CONFIRMED:** XITRIX becomes a digital companion and technical guide, but
-  Danya does not immediately trust him.
-- **WORKING:** XITRIX's phone presence should use the existing dialogue and
-  portrait presentation rather than requiring a large persistent companion UI.
+  network onto the phone without revealing himself.
+- **CONFIRMED:** XITRIX remains the anonymous helper for the rest of Act 6; his
+  identity and trial history are reserved for Act 7.
 - **CONFIRMED:** Dasha enters while Danya is examining the terminal.
 - **CONFIRMED:** Danya hides in the wardrobe and is discovered by Dasha.
 - **CONFIRMED:** Dasha reveals that she hired Soloway, arranged the
   infiltration, and wants to save the person Kirill used to be.
+- **CONFIRMED:** Dasha explains HELIOS's intended global transfer and control,
+  completing the Act 6 reveal after Danya uncovers the terminal evidence.
+- **CONFIRMED:** Dasha admits that she disabled the cameras and that Soloway sent
+  Danya through the ventilation system only because he wanted to make him crawl
+  through it.
 - **CONFIRMED:** The copied evidence reveals HELIOS's global purpose and creates
   an urgent reason to stop its activation.
 - **WORKING:** The evidence also establishes local debug mode, incomplete
   synchronization, and signs that Kirill contains separable mind signatures.
+- **CONFIRMED:** Dasha remains in SkyTower to preserve her PyCorp cover and
+  continue acting as the team's inside contact.
+- **CONFIRMED:** Danya leaves through Dasha's cleared route and rejoins Law at
+  the waiting taxi.
+
+### Act 7 — XITRIX's Confession and Taxi Escape
+
+- **CONFIRMED:** Act 7 begins during Law's taxi ride away from SkyTower.
+- **CONFIRMED:** XITRIX simulates an incoming phone call and reveals his identity
+  only after Danya has left the building.
+- **CONFIRMED:** The call contains one complete confession rather than spreading
+  the trial history across optional conversations.
+- **CONFIRMED:** XITRIX explains his extraction, TOWER, ELYSIUM, his escape into
+  PyCorp's network, the silent transfer through Danya's phone, and his desire to
+  save the original Kirill.
+- **CONFIRMED:** XITRIX reveals that he became aware of the collective influencing
+  Kirill during the trials. This knowledge is why he rejects revenge and chooses
+  to help separate and rescue the original mind instead.
+- **CONFIRMED:** The confession makes clear that in-game Danya neither knew about
+  nor participated in the trials.
+- **CONFIRMED:** The presentation uses phone dialogue interrupted by brief visual
+  glitches or stills. It does not require playable flashback maps.
+- **WORKING:** Callback material includes `404: game not found`, ELYSIUM's
+  opening darkness, its snowy kingdom and memory cards, TOWER's named threats,
+  administrator rights, and Kirill describing an endless virtual prison as a
+  gift.
+- **WORKING:** XITRIX's phone presence should use the existing dialogue and
+  portrait presentation rather than requiring a large persistent companion UI.
+- **CONFIRMED:** After completing the confession, XITRIX discovers that one
+  camera remained active and warns that PyCorp security is following the taxi.
+- **CONFIRMED:** Danya, Law, and XITRIX successfully escape the pursuit; later
+  story content does not branch on the presentation used.
+- **WORKING:** If production time permits, the escape becomes a playable chase:
+  Danya drives, Law shoots at pursuing security vehicles, and XITRIX warns about
+  hazards.
+- **BACKUP:** If the chase prototype is not stable within the available scope,
+  resolve the same escape as a short scripted dialogue/cutscene sequence.
 
 ### Gathering the Team
 
@@ -369,12 +464,21 @@ Descriptions of implemented content are labeled **IMPLEMENTED**.
 - **CONFIRMED:** Kirill tries to centralize every useful mind and capability
   inside himself; the heroes win through trust, specialization, and distributed
   cooperation.
-- **CONFIRMED:** The collective amplifies Kirill's desires, but does not erase
-  his responsibility for creating it or abusing others.
+- **CONFIRMED:** The collective was already influencing Kirill during XITRIX's
+  captivity. It amplified his cruelty and made violation of XITRIX's soul feel
+  acceptable, but does not erase his responsibility for creating it or abusing
+  others.
 - **CONFIRMED:** Dasha acts to save her husband, not because she hates or wants
   to replace him.
 - **CONFIRMED:** XITRIX is useful but not completely trustworthy; his history
   with both brothers must remain relevant.
+- **CONFIRMED:** XITRIX's captivity does not turn the rescue arc into revenge.
+  Because he knows the collective influenced his captor, he seeks to stop HELIOS,
+  preserve Kirill's accountability, and save the original mind without repeating
+  either brother's past imprisonment.
+- **CONFIRMED:** TOWER and ELYSIUM demonstrate the danger of presenting a
+  controlled virtual existence as a gift when its inhabitant cannot freely
+  leave; HELIOS expands that violation from one artificial soul to humanity.
 - **WORKING:** Every major support action should pay off an established
   relationship, skill, prior-game role, or recurring joke.
 - **WORKING:** The good ending should include consequences and accountability
@@ -387,8 +491,10 @@ Descriptions of implemented content are labeled **IMPLEMENTED**.
 - **WORKING:** Select the three playable friends, their personal hooks, the
   three Kirill minds, and the support roster before building individual virtual
   encounters.
-- **WORKING:** Finish the Act 6 XITRIX and Dasha sequence before expanding the
-  finale.
+- **WORKING:** Finish the Act 6 Dasha sequence and the required Act 7 XITRIX
+  confession before expanding the finale.
+- **WORKING:** Prototype the optional taxi chase only after the scripted escape
+  is sufficient to carry Act 7 into recruitment without a progression gap.
 
 ### Duel Gate — August 16, 2026
 
@@ -426,6 +532,10 @@ Descriptions of implemented content are labeled **IMPLEMENTED**.
   communicates HELIOS without becoming a long exposition dump.
 - **TBD:** Define XITRIX's exact phone-companion abilities and the limits that
   prevent him from solving every technical or virtual obstacle.
+- **TBD:** Decide whether the optional playable taxi chase is stable and valuable
+  enough to keep; otherwise use the confirmed scripted escape backup.
+- **TBD:** If the chase is retained, lock its controls, hazards, shooting rules,
+  fail state, checkpoint, and accessibility behavior.
 - **TBD:** Define the Kirill escalation scene that accompanies each recruitment
   beat as HELIOS approaches activation.
 - **TBD:** Lock final recovery/QTE timing and retry behavior.
@@ -435,10 +545,10 @@ Descriptions of implemented content are labeled **IMPLEMENTED**.
 ## Implementation Boundary
 
 - **CONFIRMED:** This document describes planned mechanics but does not claim
-  that the duel, boss AI, QTE controller, virtual arena, support system, or
-  ending branches currently exist.
-- **CONFIRMED:** No runtime APIs or Unity assets were changed when this plan was
-  created.
+  that Act 7, the taxi chase, duel, boss AI, QTE controller, virtual arena,
+  support system, or ending branches currently exist.
+- **CONFIRMED:** No runtime APIs or Unity assets were changed by this plot-bible
+  update.
 - **WORKING:** Future implementation should preserve Unity `.meta`, prefab,
   scene, Script Machine, and Visual Scripting macro references.
 - **WORKING:** Future code should expose clear Visual Scripting events for
@@ -451,7 +561,11 @@ The story is considered complete for the September build when all of the
 following are true:
 
 - **CONFIRMED:** The game plays continuously from Act 1 through an ending.
-- **CONFIRMED:** Act 6 reveals XITRIX, Dasha, and HELIOS's purpose.
+- **CONFIRMED:** Act 6 reveals Dasha and HELIOS's purpose while keeping XITRIX's
+  identity hidden.
+- **CONFIRMED:** Act 7 reveals XITRIX, establishes TOWER and ELYSIUM as his
+  captivity trials, and resolves the PyCorp pursuit through either the playable
+  chase or scripted backup.
 - **CONFIRMED:** Three playable friends each receive a distinct virtual
   encounter.
 - **CONFIRMED:** Support characters materially contribute from outside the

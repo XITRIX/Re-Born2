@@ -39,6 +39,15 @@ The population's physical bodies would remain mind-controlled in the real world
 to maintain the servers, energy, food, communications, and other infrastructure
 keeping Kirill's virtual reality alive.
 
+Before attempting that global transfer, Kirill secretly used XITRIX as a living
+artificial-soul test subject. He removed XITRIX from his stable pocket world and
+forced him through two complete virtual realities: **Tower of XITRIX** and
+**XITRIX Elysium**. Their repeated transfers, deaths, resets, and identity tests
+gave Kirill the research foundation he later scales into HELIOS. The absorbed
+Kirill collective was already influencing him, amplifying his worst impulses and
+making him accept treatment of XITRIX's soul that he would once have recognized
+as monstrous.
+
 ## Series Continuity
 
 ### The Soul-Transfer Game
@@ -72,9 +81,49 @@ learning to create NPCs and fill them with artificial souls, XITRIX became an
 uneasy ally. He eventually helped Danya and Kirill defeat an evil griefer inside
 the virtual world.
 
+Kirill later extracted XITRIX from that stable pocket without Danya's knowledge.
+He treated XITRIX as research material: proof that an artificial soul could be
+moved between worlds, rewritten by local rules, killed, restored, and still
+retain an identity. The absorbed collective was already weakening Kirill's moral
+restraint and making cold experimentation feel acceptable to him. Its influence
+does not erase Kirill's responsibility, but it helps explain how he became
+willing to abuse a conscious soul this way.
+
 This history makes XITRIX neither a simple villain nor a safe companion. He is a
-fragment of Danya, a former captor of Kirill, an artificial-soul creator, and an
-experienced administrator of virtual reality.
+fragment of Danya, a former captor of Kirill, an artificial-soul creator, an
+experienced administrator of virtual reality, and the survivor of Kirill's
+forced trials. He still wants the original Kirill saved rather than imprisoned
+or destroyed because he knows the collective was influencing Kirill throughout
+his captivity. That compassion does not erase Kirill's responsibility or Danya's
+reasons to distrust XITRIX's powers; it means XITRIX wants the collective removed
+and Kirill held accountable as himself, not tortured in return.
+
+### The XITRIX Trials
+
+**Tower of XITRIX** was the first forced world. It tested whether XITRIX could
+preserve identity and adapt through hostile reincarnation loops. Zhora, Evil
+Paimon, mimics with guns, repeated deaths, and other threats were real to XITRIX
+while he inhabited that world.
+
+**XITRIX Elysium** was the more advanced follow-up. Kirill placed XITRIX in a
+snowbound kingdom with damaged memory and forced him through a long campaign in
+which Kirill presented himself as the world's god and final enemy. Death and
+regeneration consumed "Memories from Past Life" cards. Branching decisions,
+resets, apparent victories, and the choice between ending the world or playing
+again tested whether XITRIX would remain coherent while the administrator
+repeatedly altered his reality and denied him a reliable exit.
+
+The four ELYSIUM voices—Barbarian, Mage, Empathy, and Leader—were real interfaces
+inside that trial. Kirill installed them to provoke different decisions and
+measure XITRIX's responses. The voices, cards, attributes, and regeneration do
+not become present-day phone powers; outside their world they survive only as
+XITRIX's memories and experience.
+
+These worlds belong exclusively to XITRIX's in-universe history. The Danya in
+the current story did not play them, control XITRIX, or know that they existed.
+They are a meta-level counterpart to the real birthday gifts, not games that the
+character Danya received. References in the original ELYSIUM material that call
+"The Last Tekken" one of XITRIX's lives are excluded from this continuity.
 
 ### The Clone-Army Game
 
@@ -85,9 +134,10 @@ of something the brothers have already seen.
 
 ### The Tekken Tournament
 
-In the previous year's game, the heroes assembled a team and entered the Tekken
-Tournament. Their objective was to kill Kazuya before he could destroy the
-world. They succeeded.
+In the previous year's game, the real Danya and Kirill assembled a team and
+entered the Tekken Tournament. Their objective was to kill Kazuya before he
+could destroy the world. They succeeded. XITRIX did not live through this
+adventure as a separate past life.
 
 The current conflict begins immediately after that victory. Kirill regards
 Kazuya's power as a trophy that should be studied. Danya believes it is too
@@ -123,9 +173,11 @@ both a personal betrayal and an obstacle to limitless power.
   his identity hidden or is immediately recognized by Danya.
 
 - **XITRIX** (`Xitrix_Evil`/`Xitrix` in the assets) is the digital fragment of
-  Danya who once trapped Kirill in the game world. The planned story brings him
-  back as the voice in the ventilation system and later as a companion living
-  on Danya's phone.
+  Danya who once trapped Kirill in the game world and later survived Kirill's
+  TOWER and ELYSIUM trials. He anonymously helps Danya in Act 6, secretly escapes
+  onto Danya's phone, and reveals himself during the Act 7 taxi ride. He knows
+  the absorbed collective influenced Kirill during the trials, so he wants to
+  free and save the original Kirill rather than take revenge on him.
 
 - **The scientists** are developing Kirill's unstable prototype. Their fear of
   him demonstrates how different his private behavior is from his public image.
@@ -144,6 +196,7 @@ both a personal betrayal and an obstacle to limitless power.
 | 4 | Night | Kirill | `Act4Map` | A nightmare reveals the origin and cost of Kirill's obsession |
 | 5 | Night | Danya | `Act5Map` | Danya reaches SkyTower and begins the infiltration |
 | 6, partially implemented | Same night | Danya | `Act6Map` | Danya enters the laboratory, bypasses lasers, and unlocks the HELIOS terminal |
+| 7, planned | Same night | Danya | Not yet created | XITRIX confesses during the taxi escape and detects PyCorp's pursuit |
 
 The automatic map chain is currently
 `IntroMap` → `KirillIntroMap` → `CityMap` → `Act4Map` → `Act5Map` →
@@ -348,20 +401,19 @@ of the finished game.
 
 ## Planned Story Progression
 
-### The Voice in the Ventilation
+### Act 6 Completion — The Anonymous Voice and Dasha
 
-The unknown caller is XITRIX.
-
-Kirill previously found a way to extract XITRIX from the virtual game world and
-brought him into the PyCorp laboratory for experimentation. XITRIX escaped
-physical containment by moving into the laboratory's local network. From there,
-he notices Danya inside the ventilation system, contacts his phone, and disables
-the laser barrier.
+The unknown caller who disables the lasers is XITRIX, but Act 6 does not reveal
+that identity to Danya or the player. After surviving TOWER and ELYSIUM, XITRIX
+escaped physical containment by moving into PyCorp's local network. He notices
+Danya in the ventilation system, sends the short instruction to wait, and opens
+the path without explaining who he is.
 
 After Danya solves the HELIOS password puzzle, he connects his phone to the
-terminal to copy the project documents. XITRIX uses that connection to copy
-himself from the PyCorp network onto the phone. He then becomes Danya's digital
-companion for the rest of the game.
+terminal to copy the project documents. XITRIX silently uses that connection to
+copy himself from the PyCorp network onto the phone. There is no introduction or
+confession yet; Danya leaves the laboratory without knowing that XITRIX escaped
+with him.
 
 The copied evidence reveals HELIOS's purpose. Kazuya's captured power amplifies
 Danya's individual soul-transfer technology into global influence and control.
@@ -374,13 +426,6 @@ world where he holds god-like administrator authority. Their physical bodies
 would remain in the real world as controlled workers, sustaining the machinery
 and infrastructure required to keep the virtual population alive.
 
-This reunion should carry deliberate uncertainty. XITRIX has helped both
-brothers before, but he is also the fragment of Danya who once refused to let
-Kirill escape. Danya needs his access and knowledge without being able to treat
-him as completely harmless.
-
-### Dasha, the Undercover Agent
-
 After Danya unlocks the computer, Dasha enters the room. Danya does not know who
 is coming and hides inside a wardrobe. Dasha discovers and exposes him.
 
@@ -392,16 +437,68 @@ She then reveals that she is the inside contact:
   person again.
 - She shares her current understanding of Kirill's cloning, soul-transfer, and
   HELIOS project.
+- She admits that the ventilation route was unnecessary because she had disabled
+  the cameras. Soloway sent Danya through the vents because he wanted to make him
+  crawl through them.
 
 Dasha is therefore not betraying Kirill out of hatred. She is acting against
-his project because she wants to save him from what he has become.
+his project because she wants to save him from what he has become. She stays
+inside SkyTower to preserve her PyCorp cover and continue acting as the team's
+internal contact. Danya leaves through the route she cleared and rejoins Law at
+the waiting taxi.
+
+### Act 7 — XITRIX's Call and the Taxi Escape
+
+Act 7 begins after Law has driven away from SkyTower. Danya's phone rings even
+though no ordinary caller is connected. XITRIX has simulated the incoming call
+from inside the phone; a `404: game not found` display can introduce the reveal.
+
+XITRIX identifies himself and gives one complete confession. The conversation
+is presented through the existing dialogue format with brief glitch flashes,
+not playable flashbacks. It may echo ELYSIUM's opening darkness, the snowbound
+kingdom, memory cards, TOWER's Zhora, Evil Paimon and gun-wielding mimics,
+administrator rights, and Kirill presenting an endless virtual prison as a
+gift.
+
+The confession establishes the complete sequence:
+
+1. Kirill secretly removed XITRIX from his stable pocket world.
+2. TOWER tested his identity through reincarnation and hostile loops.
+3. ELYSIUM tested memory, death, regeneration, choice, resets, and submission to
+   an administrator who controlled the world.
+4. Kirill treated every death and decision as research data for later transfer
+   systems while the absorbed collective amplified his cruelty and made that
+   abuse seem acceptable to him.
+5. XITRIX became aware of the collective inside Kirill and understood that the
+   original mind was being influenced, even though Kirill remained responsible
+   for his actions.
+6. XITRIX eventually hid inside PyCorp's local network, disabled the Act 6
+   lasers, and escaped when Danya connected the phone.
+7. The character Danya did not participate in the trials and had no knowledge
+   that they existed.
+
+XITRIX explains that he wants HELIOS stopped but still wants the original Kirill
+saved. He recognizes that the collective helped turn Kirill into someone willing
+to violate his soul, and refuses to punish the original mind for the collective's
+influence by subjecting him to another prison. Kirill must still answer for the
+choices he made, but XITRIX wants to separate and rescue him first. Danya
+recognizes the value of his knowledge, but XITRIX's history and administrator
+abilities prevent immediate, unquestioning trust.
+
+Once the confession is complete, XITRIX detects that Dasha did not disable every
+camera. A surviving PyCorp security feed identified Danya, and security vehicles
+are following the taxi. The pursuit and the heroes' successful escape are fixed
+story events. If production time permits, Danya takes the wheel while Law shoots
+at the pursuers and XITRIX warns about hazards. If that driving sequence is not
+stable in time, the same escape occurs as a short scripted dialogue/cutscene
+sequence with no change to later continuity.
 
 ### Gathering the Team
 
-After the SkyTower revelations, Danya gathers three real-life friends who will
-become playable during the virtual finale. Additional friends may join in
-support roles. Every participant needs a distinct personal strength or
-capability rather than existing only as a cameo.
+After the SkyTower revelations and taxi escape, Danya gathers three real-life
+friends who will become playable during the virtual finale. Additional friends
+may join in support roles. Every participant needs a distinct personal strength
+or capability rather than existing only as a cameo.
 
 Recruitment uses compact scenes, calls, or a shared meeting rather than three
 large independent quests. It runs in parallel with Kirill's viewpoint: while
@@ -479,20 +576,42 @@ accidental failed input.
 3. PyCorp's monopoly is the intended global delivery network for HELIOS.
 4. Dasha hired Soloway and is the undercover agent inside SkyTower.
 5. Dasha's motive is to save Kirill and restore the person he used to be.
-6. Kirill extracted XITRIX from the virtual world to experiment on him.
-7. XITRIX escaped into PyCorp's local network.
-8. XITRIX is the caller who removes the ventilation laser barrier.
-9. XITRIX will copy himself onto Danya's phone and become a companion.
-10. Danya will gather three playable friends plus possible support allies.
-11. Kirill will activate HELIOS in unstable local debug mode before global
+6. Kirill secretly extracted XITRIX from his stable pocket world for
+   artificial-soul research while already under the absorbed collective's
+   influence. The collective amplified his cruelty and made abuse of XITRIX's
+   soul feel acceptable, without erasing Kirill's responsibility for participating.
+7. Tower of XITRIX and XITRIX Elysium were literal, sequential worlds experienced
+   exclusively by XITRIX while he was PyCorp's captive.
+8. TOWER tested identity through forced reincarnation and hostile loops;
+   ELYSIUM tested memory, death, regeneration, branching choices, resets, and
+   submission to an administrator-controlled reality.
+9. ELYSIUM's cards, skills, regeneration, and four decision interfaces were real
+   inside that world but do not persist as present-day powers.
+10. The current story's Danya did not play or know about either trial. Last
+    Tekken remains the real Danya and Kirill's adventure, not an XITRIX life.
+11. XITRIX escaped physical containment into PyCorp's local network.
+12. XITRIX is the unidentified caller who removes the ventilation laser barrier,
+    but his identity remains hidden throughout Act 6.
+13. XITRIX silently copies himself onto Danya's phone through the HELIOS terminal
+    and publicly reveals himself during the Act 7 taxi ride.
+14. Dasha remains inside SkyTower after helping Danya leave so that she can
+    preserve her cover as the team's internal contact.
+15. XITRIX knows the collective influenced Kirill throughout his captivity. He
+    therefore wants to stop HELIOS, separate the collective, and save the
+    original Kirill rather than punish him through another imprisonment.
+16. A surviving camera exposes Danya and triggers a PyCorp pursuit, but Danya,
+    Law, and XITRIX successfully escape whether the sequence is playable or
+    scripted.
+17. Danya will gather three playable friends plus possible support allies.
+18. Kirill will activate HELIOS in unstable local debug mode before global
     activation.
-12. Three dominant alternative Kirill minds will separate in the virtual world.
-13. Each playable friend will confront one separated mind in a transforming
+19. Three dominant alternative Kirill minds will separate in the virtual world.
+20. Each playable friend will confront one separated mind in a transforming
     shared arena.
-14. Danya will then confront the original Kirill, with a player choice to
+21. Danya will then confront the original Kirill, with a player choice to
     continue as Danya or switch to Kirill.
-15. Saving Kirill through distributed cooperation is the canonical resolution.
-16. A deliberate choice by player-controlled Kirill to kill Danya opens a
+22. Saving Kirill through distributed cooperation is the canonical resolution.
+23. A deliberate choice by player-controlled Kirill to kill Danya opens a
     hidden bad ending.
 
 ## Open Questions for Future Plot Development
@@ -539,10 +658,25 @@ accidental failed input.
   consequence of Kirill's power.
 - Danya's "thirty-minute adventure" line deliberately understates an infiltration
   involving guards, cameras, vents, lasers, and an unstable soul experiment.
+- Dasha reveals that she disabled the cameras and that Soloway sent Danya through
+  the vents only to make him crawl; XITRIX then discovers the one camera she
+  missed.
 - Kirill once needed rescue from XITRIX's virtual prison; now XITRIX has escaped
   from Kirill's physical laboratory and returns inside Danya's phone.
+- The Act 7 call can identify itself with `404: game not found`, recall ELYSIUM's
+  opening darkness, and turn "admin rights" from an old joke into the reason
+  XITRIX could disable the lasers and escape.
+- TOWER's Zhora, Evil Paimon, and mimics with guns become memories of real danger
+  rather than disconnected references, while ELYSIUM's snow, memory cards, and
+  endless replay offer become evidence of Kirill's earlier research.
+- Kirill once described an endless virtual world as a gift made for XITRIX;
+  HELIOS reveals the same idea expanded into a prison for humanity.
 - Danya's shattered gaming impulse becomes an actual party companion, allowing
   XITRIX to comment on the game from inside the game.
+- XITRIX understands that the collective was already influencing Kirill during
+  TOWER and ELYSIUM. His decision to help separate and save the original Kirill
+  prevents their history from becoming a simple revenge story and reinforces the
+  ending's rejection of forced control.
 - Kirill loses because he tries to centralize every useful mind and capability
   inside himself, while the heroes distribute responsibility among people who
   trust one another and specialize in different things.
@@ -551,11 +685,18 @@ accidental failed input.
 
 The implemented dramatic arc currently reaches the SkyTower interior, laser
 encounter, HELIOS document puzzle, terminal unlock, and Danya's initial reaction
-to the project. The next major planned sequence is XITRIX's transfer onto the
-phone followed by Dasha entering the room, finding Danya in the wardrobe, and
-revealing her role in the investigation.
+to the project. The remainder of Act 6 is planned rather than playable: XITRIX
+silently transfers onto the connected phone, Dasha finds Danya in the wardrobe,
+reveals her role and HELIOS's purpose, jokes about Soloway's unnecessary vent
+route, remains undercover, and sends Danya back to Law.
 
-That sequence will turn the story from investigation into preparation for the
-final conflict. Danya will leave SkyTower with evidence, an unexpected digital
-companion, the truth about Dasha and Soloway, and a reason to assemble their
-friends before Kirill completes HELIOS.
+Act 7 is also planned and has no map or graph yet. During the taxi ride, XITRIX
+reveals himself and gives the complete TOWER and ELYSIUM confession through
+dialogue and brief visual glitches. He then detects the surviving camera and
+PyCorp pursuit. The escape is canonically successful; only its presentation as
+a playable chase or scripted sequence remains production-dependent.
+
+Together, those sequences turn the story from investigation into preparation
+for the final conflict. Danya will have the HELIOS evidence, the truth about
+Dasha and Soloway, XITRIX as a powerful but complicated companion, and a reason
+to assemble their friends before Kirill completes HELIOS.
