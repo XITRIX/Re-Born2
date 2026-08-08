@@ -62,6 +62,15 @@ public class PlayerInputScript : MonoBehaviour
         else Shared.DisablePlayerInput();
     }
 
+    public static void SetActiveCharacterVisible(bool visible)
+    {
+        if (Shared == null || Shared.AllCharacters.Count == 0) return;
+
+        var spriteRenderer = Shared.ActiveCharacter.GetComponentInChildren<SpriteRenderer>(true);
+        if (spriteRenderer != null)
+            spriteRenderer.enabled = visible;
+    }
+
     public void EnablePlayerInput()
     {
         _controlMap.Player.PrevCharacter.Enable();
@@ -326,6 +335,117 @@ public class PlayerInputScript : MonoBehaviour
             Shared.EnablePlayerInput();
 
         _charIsMoving.Remove(character.characterModel);
+    }
+
+    public static IEnumerator MoveCharExactCoroutine(CharacterScript character, GameObject target)
+    {
+        yield return MoveCharExactCoroutine(character, target, false, 2.3f, 10);
+    }
+
+    public static IEnumerator MoveCharExactCoroutine(CharacterScript character, GameObject target, bool forceWalking)
+    {
+        yield return MoveCharExactCoroutine(character, target, forceWalking, 2.3f, 10);
+    }
+
+    public static IEnumerator MoveCharExactCoroutine(CharacterScript character, GameObject target, bool forceWalking, float forceWalkingSpeed, float timeout)
+    {
+        const float exactPositionTolerance = 0.05f;
+
+        if (character == null || target == null)
+        {
+            Debug.LogWarning("MoveCharExactCoroutine requires both a character and a target.");
+            yield break;
+        }
+
+        if (_charIsMoving.ContainsKey(character.characterModel))
+        {
+            Debug.LogWarning($"MoveCharExactCoroutine cannot move {character.characterModel.charName} because that character is already moving.");
+            yield break;
+        }
+
+        var characterCollider = character.GetComponent<Collider>();
+        var ai = character.GetComponent<FollowerAIScript>();
+        var navMeshAgent = character.GetComponent<NavMeshAgent>();
+        if (characterCollider == null || ai == null || navMeshAgent == null)
+        {
+            Debug.LogWarning("MoveCharExactCoroutine requires Collider, FollowerAIScript, and NavMeshAgent components on the character.");
+            yield break;
+        }
+
+        _charIsMoving.Add(character.characterModel, true);
+
+        var isActiveCharacter = Shared.ActiveCharacter == character;
+        if (isActiveCharacter)
+            Shared.DisablePlayerInput();
+
+        var wasCharacterColliderTrigger = characterCollider.isTrigger;
+        var previousForceWalking = ai.forceWalking;
+        var previousForceWalkingSpeed = ai.forceWalkingSpeed;
+        var previousStoppingDistance = navMeshAgent.stoppingDistance;
+        var reachedTarget = false;
+        var exactTargetPosition = target.transform.position;
+
+        ai.overrideFollowTarget = target;
+        ai.needToOverrideFollowTarget = true;
+        navMeshAgent.stoppingDistance = 0;
+        ai.forceWalking = forceWalking;
+        ai.forceWalkingSpeed = forceWalkingSpeed;
+        ai.AIEnabled = true;
+
+        var characterTransform = character.transform;
+        var targetTransform = target.transform;
+        var startTime = Time.time;
+
+        while (Time.time - startTime < timeout && _charIsMoving[character.characterModel])
+        {
+            yield return new WaitForFixedUpdate();
+
+            exactTargetPosition = targetTransform.position;
+            if (Vector2.Distance(characterTransform.position, exactTargetPosition) <= exactPositionTolerance)
+            {
+                reachedTarget = true;
+                break;
+            }
+        }
+
+        ai.AIEnabled = false;
+        ai.needToOverrideFollowTarget = false;
+        ai.overrideFollowTarget = null;
+        ai.forceWalking = previousForceWalking;
+        ai.forceWalkingSpeed = previousForceWalkingSpeed;
+        navMeshAgent.stoppingDistance = previousStoppingDistance;
+        characterCollider.isTrigger = wasCharacterColliderTrigger;
+        character.MoveByVector(Vector2.zero, 0);
+
+        if (reachedTarget)
+        {
+            var finalCharacterPosition = characterTransform.position;
+            finalCharacterPosition.x = exactTargetPosition.x;
+            finalCharacterPosition.y = exactTargetPosition.y;
+
+            var characterRigidbody = character.GetComponent<Rigidbody>();
+            if (characterRigidbody != null)
+                characterRigidbody.position = finalCharacterPosition;
+            else
+                characterTransform.position = finalCharacterPosition;
+        }
+
+        if (isActiveCharacter)
+            Shared.EnablePlayerInput();
+
+        _charIsMoving.Remove(character.characterModel);
+    }
+
+    public static IEnumerator MoveCharExactCoroutine(CharacterScriptableObject characterModel, GameObject target, bool forceWalking, float forceWalkingSpeed, float timeout)
+    {
+        var character = Shared.AllCharacters.FirstOrDefault(x => x.characterModel == characterModel);
+        if (character == null)
+        {
+            Debug.LogWarning("MoveCharExactCoroutine could not find the requested character in the current map.");
+            yield break;
+        }
+
+        yield return MoveCharExactCoroutine(character, target, forceWalking, forceWalkingSpeed, timeout);
     }
 
     public static IEnumerator MoveCharCoroutine(CharacterScriptableObject characterModel, GameObject target, bool forceWalking, float forceWalkingSpeed, float timeout)
