@@ -125,18 +125,34 @@ Descriptions of implemented content are labeled **IMPLEMENTED**.
 - **IMPLEMENTED:** The interior contains readable HELIOS documents, a staff
   directory, an approval-chain puzzle, and a password-protected PyCorp
   terminal.
-- **IMPLEMENTED:** The HELIOS password puzzle has a complete solution,
-  progressive hints, an unlock state, and initial post-unlock dialogue in which
-  Danya reacts to the project.
+- **IMPLEMENTED:** The HELIOS password puzzle has a complete solution and no
+  progressive hints. The hints were intentionally removed so the document
+  puzzle remains challenging.
 - **IMPLEMENTED:** A nearby door interaction establishes that the route remains
   locked from the outside.
+- **IMPLEMENTED:** After unlocking the terminal, Danya sees alarming fragments
+  about soul transfer, global mind control, and a virtual world maintained by
+  controlled bodies. He copies the full archive to his phone to investigate
+  later rather than reading every document inside SkyTower.
+- **IMPLEMENTED:** Dasha enters, Danya hides in the wardrobe, and she discovers
+  him. She reveals that she hired Soloway, explains that the cameras were
+  already offline, exposes the ventilation route as Soloway's joke, and asks
+  Danya to help save Kirill.
+- **IMPLEMENTED:** Dasha returns Danya's phone after the transfer completes and
+  guides him toward the unguarded front-door route. Act 6 currently ends on the
+  departure fade because Act 7 does not exist yet.
 - **CONFIRMED:** XITRIX is the anonymous presence that disabled the lasers.
 - **CONFIRMED:** XITRIX escaped physical containment by moving into PyCorp's
   local network.
 - **CONFIRMED:** XITRIX's identity remains hidden throughout Act 6. When Danya
   connects his phone to the terminal, XITRIX silently copies himself onto it.
-- **CONFIRMED:** Dasha then enters the room and reveals herself as the inside
-  contact. XITRIX does not introduce himself until the planned Act 7 taxi ride.
+- **CONFIRMED:** The transfer is a mandatory story event and does not require a
+  game-state flag or player choice.
+- **CONFIRMED:** The `Unknown` dialogue character is a generic presentation for
+  any speaker whose identity is hidden; using it for more than one character
+  does not identify those characters as the same person.
+- **CONFIRMED:** XITRIX does not introduce himself until the planned Act 7 taxi
+  ride.
 - **CURRENT DEVELOPMENT STATE:** The Init graph launches `Act6Map` directly for
   interior testing. This is not the intended narrative opening and must be
   restored to the full Act 1–6 sequence for integration testing.
@@ -222,35 +238,38 @@ Descriptions of implemented content are labeled **IMPLEMENTED**.
 
 ## Remaining Narrative Arc
 
-### Act 6 Completion — Silent Escape and Dasha
+### Act 6 Ending — Silent Escape and Dasha
 
-- **CONFIRMED:** Danya connects his phone to the unlocked terminal while copying
-  HELIOS evidence.
-- **CONFIRMED:** XITRIX uses that connection to copy himself from PyCorp's
-  network onto the phone without revealing himself.
-- **CONFIRMED:** XITRIX remains the anonymous helper for the rest of Act 6; his
-  identity and trial history are reserved for Act 7.
-- **CONFIRMED:** Dasha enters while Danya is examining the terminal.
-- **CONFIRMED:** Danya hides in the wardrobe and is discovered by Dasha.
-- **CONFIRMED:** Dasha reveals that she hired Soloway, arranged the
-  infiltration, and wants to save the person Kirill used to be.
-- **CONFIRMED:** Dasha explains HELIOS's intended global transfer and control,
-  completing the Act 6 reveal after Danya uncovers the terminal evidence.
-- **CONFIRMED:** Dasha admits that she disabled the cameras and that Soloway sent
-  Danya through the ventilation system only because he wanted to make him crawl
-  through it.
-- **CONFIRMED:** The copied evidence reveals HELIOS's global purpose and creates
-  an urgent reason to stop its activation.
-- **WORKING:** The evidence also establishes local debug mode, incomplete
-  synchronization, and signs that Kirill contains separable mind signatures.
+- **IMPLEMENTED:** Danya connects his phone to the unlocked terminal and copies
+  the HELIOS archive for later investigation.
+- **CONFIRMED:** XITRIX unconditionally uses that connection to copy himself
+  from PyCorp's network onto the phone without revealing himself. No transfer
+  flag or optional branch is required.
+- **IMPLEMENTED:** Dasha enters while Danya is examining the terminal. Danya
+  hides in the wardrobe and is discovered by her.
+- **IMPLEMENTED:** Dasha reveals that she hired Soloway, explains that the
+  cameras were already offline, exposes the ventilation route as Soloway's
+  unnecessary joke, and asks Danya to help save the person Kirill used to be.
+- **CONFIRMED:** Act 6 is not required to explain every HELIOS document. Danya
+  leaves with enough fragments to recognize an urgent threat and reads the full
+  copied evidence during the Act 7 taxi ride.
 - **CONFIRMED:** Dasha remains in SkyTower to preserve her PyCorp cover and
   continue acting as the team's inside contact.
-- **CONFIRMED:** Danya leaves through Dasha's cleared route and rejoins Law at
-  the waiting taxi.
+- **IMPLEMENTED:** Dasha clears the front-door route and Danya begins leaving.
+  The fade is the current endpoint because the Act 7 taxi map and graph do not
+  exist yet.
 
 ### Act 7 — XITRIX's Confession and Taxi Escape
 
 - **CONFIRMED:** Act 7 begins during Law's taxi ride away from SkyTower.
+- **CONFIRMED:** Danya reviews the complete HELIOS archive on his phone during
+  the taxi ride. The evidence explains the intended global transfer, Kirill's
+  administrator control, PyCorp's delivery network, and the controlled physical
+  bodies that would maintain the virtual world.
+- **WORKING:** The evidence review may happen immediately before XITRIX appears
+  or may become a shared investigation with XITRIX during their conversation.
+- **WORKING:** The copied evidence also establishes local debug mode, incomplete
+  synchronization, and signs that Kirill contains separable mind signatures.
 - **CONFIRMED:** XITRIX simulates an incoming phone call and reveals his identity
   only after Danya has left the building.
 - **CONFIRMED:** The call contains one complete confession rather than spreading

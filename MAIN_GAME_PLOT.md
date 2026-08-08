@@ -195,8 +195,8 @@ both a personal betrayal and an obstacle to limitless power.
 | 3 | Evening | Danya | `CityMap` | Soloway recruits Danya into the investigation |
 | 4 | Night | Kirill | `Act4Map` | A nightmare reveals the origin and cost of Kirill's obsession |
 | 5 | Night | Danya | `Act5Map` | Danya reaches SkyTower and begins the infiltration |
-| 6, partially implemented | Same night | Danya | `Act6Map` | Danya enters the laboratory, bypasses lasers, and unlocks the HELIOS terminal |
-| 7, planned | Same night | Danya | Not yet created | XITRIX confesses during the taxi escape and detects PyCorp's pursuit |
+| 6, implemented to its current endpoint | Same night | Danya | `Act6Map` | Danya copies the HELIOS archive, meets Dasha, and begins leaving SkyTower |
+| 7, planned | Same night | Danya | Not yet created | Danya reviews the evidence, XITRIX confesses, and PyCorp begins its pursuit |
 
 The automatic map chain is currently
 `IntroMap` → `KirillIntroMap` → `CityMap` → `Act4Map` → `Act5Map` →
@@ -372,7 +372,7 @@ into the laboratory. The map then loads the unfinished Act 6 interior.
 conflict and evening warning lead into a nighttime break-in, placing Danya on a
 collision course with Kirill's project and the promised undercover agent.
 
-## Act 6 — Work-in-Progress SkyTower Interior
+## Act 6 — SkyTower Interior
 
 The interior map is the next target loaded by the Act 5 ladder. The following
 portion of the sixth act is implemented:
@@ -386,14 +386,31 @@ portion of the sixth act is implemented:
 - He can read HELIOS records, an obsolete R5 archive, the current R6 approval
   chain, a staff directory, and an IT recovery reminder.
 - Those documents form a password puzzle for a protected PyCorp terminal. The
-  puzzle has progressive hints and a persistent unlock state.
-- Unlocking the terminal triggers Danya's initial reaction that the project is
-  insane and must be stopped.
+  intended solution is `8365`. Progressive hints were deliberately removed so
+  the player must solve the document trail without being led to the answer.
+- Unlocking the terminal exposes alarming fragments about soul transfer, global
+  mind control, and a virtual world maintained by controlled bodies. Danya
+  concludes that the project must be stopped but copies the complete archive to
+  his phone so he can study it safely after leaving SkyTower.
 - A nearby door remains locked from the outside.
+- While the phone is connected, XITRIX silently and unconditionally copies
+  himself from PyCorp's local network onto it. Neither Danya nor the player is
+  told this during Act 6, and the mandatory transfer does not require a game
+  flag.
+- Dasha enters while the archive is transferring. Danya hides in the wardrobe,
+  leaves his phone on the table, and is discovered.
+- Dasha reveals that she hired Soloway to find help. She has no idea why Danya
+  used the ventilation system: she had already taken the cameras offline, and
+  Soloway added the vent route as an unnecessary joke.
+- Dasha asks Danya to help stop HELIOS and save the person Kirill used to be.
+  After the transfer completes, she returns Danya's phone and clears the route
+  through the front door.
+- Danya begins leaving and the scene fades to black. This is the current Act 6
+  endpoint; there is no `LoadMap` because Act 7 has not been created yet.
 
-The current scene does not yet reveal the caller, the undercover agent, or the
-full evidence stored on the computer. The confirmed plan below supplies those
-answers, but they remain future revelations for the player.
+The anonymous laser helper is XITRIX, but Act 6 does not reveal that identity.
+The `Unknown` character preset is a generic presentation for any concealed
+speaker, not an identity belonging exclusively to XITRIX.
 
 The Init graph still launches `Act6Map` directly, which appears to be a
 development shortcut for testing the interior rather than the intended opening
@@ -401,57 +418,21 @@ of the finished game.
 
 ## Planned Story Progression
 
-### Act 6 Completion — The Anonymous Voice and Dasha
-
-The unknown caller who disables the lasers is XITRIX, but Act 6 does not reveal
-that identity to Danya or the player. After surviving TOWER and ELYSIUM, XITRIX
-escaped physical containment by moving into PyCorp's local network. He notices
-Danya in the ventilation system, sends the short instruction to wait, and opens
-the path without explaining who he is.
-
-After Danya solves the HELIOS password puzzle, he connects his phone to the
-terminal to copy the project documents. XITRIX silently uses that connection to
-copy himself from the PyCorp network onto the phone. There is no introduction or
-confession yet; Danya leaves the laboratory without knowing that XITRIX escaped
-with him.
-
-The copied evidence reveals HELIOS's purpose. Kazuya's captured power amplifies
-Danya's individual soul-transfer technology into global influence and control.
-PyCorp's ownership of game engines, hardware, software, servers, and consumer
-infrastructure is not merely the result of Kirill's greed; it is the delivery
-network for HELIOS.
-
-Kirill intends to transfer or confine humanity's minds inside a shared virtual
-world where he holds god-like administrator authority. Their physical bodies
-would remain in the real world as controlled workers, sustaining the machinery
-and infrastructure required to keep the virtual population alive.
-
-After Danya unlocks the computer, Dasha enters the room. Danya does not know who
-is coming and hides inside a wardrobe. Dasha discovers and exposes him.
-
-She then reveals that she is the inside contact:
-
-- She hired Soloway to approach Danya.
-- She arranged for the letter and SkyTower infiltration instructions.
-- She has watched Kirill transform and wants her husband to become a good
-  person again.
-- She shares her current understanding of Kirill's cloning, soul-transfer, and
-  HELIOS project.
-- She admits that the ventilation route was unnecessary because she had disabled
-  the cameras. Soloway sent Danya through the vents because he wanted to make him
-  crawl through them.
-
-Dasha is therefore not betraying Kirill out of hatred. She is acting against
-his project because she wants to save him from what he has become. She stays
-inside SkyTower to preserve her PyCorp cover and continue acting as the team's
-internal contact. Danya leaves through the route she cleared and rejoins Law at
-the waiting taxi.
-
 ### Act 7 — XITRIX's Call and the Taxi Escape
 
 Act 7 begins after Law has driven away from SkyTower. Danya's phone rings even
 though no ordinary caller is connected. XITRIX has simulated the incoming call
 from inside the phone; a `404: game not found` display can introduce the reveal.
+
+During the taxi ride, Danya reads the complete HELIOS archive copied in Act 6.
+The review may happen immediately before XITRIX appears or as a shared
+investigation during their conversation. The evidence supplies the detailed
+reveal that Act 6 intentionally postpones: Kazuya's captured power scales
+Danya's soul-transfer technology into global control; PyCorp's monopoly is the
+delivery network; Kirill would rule the shared virtual world as its
+administrator; and controlled physical bodies would maintain the infrastructure
+keeping it alive. The evidence may also establish local debug mode, incomplete
+synchronization, and separable mind signatures.
 
 XITRIX identifies himself and gives one complete confession. The conversation
 is presented through the existing dialogue format with brief glitch flashes,
@@ -566,6 +547,12 @@ accidental failed input.
    attempting to control Kirill.
 9. PyCorp's public monopoly gives Kirill the money, hardware, staff, and secrecy
    needed to continue the project.
+10. Dasha hired Soloway to find help inside SkyTower.
+11. Dasha had already disabled the cameras; the ventilation route was Soloway's
+    unnecessary joke.
+12. Dasha opposes HELIOS because she wants to save Kirill rather than abandon
+    him to what he has become.
+13. Danya copied the HELIOS archive to his phone for later investigation.
 
 ### Author-Confirmed but Not Yet Revealed to the Player
 
@@ -574,44 +561,42 @@ accidental failed input.
 2. HELIOS would confine humanity inside Kirill's shared virtual world while
    mind-controlled bodies maintain its physical infrastructure.
 3. PyCorp's monopoly is the intended global delivery network for HELIOS.
-4. Dasha hired Soloway and is the undercover agent inside SkyTower.
-5. Dasha's motive is to save Kirill and restore the person he used to be.
-6. Kirill secretly extracted XITRIX from his stable pocket world for
+4. Kirill secretly extracted XITRIX from his stable pocket world for
    artificial-soul research while already under the absorbed collective's
    influence. The collective amplified his cruelty and made abuse of XITRIX's
    soul feel acceptable, without erasing Kirill's responsibility for participating.
-7. Tower of XITRIX and XITRIX Elysium were literal, sequential worlds experienced
+5. Tower of XITRIX and XITRIX Elysium were literal, sequential worlds experienced
    exclusively by XITRIX while he was PyCorp's captive.
-8. TOWER tested identity through forced reincarnation and hostile loops;
+6. TOWER tested identity through forced reincarnation and hostile loops;
    ELYSIUM tested memory, death, regeneration, branching choices, resets, and
    submission to an administrator-controlled reality.
-9. ELYSIUM's cards, skills, regeneration, and four decision interfaces were real
+7. ELYSIUM's cards, skills, regeneration, and four decision interfaces were real
    inside that world but do not persist as present-day powers.
-10. The current story's Danya did not play or know about either trial. Last
+8. The current story's Danya did not play or know about either trial. Last
     Tekken remains the real Danya and Kirill's adventure, not an XITRIX life.
-11. XITRIX escaped physical containment into PyCorp's local network.
-12. XITRIX is the unidentified caller who removes the ventilation laser barrier,
+9. XITRIX escaped physical containment into PyCorp's local network.
+10. XITRIX is the unidentified caller who removes the ventilation laser barrier,
     but his identity remains hidden throughout Act 6.
-13. XITRIX silently copies himself onto Danya's phone through the HELIOS terminal
+11. XITRIX silently copies himself onto Danya's phone through the HELIOS terminal
     and publicly reveals himself during the Act 7 taxi ride.
-14. Dasha remains inside SkyTower after helping Danya leave so that she can
+12. Dasha remains inside SkyTower after helping Danya leave so that she can
     preserve her cover as the team's internal contact.
-15. XITRIX knows the collective influenced Kirill throughout his captivity. He
+13. XITRIX knows the collective influenced Kirill throughout his captivity. He
     therefore wants to stop HELIOS, separate the collective, and save the
     original Kirill rather than punish him through another imprisonment.
-16. A surviving camera exposes Danya and triggers a PyCorp pursuit, but Danya,
+14. A surviving camera exposes Danya and triggers a PyCorp pursuit, but Danya,
     Law, and XITRIX successfully escape whether the sequence is playable or
     scripted.
-17. Danya will gather three playable friends plus possible support allies.
-18. Kirill will activate HELIOS in unstable local debug mode before global
+15. Danya will gather three playable friends plus possible support allies.
+16. Kirill will activate HELIOS in unstable local debug mode before global
     activation.
-19. Three dominant alternative Kirill minds will separate in the virtual world.
-20. Each playable friend will confront one separated mind in a transforming
+17. Three dominant alternative Kirill minds will separate in the virtual world.
+18. Each playable friend will confront one separated mind in a transforming
     shared arena.
-21. Danya will then confront the original Kirill, with a player choice to
+19. Danya will then confront the original Kirill, with a player choice to
     continue as Danya or switch to Kirill.
-22. Saving Kirill through distributed cooperation is the canonical resolution.
-23. A deliberate choice by player-controlled Kirill to kill Danya opens a
+20. Saving Kirill through distributed cooperation is the canonical resolution.
+21. A deliberate choice by player-controlled Kirill to kill Danya opens a
     hidden bad ending.
 
 ## Open Questions for Future Plot Development
@@ -627,8 +612,8 @@ accidental failed input.
 - What exact physical area does HELIOS local debug mode affect?
 - How much does Dasha know when she finds Danya, and which conclusions are still
   her theory?
-- What evidence does Danya copy from the terminal, and how can it explain
-  HELIOS without becoming a long exposition dump?
+- How should Danya's review of the copied HELIOS evidence be staged without
+  becoming a long exposition dump?
 - What limited abilities does XITRIX provide as a phone companion and during the
   finale?
 - Which Kirill escalation scene accompanies each recruitment beat as HELIOS
@@ -683,16 +668,18 @@ accidental failed input.
 
 ## Current Story Boundary
 
-The implemented dramatic arc currently reaches the SkyTower interior, laser
-encounter, HELIOS document puzzle, terminal unlock, and Danya's initial reaction
-to the project. The remainder of Act 6 is planned rather than playable: XITRIX
-silently transfers onto the connected phone, Dasha finds Danya in the wardrobe,
-reveals her role and HELIOS's purpose, jokes about Soloway's unnecessary vent
-route, remains undercover, and sends Danya back to Law.
+The implemented dramatic arc currently reaches the end of the SkyTower interior
+sequence. Danya bypasses the lasers, solves the HELIOS document puzzle, copies
+the archive to his phone, hides from Dasha in the wardrobe, learns that she
+hired Soloway and disabled the cameras, and begins leaving by the front door.
+XITRIX silently transfers onto the connected phone, but that mandatory event is
+hidden from both Danya and the player. The scene then fades at the current Act 6
+endpoint.
 
-Act 7 is also planned and has no map or graph yet. During the taxi ride, XITRIX
-reveals himself and gives the complete TOWER and ELYSIUM confession through
-dialogue and brief visual glitches. He then detects the surviving camera and
+Act 7 is planned and has no map or graph yet. During the taxi ride, Danya reads
+the complete HELIOS archive either before XITRIX appears or together with him.
+XITRIX then reveals himself and gives the complete TOWER and ELYSIUM confession
+through dialogue and brief visual glitches. He detects the surviving camera and
 PyCorp pursuit. The escape is canonically successful; only its presentation as
 a playable chase or scripted sequence remains production-dependent.
 
